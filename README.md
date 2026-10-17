@@ -1,6 +1,6 @@
 # Level 1 Semantic and Epistemic Governance
 
-Private independent research package, version0.1.0-dev. This is a standalone copy, not a submodule or a pointer to the original private checkout. No public release is implied.
+Private independent research package, version0.1.2-dev. This is a standalone copy, not a submodule or a pointer to the original private checkout. No public release is implied.
 
 The original problem bytes, model-facing requests and scorer sources are copied with origin hashes. They are never regenerated from a newer generator. Native source code is unchanged; only minimal package namespace initializers and an offline CLI are new. Original experiment history remains in the research archive.
 

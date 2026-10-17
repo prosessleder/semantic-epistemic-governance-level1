@@ -3,6 +3,7 @@
 from pathlib import Path
 from collections import defaultdict
 import argparse,hashlib,json,re,sys
+sys.dont_write_bytecode=True
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT))
 from internal.benchmarks import ontology_semantic_challenge_v2 as sem1

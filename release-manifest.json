@@ -9,7 +9,7 @@
     {
       "bytes": 280,
       "path": "CITATION.cff",
-      "sha256": "22598cf854bd2454ca1c07ebcdd2aff602ee6007af30e6080aacaa37a7f136d4"
+      "sha256": "918140ba1b46ce7338d96c12f6958e6fc17f0fcc53e0574852d4c3d36ba3e399"
     },
     {
       "bytes": 19168,
@@ -29,7 +29,7 @@
     {
       "bytes": 2586,
       "path": "README.md",
-      "sha256": "9868137bc065b05bcffd465fab6e64252018a19001ebb96a884c8618967bcf62"
+      "sha256": "14d8d349c5fff54f4943497e717a14143fe38c7e76e9cbf4d49198d9a8a4fa54"
     },
     {
       "bytes": 2378380,
@@ -4622,29 +4622,9 @@
       "sha256": "79f82e2b1b7663cc672da4e680b65bcbaf8310bf469b54a81dc2f4d0df4c1dbf"
     },
     {
-      "bytes": 263,
-      "path": "internal/__pycache__/__init__.cpython-312.pyc",
-      "sha256": "faa81ecaf2e0547307c79446c4ded7efce50285288462fb1be124f6b404885f0"
-    },
-    {
       "bytes": 68,
       "path": "internal/benchmarks/__init__.py",
       "sha256": "79f82e2b1b7663cc672da4e680b65bcbaf8310bf469b54a81dc2f4d0df4c1dbf"
-    },
-    {
-      "bytes": 274,
-      "path": "internal/benchmarks/__pycache__/__init__.cpython-312.pyc",
-      "sha256": "325214d140a56d81c7b94bc8a39d8fefe1466370f9f0af5042c3827918f890e0"
-    },
-    {
-      "bytes": 32873,
-      "path": "internal/benchmarks/__pycache__/ontology_epistemic_challenge_v2.cpython-312.pyc",
-      "sha256": "be30ad26b4dbad2994e35607747b5a98d6a0c14d6144efa40dd9d9298286f5d8"
-    },
-    {
-      "bytes": 51965,
-      "path": "internal/benchmarks/__pycache__/ontology_semantic_challenge_v2.cpython-312.pyc",
-      "sha256": "1843d632111d945b69a348879c8e690224dccba81320412d5bcbeac4024f5591"
     },
     {
       "bytes": 21095,
@@ -4672,16 +4652,6 @@
       "sha256": "79f82e2b1b7663cc672da4e680b65bcbaf8310bf469b54a81dc2f4d0df4c1dbf"
     },
     {
-      "bytes": 272,
-      "path": "ontology_boundary/__pycache__/__init__.cpython-312.pyc",
-      "sha256": "57c1c313ee8d1608fdf63694ff896514493ad4967b3a86af679c21e4f96b1eef"
-    },
-    {
-      "bytes": 32549,
-      "path": "ontology_boundary/__pycache__/oracle.cpython-312.pyc",
-      "sha256": "8b66d2ed07bb43e29ad60ab3bb24f5d6b43730c028ef6e8d09a1be9b59330b34"
-    },
-    {
       "bytes": 21113,
       "path": "ontology_boundary/oracle.py",
       "sha256": "10900bbd928a49907e4b60f6db90312e36c168f3d93159dfe0ab7d763fc45208"
@@ -4704,7 +4674,7 @@
     {
       "bytes": 309,
       "path": "pyproject.toml",
-      "sha256": "7cff8daced3982c9cf3cbfb801860046d77103fb9d1d8dcf580985d3116d7307"
+      "sha256": "8979cfb3824dba09af87a28ec79f70c9be336f8ba5d9ea6323d0d081edc38c21"
     },
     {
       "bytes": 210699,
@@ -4712,9 +4682,14 @@
       "sha256": "9583251adc9920a94ae1e9351c75d601903f139da75b3eafd8cee7344f77be7b"
     },
     {
-      "bytes": 6943,
+      "bytes": 416418,
+      "path": "release-manifests/0.1.1-dev.json",
+      "sha256": "b52ec926432816c43fe247822b53d489d877d7bf5728273cd23d8e20777fd467"
+    },
+    {
+      "bytes": 6972,
       "path": "reproduce.py",
-      "sha256": "b499c5472aefc2409e79baa4ee8bac5ac20dffe86d534ef91f93626752b7da6b"
+      "sha256": "3a4bc36f3c9c24253390217ce601a2d424e700ff15f5aa2ef10ae5388ec09819"
     },
     {
       "bytes": 0,
@@ -9604,7 +9579,8 @@
   ],
   "level": 1,
   "new_model_calls_by_export": 0,
-  "previous_manifest_sha256": "9583251adc9920a94ae1e9351c75d601903f139da75b3eafd8cee7344f77be7b",
+  "packaging_note": "Exclude ignored transient bytecode and disable bytecode generation in isolated replay. Original cases and scorer bytes unchanged.",
+  "previous_manifest_sha256": "b52ec926432816c43fe247822b53d489d877d7bf5728273cd23d8e20777fd467",
   "status": "PRIVATE_WORKING_PACKAGE",
-  "version": "0.1.1-dev"
+  "version": "0.1.2-dev"
 }
