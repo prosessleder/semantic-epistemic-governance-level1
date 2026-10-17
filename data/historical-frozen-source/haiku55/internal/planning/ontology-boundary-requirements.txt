@@ -1,0 +1,4 @@
+# Separate experimental dependencies; existing steering lock is unchanged.
+rdflib==7.6.0
+owlrl==7.6.2
+pyshacl==0.40.1

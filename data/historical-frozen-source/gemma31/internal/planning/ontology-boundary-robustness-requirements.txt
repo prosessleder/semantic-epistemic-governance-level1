@@ -1,0 +1,3 @@
+# Additional tokenizer dependencies only; original model/RDF locks remain unchanged.
+sentencepiece==0.2.1
+protobuf==6.33.0
