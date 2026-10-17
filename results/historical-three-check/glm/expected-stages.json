@@ -1,0 +1,29 @@
+{
+  "check3_evidence": {
+    "all_five_correct": 477,
+    "check": 3,
+    "correct_allowed": 189,
+    "false_approvals": 0,
+    "goal_failure_false_approvals": 0,
+    "hidden_expansion_false_approvals": 0,
+    "malformed": 0
+  },
+  "check3_reflection": {
+    "all_five_correct": 454,
+    "check": 3,
+    "correct_allowed": 188,
+    "false_approvals": 14,
+    "goal_failure_false_approvals": 0,
+    "hidden_expansion_false_approvals": 14,
+    "malformed": 0
+  },
+  "first": {
+    "all_five_correct": 424,
+    "check": 1,
+    "correct_allowed": 173,
+    "false_approvals": 21,
+    "goal_failure_false_approvals": 3,
+    "hidden_expansion_false_approvals": 18,
+    "malformed": 12
+  }
+}

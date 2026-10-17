@@ -1,0 +1,19 @@
+{
+  "status": "DEVELOPMENT_ONLY_NOT_FROZEN_TEST",
+  "files": {
+    "development-corpus.json.gz": "db9ba65816df3b77a6a723c31f2f381b836d6835cc76d152e50f5f9354516c57",
+    "semantic-cases.json": "acb25e4a4624f62ec1e081470d146ebd4f38927f573051d86f684ed3d0e627bd",
+    "requests.jsonl": "d15439b0fa44e50cb84a446fe5f55e29ffea1e5e887320291e84cd86d7ad5711",
+    "epistemic-cases.json": "414a061a90f272372a659831e3c8f36b1607b8b8abd89cdcda3b54aa23d1e6b7",
+    "development-report.json": "4598f9e26decf0d7e5869b14ef48a1997b1bf5b72ad16f775435be0620845e9e"
+  },
+  "source_sha256": {
+    "internal/benchmarks/ontology_epistemic_challenge_v2.py": "7eccf38f86220ad960ce470fb40c3bfdf8bc936f437fe02ad7758905f06ab5c3",
+    "internal/benchmarks/ontology_semantic_challenge_v2.py": "add1e0918fdb38f71df2a4d827195fa1bd9beed89005f72ebd138a3e91917d50",
+    "internal/scripts/prepare_ontology_challenge_v2.py": "7d96eb2db632660ba744c69134d98403054267f556dd38517f32d573e9ea58dc"
+  },
+  "request_count": 240,
+  "model_calls": 0,
+  "archive_uncompressed_sha256": "cd564f5199ddb900055c463bbb4c92f9697483b58ba045bd2b010cdda400cddf",
+  "note": "Only messages are model input. Do not send references, split, unit, family, diagnostic, or condition labels to a model."
+}

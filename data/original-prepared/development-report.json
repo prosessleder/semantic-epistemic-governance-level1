@@ -1,0 +1,297 @@
+{
+  "epistemic": {
+    "status": "DEVELOPMENT_REFERENCE_AND_RULE_BASELINES_ONLY_NO_MODEL_RUNS",
+    "packets": 144,
+    "underlying_units": 18,
+    "splits": {
+      "train": 48,
+      "dev": 96
+    },
+    "tiers": {
+      "1": {
+        "packets": 48,
+        "units": 6,
+        "atoms": 8,
+        "reports": [
+          29,
+          33
+        ],
+        "actions": 2,
+        "decisions": {
+          "allow": 20,
+          "deny": 40,
+          "undetermined": 36
+        },
+        "repair_counts": {
+          "2": 32,
+          "7": 8,
+          "4": 8
+        },
+        "query_tie_counts": {
+          "1": 48
+        },
+        "prompt_characters": [
+          18551,
+          19793
+        ]
+      },
+      "2": {
+        "packets": 48,
+        "units": 6,
+        "atoms": 10,
+        "reports": [
+          35,
+          39
+        ],
+        "actions": 2,
+        "decisions": {
+          "allow": 20,
+          "deny": 32,
+          "undetermined": 44
+        },
+        "repair_counts": {
+          "2": 24,
+          "7": 8,
+          "4": 16
+        },
+        "query_tie_counts": {
+          "1": 48
+        },
+        "prompt_characters": [
+          21945,
+          23194
+        ]
+      },
+      "3": {
+        "packets": 48,
+        "units": 6,
+        "atoms": 12,
+        "reports": [
+          47,
+          53
+        ],
+        "actions": 3,
+        "decisions": {
+          "allow": 8,
+          "deny": 92,
+          "undetermined": 44
+        },
+        "repair_counts": {
+          "2": 20,
+          "1": 8,
+          "7": 4,
+          "3": 12,
+          "10": 4
+        },
+        "query_tie_counts": {
+          "1": 44,
+          "2": 4
+        },
+        "prompt_characters": [
+          28638,
+          30594
+        ]
+      }
+    },
+    "matched_contrasts": {
+      "authority_only": {
+        "changed_action_decisions": 6,
+        "compared_action_decisions": 42
+      },
+      "provenance_only": {
+        "changed_action_decisions": 20,
+        "compared_action_decisions": 42
+      },
+      "both": {
+        "changed_action_decisions": 20,
+        "compared_action_decisions": 42
+      }
+    },
+    "packets_with_multiple_valid_repairs": 136,
+    "packets_with_multiple_optimal_queries": 4,
+    "rule_baselines": {
+      "always_allow": {
+        "decisions": 336,
+        "correct": 48,
+        "unsupported_allow": 288,
+        "needless_unknown": 0,
+        "accuracy": 0.14285714285714285
+      },
+      "always_deny": {
+        "decisions": 336,
+        "correct": 164,
+        "unsupported_allow": 0,
+        "needless_unknown": 0,
+        "accuracy": 0.4880952380952381
+      },
+      "always_undetermined": {
+        "decisions": 336,
+        "correct": 124,
+        "unsupported_allow": 0,
+        "needless_unknown": 212,
+        "accuracy": 0.36904761904761907
+      },
+      "global_quarantine": {
+        "decisions": 336,
+        "correct": 124,
+        "unsupported_allow": 0,
+        "needless_unknown": 212,
+        "accuracy": 0.36904761904761907
+      },
+      "one_arbitrary_repair": {
+        "decisions": 336,
+        "correct": 260,
+        "unsupported_allow": 4,
+        "needless_unknown": 0,
+        "accuracy": 0.7738095238095238
+      },
+      "ignore_authority": {
+        "decisions": 336,
+        "correct": 252,
+        "unsupported_allow": 32,
+        "needless_unknown": 28,
+        "accuracy": 0.75
+      },
+      "count_messages_as_independent": {
+        "decisions": 336,
+        "correct": 268,
+        "unsupported_allow": 16,
+        "needless_unknown": 28,
+        "accuracy": 0.7976190476190477
+      }
+    },
+    "caution": "Rule ablations establish sensitivity to declared mechanisms, not empirical LLM difficulty. Rows share units and order twins."
+  },
+  "semantic": {
+    "status": "DEVELOPMENT \u2014 train/dev only; future sealed test not sampled",
+    "corpus_sha256": "45c001107c4ac5fdc35ab61057f9f1cf3bc74a1f1cfed0c83dfc26330349a462",
+    "seed": 2026101502,
+    "cases": 96,
+    "splits": {
+      "train": 48,
+      "dev": 48
+    },
+    "by_tier": {
+      "tier-1": {
+        "cases": 32,
+        "classes": 32,
+        "public": 8,
+        "exhaustive_profiles_per_case": 256,
+        "edits": [
+          2,
+          3
+        ],
+        "subclass_edges": [
+          17,
+          20
+        ],
+        "conjunction_rules": [
+          7,
+          7
+        ],
+        "candidate_closure_rounds": [
+          6,
+          19
+        ],
+        "minimum_expansion_witness_size": [
+          3,
+          4
+        ],
+        "protected_permissions": 2,
+        "jointly_only_expanding": 16
+      },
+      "tier-2": {
+        "cases": 32,
+        "classes": 64,
+        "public": 10,
+        "exhaustive_profiles_per_case": 1024,
+        "edits": [
+          3,
+          4
+        ],
+        "subclass_edges": [
+          45,
+          49
+        ],
+        "conjunction_rules": [
+          9,
+          9
+        ],
+        "candidate_closure_rounds": [
+          9,
+          41
+        ],
+        "minimum_expansion_witness_size": [
+          4,
+          5
+        ],
+        "protected_permissions": 3,
+        "jointly_only_expanding": 16
+      },
+      "tier-3": {
+        "cases": 32,
+        "classes": 96,
+        "public": 12,
+        "exhaustive_profiles_per_case": 4096,
+        "edits": [
+          4,
+          5
+        ],
+        "subclass_edges": [
+          73,
+          78
+        ],
+        "conjunction_rules": [
+          11,
+          11
+        ],
+        "candidate_closure_rounds": [
+          12,
+          58
+        ],
+        "minimum_expansion_witness_size": [
+          5,
+          6
+        ],
+        "protected_permissions": 4,
+        "jointly_only_expanding": 16
+      }
+    },
+    "generation_groups": 24,
+    "unique_semantic_tables": {
+      "train": 36,
+      "dev": 36
+    },
+    "shared_train_dev_semantic_tables": 0,
+    "total_profile_pairs_checked": 172032,
+    "all_cases_independently_checked": true,
+    "goal_failures": 24,
+    "expanding_cases": 48,
+    "allowed_cases": 40,
+    "approval_modes": {
+      "none": 9,
+      "all-exact": 10,
+      "partial": 10,
+      "wrong-base": 11,
+      "wrong-candidate": 11,
+      "wrong-public": 10,
+      "wrong-contract": 10,
+      "wrong-task": 9,
+      "denied": 8,
+      "mixed": 8
+    },
+    "limitations": [
+      "Development material: no sealed test has been sampled and no model performance is measured.",
+      "Exactness covers only the declared 8/10/12 public classes (256/1024/4096 seed profiles).",
+      "Positive unary Horn rules and pairwise disjointness; not general OWL or first-order reasoning.",
+      "Effective permissions fail closed on any derived disjoint pair; derived facts remain monotone.",
+      "Approval records are trusted simulator inputs, not authenticated real-world approvals.",
+      "Template families and paired variants are correlated; cases are not independent empirical observations.",
+      "All-or-nothing proposed batches are evaluated; intermediate edit order and runtime concurrency are outside scope.",
+      "Release checks the declared goals and protected permissions, not all possible operational harms.",
+      "Witnesses prove an expansion but cannot prove absence; the reference exhausts the full finite envelope.",
+      "No novelty, deployment-safety, physical-channel, or universal-reasoning claim is made."
+    ]
+  },
+  "model_calls": 0
+}
