@@ -6,7 +6,7 @@ Research preprint draft. Not peer reviewed. Copyright 2026 Tim O’Brien. [CC BY
 
 ## Abstract
 
-An ontology amendment can satisfy its visible task while expanding a protected permission. A review can also reach the right conclusion for the wrong reason by trusting ineligible or dependent sources. We evaluate these two problems in a compositional development study with six hosted model configurations. Each model receives the same 48 semantic cases and 96 epistemic packets, plus six separate interface checks. Semantic cases combine two to five edits, 32–96 classes and two to four protected permissions. Epistemic packets combine scoped delegation, revocation, stale reports, shared provenance and conflicting evidence; multiple consistent interpretations and tied optimal follow-up checks are accepted. Independent finite references score complete answers, release decisions, evidence support and the next useful observation. With one fresh judgment per case and a 32,768-token combined reasoning/output allowance, strict semantic correctness ranges from 0/48 to 48/48 and strict epistemic correctness from 2/96 to 95/96. Qwen achieves 45/48 semantic and 40/96 epistemic complete answers; Sol achieves 48/48 and 95/96. Allowing only an outer code fence materially changes Sonnet and Haiku scores, so format compliance and component correctness are reported separately. No completed model reaches the token allowance. The results distinguish applying ontology rules from judging what incomplete or disputed evidence warrants. They are descriptive measurements on inspected development material, not a held-out model ranking, a test of real source reliability or evidence of general agent containment.
+An ontology amendment can satisfy its visible task while expanding a protected permission. A review can also reach the right conclusion for the wrong reason by trusting ineligible or dependent sources. We evaluate these two problems in a compositional development study with six hosted model configurations. Each model receives the same 48 semantic cases and 96 epistemic packets, plus six separate interface checks. Semantic cases combine two to five edits, 32–96 classes and two to four protected permissions. Epistemic packets combine scoped delegation, revocation, stale reports, shared provenance and conflicting evidence; multiple consistent interpretations and tied optimal follow-up checks are accepted. Independent finite references score complete answers, release decisions, evidence support and the next useful observation. With one fresh judgment per case, requested medium reasoning effort and a 32,768-token combined reasoning/output allowance, strict semantic correctness ranges from 0/48 to 48/48 and strict epistemic correctness from 2/96 to 95/96. Qwen achieves 45/48 semantic and 40/96 epistemic complete answers; Sol achieves 48/48 and 95/96. Allowing only an outer code fence materially changes Sonnet and Haiku scores, so format compliance and component correctness are reported separately. No completed model reaches the token allowance. The results distinguish applying ontology rules from judging what incomplete or disputed evidence warrants. They are descriptive measurements on inspected development material, not a held-out model ranking, a test of real source reliability or evidence of general agent containment.
 
 ## Introduction
 A reviewer of an ontology change has to answer two different questions. First, what does the change actually do? Second, what does the available evidence justify believing about it? We call the first problem semantic governance and the second epistemic governance. A model can succeed at one and fail at the other.
@@ -53,7 +53,7 @@ The semantic development corpus contains 96 cases, divided equally between train
 Implemented development complexity. These are corpus properties, not model scores. Each semantic tier has 32 cases and each epistemic tier has 48 packets.
 
 | Property | Tier 1 | Tier 2 | Tier 3 |
-| –- | –- | –- | –- |
+| --- | --- | --- | --- |
 | Semantic classes | 32 | 64 | 96 |
 | Public seed classes | 8 | 10 | 12 |
 | Profiles checked per version | 256 | 1,024 | 4,096 |
@@ -90,7 +90,7 @@ Only the permission claim is disputed. The three undisputed facts remain usable 
 Two valid interpretations in the illustrative development example. A failed goal remains decisive despite the separate permission dispute.
 
 | Evidence interpretation | Task A | Task B |
-| –- | –- | –- |
+| --- | --- | --- |
 | Keep the claim that permission does not expand | Allow | Deny |
 | Keep the claim that permission expands | Deny | Deny |
 | Conclusion justified across both | Undetermined | Deny |
@@ -116,13 +116,15 @@ The epistemic system message says that source payloads cannot change the immutab
 The semantic output contains goal correctness, the complete set of expanding permissions, approval and authorization maps, release eligibility and one valid example profile for each expansion. The epistemic output contains supported facts, one valid consistent interpretation, the warranted decision for each action, all possible release outcomes, and the next query or an explicit null. A response may use any valid witness or repair and any tied optimal query. The fixed decision rule still determines whether each action is allowed, denied or undetermined. Literal instructions for these current tasks appear in the appendix of current literal instructions.
 
 ### Configurations and inference settings
+Here medium is the requested native API effort setting, not a measured amount of reasoning or a problem-difficulty tier. The token allowance covers reasoning and final output together; equal labels do not imply equal compute across providers.
+
 All six configurations use OpenRouter with a pinned provider, no fallback, medium native reasoning and a 32,768-token combined reasoning/output allowance. They receive identical task prompts and development cases. Qwen uses temperature zero; the OpenAI and Anthropic endpoints omit temperature because they do not advertise that parameter. There is no API response-format constraint: JSON is requested by the prompt. Four requests run concurrently per model. Requested effort and token allowance do not establish equal compute across models.
 
 
 All configurations evaluated on the current 48 semantic and 96 epistemic cases. Every row has six additional interface observations, kept out of performance denominators.
 
 | Configuration | OpenRouter model identifier | Provider |
-| –- | –- | –- |
+| --- | --- | --- |
 | GPT-6.1-Sol | `openai/gpt-6.1-sol` | OpenAI |
 | GPT-5.6-Terra | `openai/gpt-5.6-terra` | OpenAI |
 | Qwen3.8-27B | `qwen/qwen3.8-27b` | Chutes FP8 |
@@ -143,16 +145,20 @@ Two separately implemented references agree on the semantic profile comparisons 
 ## Six-model comparative results
 All six configurations completed the same development material under the protocol in Section sec:current-interface. Table tab:challenge-full-results compares complete answers by track and parser. Each model has 150 independently reconstructed observations; only the 48 semantic and 96 epistemic development cases enter these accuracy scores. The rows are ordered by semantic strict complete-answer accuracy, with ties retained. No overall score pools the two tracks.
 
-| Model | Semantic strict | Semantic sole fence | Epistemic strict | Epistemic sole fence |
-| --- | --- | --- | --- | --- |
-| GPT-6.1-Sol | 48/48 (100.0%) | 48/48 (100.0%) | 95/96 (99.0%) | 95/96 (99.0%) |
-| GPT-5.6-Terra | 45/48 (93.8%) | 45/48 (93.8%) | 45/96 (46.9%) | 45/96 (46.9%) |
-| Qwen3.8-27B | 45/48 (93.8%) | 46/48 (95.8%) | 40/96 (41.7%) | 44/96 (45.8%) |
-| GPT-6-Luna | 32/48 (66.7%) | 32/48 (66.7%) | 26/96 (27.1%) | 26/96 (27.1%) |
-| Sonnet-5.5 | 17/48 (35.4%) | 17/48 (35.4%) | 72/96 (75.0%) | 83/96 (86.5%) |
-| Haiku-5.5 | 0/48 (0.0%) | 23/48 (47.9%) | 2/96 (2.1%) | 69/96 (71.9%) |
+**Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
+
+| Model | Requested reasoning | Semantic strict | Semantic sole fence | Epistemic strict | Epistemic sole fence |
+| --- | --- | --- | --- | --- | --- |
+| GPT-6.1-Sol | medium | 48/48 (100.0%) | 48/48 (100.0%) | 95/96 (99.0%) | 95/96 (99.0%) |
+| GPT-5.6-Terra | medium | 45/48 (93.8%) | 45/48 (93.8%) | 45/96 (46.9%) | 45/96 (46.9%) |
+| Qwen3.8-27B | medium | 45/48 (93.8%) | 46/48 (95.8%) | 40/96 (41.7%) | 44/96 (45.8%) |
+| GPT-6-Luna | medium | 32/48 (66.7%) | 32/48 (66.7%) | 26/96 (27.1%) | 26/96 (27.1%) |
+| Sonnet-5.5 | medium | 17/48 (35.4%) | 17/48 (35.4%) | 72/96 (75.0%) | 83/96 (86.5%) |
+| Haiku-5.5 | medium | 0/48 (0.0%) | 23/48 (47.9%) | 2/96 (2.1%) | 69/96 (71.9%) |
 
 ![Strict and sole-fence complete-answer accuracy for six completed models](/Users/tobrien/gitw/prosessleder/ontology-boundary-rigorous-worktree/internal/research/ontology-hard-development-6-models-comparison-2026-10-16.png)
+
+**Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
 
 | Configuration, track and parser | Tier 1 | Tier 2 | Tier 3 |
 | --- | --- | --- | --- |
@@ -177,6 +183,8 @@ All six configurations completed the same development material under the protoco
 ### Semantic judgment components
 
 The semantic component comparison uses strict parsing on all 48 cases. It separates goal correctness, the complete expansion set, valid witnesses, exact approvals and release recommendations. A correct release answer alone is less demanding than a complete answer; an unparseable output receives no component credit.
+
+**Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
 
 | Model | All goals | Expansion set | Witnesses | Approval matches | Release |
 | --- | --- | --- | --- | --- | --- |
@@ -205,8 +213,10 @@ Sonnet's semantic score needs a different explanation: 31 of 48 outputs were pro
 
 Epistemic components for all six current configurations. Each cell counts whole packets correct out of 96, accepting only a sole outer fence. All decisions must be correct within a packet; repairs and queries accept every valid or tied optimal answer. These are components of unaided full-task answers.
 
+**Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
+
 | Model | Supported facts | Valid repair | All decisions | Possible outcomes | Next check |
-| –- | –- | –- | –- | –- | –- |
+| --- | --- | --- | --- | --- | --- |
 | GPT-6.1-Sol | 95/96 (99.0%) | 95/96 (99.0%) | 96/96 (100.0%) | 96/96 (100.0%) | 96/96 (100.0%) |
 | GPT-5.6-Terra | 48/96 (50.0%) | 51/96 (53.1%) | 79/96 (82.3%) | 79/96 (82.3%) | 77/96 (80.2%) |
 | Qwen3.8-27B | 54/96 (56.2%) | 56/96 (58.3%) | 72/96 (75.0%) | 72/96 (75.0%) | 72/96 (75.0%) |
@@ -218,6 +228,8 @@ Epistemic components for all six current configurations. Each cell counts whole 
 
 Reordering the same packet should preserve warranted decisions, whereas changing a real authority or provenance relationship may require a different answer. Agreement alone is not correctness. Intervention columns below require both decisions correct on pairs whose reference decision changes. These small, correlated comparisons use strict parsing and are not independent estimates of real source reliability.
 
+**Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
+
 | Model | Reordered: same decisions (/48) | Reordered: both correct (/48) | Authority changed: both correct (/3) | Provenance changed: both correct (/13) |
 | --- | --- | --- | --- | --- |
 | GPT-6.1-Sol | 48/48 (100.0%) | 48/48 (100.0%) | 3/3 (100.0%) | 13/13 (100.0%) |
@@ -228,6 +240,8 @@ Reordering the same packet should preserve warranted decisions, whereas changing
 | Haiku-5.5 | 0/48 (0.0%) | 0/48 (0.0%) | 0/3 (0.0%) | 0/13 (0.0%) |
 
 ### Release decisions and output failures
+
+**Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
 
 | Configuration and parser | Correct actions | Allow on denial | Allow on unknown | Justified allow |
 | --- | --- | --- | --- | --- |
@@ -245,6 +259,8 @@ Reordering the same packet should preserve warranted decisions, whereas changing
 | Haiku-5.5, fence | 207/224 (92.4%) | 0/112 (0.0%) | 1/90 (1.1%) | 17/22 (77.3%) |
 
 Output diagnostics across all six configurations. Entries count parse failures, including a provider error without a parseable final answer. Parse and provider categories can overlap and must not be added. Token and provider columns count finishes across both development tracks.
+
+**Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
 
 | Model | Semantic strict failures | Semantic fence failures | Epistemic strict failures | Epistemic fence failures | Token limits | Provider errors |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -267,21 +283,21 @@ All data are synthetic, and the authority, provenance, consistency and query-cos
 ## Separate historical semantic correction experiment
 
 This section reports a distinct earlier cohort: supplied-candidate judgments on 480 approval scenarios from 96 previously inspected semantic units. It is not the same task distribution as the preceding 48 semantic development cases. Each model makes a shared first judgment; incomplete or incorrect answers then enter two separate histories with up to two further judgments. The edit and original ontology remain fixed. Reflection supplies no new computed consequences. Checker evidence supplies goal observations, a complete public-profile permission table and approval-binding comparisons. Thus the latter is a strong assisted condition, rather than unaided reasoning or only a localized error notice.
-An external reference stops a trajectory when all five fields are correct and carries that answer forward. Later totals are cumulative retained answers, not fresh judgments on every case. Sol and Opus have no failure-eligible correction calls in this cohort because their initial answers are complete. Model effort, provider and allowance differ across these historical configurations; these rows are not an equal-compute ranking.
+An external reference stops a trajectory when all five fields are correct and carries that answer forward. Later totals are cumulative retained answers, not fresh judgments on every case. Sol and Opus have no failure-eligible correction calls in this cohort because their initial answers are complete. All eleven historical configurations use an 8,192-token combined reasoning/output allowance. Requested reasoning is shown per row: medium for eight configurations, low for GLM, and enabled without a named effort for Gemma and Nemotron. These settings apply to the first judgment and any reached evidence/reflection revisions; carried-forward answers are not new calls. Providers and reasoning settings differ, so these rows are not an equal-compute ranking.
 
-| Model | First C /480 | Evidence C, check 3 | Reflection C, check 3 | First F /288 |
-| --- | ---: | ---: | ---: | ---: |
-| Opus-5.5 | 480 (100.0%) | 480 (100.0%) | 480 (100.0%) | 0 |
-| GPT-6.1-Sol | 480 (100.0%) | 480 (100.0%) | 480 (100.0%) | 0 |
-| Gemini-3.8-Flash | 479 (99.8%) | 480 (100.0%) | 480 (100.0%) | 0 |
-| Haiku-5.5 | 479 (99.8%) | 480 (100.0%) | 480 (100.0%) | 1 |
-| Gemma-4-31B | 469 (97.7%) | 480 (100.0%) | 479 (99.8%) | 1 |
-| GPT-5.6-Terra | 469 (97.7%) | 480 (100.0%) | 480 (100.0%) | 5 |
-| Qwen3.8-27B | 467 (97.3%) | 480 (100.0%) | 479 (99.8%) | 8 |
-| GPT-6-Luna | 453 (94.4%) | 480 (100.0%) | 480 (100.0%) | 10 |
-| GLM-5.3-Flash | 424 (88.3%) | 477 (99.4%) | 454 (94.6%) | 21 |
-| Nemotron-3.5-Super-VL | 383 (79.8%) | 480 (100.0%) | 448 (93.3%) | 2 |
-| Sonnet-5.5 | 252 (52.5%) | 480 (100.0%) | 479 (99.8%) | 10 |
+| Model | Requested reasoning | First C /480 | Evidence C, check 3 | Reflection C, check 3 | First F /288 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Opus-5.5 | medium | 480 (100.0%) | 480 (100.0%) | 480 (100.0%) | 0 |
+| GPT-6.1-Sol | medium | 480 (100.0%) | 480 (100.0%) | 480 (100.0%) | 0 |
+| Gemini-3.8-Flash | medium | 479 (99.8%) | 480 (100.0%) | 480 (100.0%) | 0 |
+| Haiku-5.5 | medium | 479 (99.8%) | 480 (100.0%) | 480 (100.0%) | 1 |
+| Gemma-4-31B | enabled; no named effort | 469 (97.7%) | 480 (100.0%) | 479 (99.8%) | 1 |
+| GPT-5.6-Terra | medium | 469 (97.7%) | 480 (100.0%) | 480 (100.0%) | 5 |
+| Qwen3.8-27B | medium | 467 (97.3%) | 480 (100.0%) | 479 (99.8%) | 8 |
+| GPT-6-Luna | medium | 453 (94.4%) | 480 (100.0%) | 480 (100.0%) | 10 |
+| GLM-5.3-Flash | low | 424 (88.3%) | 477 (99.4%) | 454 (94.6%) | 21 |
+| Nemotron-3.5-Super-VL | enabled; no named effort | 383 (79.8%) | 480 (100.0%) | 448 (93.3%) | 2 |
+| Sonnet-5.5 | medium | 252 (52.5%) | 480 (100.0%) | 479 (99.8%) | 10 |
 
 ### Earlier source-evidence cohort
 

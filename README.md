@@ -1,6 +1,8 @@
 # Level 1 Semantic and Epistemic Governance
 
-Private independent research package, version0.1.2-dev. This is a standalone copy, not a submodule or a pointer to the original private checkout. No public release is implied.
+Private independent research package, version0.1.3-dev. This is a standalone copy, not a submodule or a pointer to the original private checkout. No public release is implied.
+
+Version 0.1.3-dev is a documentation-only clarification of requested reasoning effort and token allowances in the paper tables. The fixed benchmark version, cases, frozen requests, model outputs, scorers and reported scores are unchanged; `release-manifests/0.1.2-dev.json` preserves the preceding package manifest.
 
 The original problem bytes, model-facing requests and scorer sources are copied with origin hashes. They are never regenerated from a newer generator. Native source code is unchanged; only minimal package namespace initializers and an offline CLI are new. Original experiment history remains in the research archive.
 

@@ -1,0 +1,155 @@
+{
+  "scope": "Manuscript clarification only; frozen benchmark inputs, requests, outputs and scorers unchanged",
+  "main": {
+    "gpt56terra": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 32768,
+      "plan_sha256": "5abbb911b61cb681bb21634d755266b75956024d751ca0592dae0e4ab80787d1"
+    },
+    "gpt61sol": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 32768,
+      "plan_sha256": "f5ea2ff01335b6dbce8add64797727f80d3f4f7abd36e2aa051dd385f84bc6d2"
+    },
+    "gpt6luna": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 32768,
+      "plan_sha256": "21acf9679dbab398ab265931e5b387725073c4d28565140836b7c49fefc4c8cd"
+    },
+    "haiku55": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 32768,
+      "plan_sha256": "424e59023e24bcca5b27c89b17b904393a261549c505b8c03b8bb699a23e1604"
+    },
+    "qwen38": {
+      "reasoning": {
+        "effort": "medium",
+        "exclude": false
+      },
+      "max_tokens": 32768,
+      "plan_sha256": "6a449e60aa97825799b2ba3f3228f0091233b7bae3f15c3e0c6d91c6c0d3c878"
+    },
+    "sonnet55": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 32768,
+      "plan_sha256": "06d3ce6f120769af3cf2e2c30f398e169e7921617be78f1241ca0545fa7ca9a9"
+    }
+  },
+  "historical": {
+    "gemini38": {
+      "reasoning": {
+        "effort": "medium",
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "433628b21ac90bced98d9f94e3a07e29dbddda36d68c316d245c6fc3f4b7bac4"
+    },
+    "gemma31": {
+      "reasoning": {
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "a85b52a0bdcd094086dc1d27c094c61b04342ea2f01127cf7a9032da5b9cb74b"
+    },
+    "glm": {
+      "reasoning": {
+        "effort": "low",
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "f1505b636442843abc4a67f95ebc46348be866e2ea637f05ec9264aa6240bb0b"
+    },
+    "gpt56terra": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "1fe4b1b5d549a4cd5c2b04cc85f6ab7ebef0e557f65d6f006952d5f622ea6011"
+    },
+    "gpt61sol": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "59e6a3b211803ee99219d980bda3d2a3dbb749fd5c56ff10f093044657cb82e4"
+    },
+    "gpt6luna": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "c498abbaaff840f4ad67e1fd87f1d2498f0f6f40e5279f3f75ea899043de5085"
+    },
+    "haiku55": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "a9a573e67c827612289381540a1f52c365e27663894a923f5567cd08fa6aeb49"
+    },
+    "nemotron35": {
+      "reasoning": {
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "85c43f01b88287961e0b5ecdd3f6748b538f3a870025c7648f5b30ba8b083f89"
+    },
+    "opus55": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "b752e4b71a6f9422766e8a54f4e41d519061212e918894d54be1f315bdd2126d"
+    },
+    "qwen38": {
+      "reasoning": {
+        "effort": "medium",
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "3090371f0541459cdd3596328882be9b42374605f01ef29184f06ad9170b7c71"
+    },
+    "sonnet55": {
+      "reasoning": {
+        "effort": "medium",
+        "enabled": true,
+        "exclude": false
+      },
+      "max_tokens": 8192,
+      "plan_sha256": "dba51fda1cf54f6152af2cbcc3aa24ae449b84fd7771f4aecc3b8730d1b551fa"
+    }
+  },
+  "new_model_calls": 0
+}

@@ -9,7 +9,7 @@
     {
       "bytes": 280,
       "path": "CITATION.cff",
-      "sha256": "918140ba1b46ce7338d96c12f6958e6fc17f0fcc53e0574852d4c3d36ba3e399"
+      "sha256": "62fcd8869ffc355fe40779bcfb2f7f9dc32b83731eeb165e79e472a1f4e0cf95"
     },
     {
       "bytes": 19168,
@@ -27,9 +27,9 @@
       "sha256": "9d1c9c09012fe26e7724893814842ea7900d531fde09cf82aebed297f113c75f"
     },
     {
-      "bytes": 2586,
+      "bytes": 2903,
       "path": "README.md",
-      "sha256": "14d8d349c5fff54f4943497e717a14143fe38c7e76e9cbf4d49198d9a8a4fa54"
+      "sha256": "d0fb387c430104c04b66fc6fc2a67a6258af7b3551416e0594615de6bbe2dc00"
     },
     {
       "bytes": 2378380,
@@ -4662,19 +4662,24 @@
       "sha256": "4eea11dae67fce1fa37bb3653eb1c929575dcba9701355d8b24792dcd258918d"
     },
     {
-      "bytes": 55870,
+      "bytes": 57635,
       "path": "paper/paper.md",
-      "sha256": "a24e32e7f6f4a8e90c275b1e6a4b08a5c3631d4e090647cf96876c0705795564"
+      "sha256": "5468a174b7a4f68ab8c161a16b06e4e2188fcddd56be28d6cad612b6e3dd5ac1"
     },
     {
-      "bytes": 67616,
+      "bytes": 69238,
       "path": "paper/paper.tex",
-      "sha256": "740ff0b0bdf996d5a2c18f6d1a31f3c210f7f0222344a29311b92d93b466ea99"
+      "sha256": "8943664d7f00843036b2b8d343ff3502072474bba80457507c4c5da425893752"
+    },
+    {
+      "bytes": 4213,
+      "path": "paper/reasoning-settings-clarification.json",
+      "sha256": "583b81527cc7552b78c56fdf35a217e5e059c354abc03f2a6e1e2a2c2fe04888"
     },
     {
       "bytes": 309,
       "path": "pyproject.toml",
-      "sha256": "8979cfb3824dba09af87a28ec79f70c9be336f8ba5d9ea6323d0d081edc38c21"
+      "sha256": "c85913512e7b7f3044680e331f3f8d8879e8ee13b25555aa563089eb895d3a3a"
     },
     {
       "bytes": 210699,
@@ -4685,6 +4690,11 @@
       "bytes": 416418,
       "path": "release-manifests/0.1.1-dev.json",
       "sha256": "b52ec926432816c43fe247822b53d489d877d7bf5728273cd23d8e20777fd467"
+    },
+    {
+      "bytes": 415566,
+      "path": "release-manifests/0.1.2-dev.json",
+      "sha256": "046401401180d5af94300a6169390798556eaa0ead3b5e48a43518391495c089"
     },
     {
       "bytes": 6972,
@@ -9579,8 +9589,8 @@
   ],
   "level": 1,
   "new_model_calls_by_export": 0,
-  "packaging_note": "Exclude ignored transient bytecode and disable bytecode generation in isolated replay. Original cases and scorer bytes unchanged.",
-  "previous_manifest_sha256": "b52ec926432816c43fe247822b53d489d877d7bf5728273cd23d8e20777fd467",
+  "packaging_note": "Documentation-only revision: explicit requested reasoning settings beside main/historical tables; all benchmark cases, frozen sources, requests, model outputs and scorers unchanged. Preserves 0.1.2-dev manifest.",
+  "previous_manifest_sha256": "046401401180d5af94300a6169390798556eaa0ead3b5e48a43518391495c089",
   "status": "PRIVATE_WORKING_PACKAGE",
-  "version": "0.1.2-dev"
+  "version": "0.1.3-dev"
 }
