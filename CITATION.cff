@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "Cite this immutable benchmark version and the corresponding paper."
 title: "Level 1 Semantic and Epistemic Governance"
-version: 0.1.5-dev
+version: 0.1.6-dev
 authors:
   - family-names: "O’Brien"
-    given-names: "Tim"
+    given-names: "Timothy"
     orcid: "https://orcid.org/0009-0001-2589-347X"

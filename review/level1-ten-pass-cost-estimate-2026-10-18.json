@@ -1,0 +1,64 @@
+{
+  "scope": "Estimate only; no new inference authorized or launched. Six completed Level 1 configurations; same medium/32768 condition. Observed reported costs, not live quotes or guaranteed bounds.",
+  "rows": [
+    {
+      "model": "gpt56terra",
+      "source": "results/main/gpt56terra/original-report.json",
+      "source_sha256": "bcc970cfb146de2315d0afbf4e747308c5e2744624656b12eb24150b206c1b12",
+      "observed_dev_144_usd": "4.3488465",
+      "observed_interface_6_usd": "0.1463765",
+      "ten_fresh_dev_passes_usd": "43.4884650",
+      "prior_run_unknown_billing_upper_bound_usd": "0"
+    },
+    {
+      "model": "gpt61sol",
+      "source": "results/main/gpt61sol/original-report.json",
+      "source_sha256": "76c5c226bccb036f62bcd84b2c499ab7bb74ec6991512e3243c66764afeabab3",
+      "observed_dev_144_usd": "2.5913965",
+      "observed_interface_6_usd": "0.0881485",
+      "ten_fresh_dev_passes_usd": "25.9139650",
+      "prior_run_unknown_billing_upper_bound_usd": "0"
+    },
+    {
+      "model": "gpt6luna",
+      "source": "results/main/gpt6luna/original-report.json",
+      "source_sha256": "a2722af593c111677fe88726b42ca96f21b6378e31aabc2b183458adf082df30",
+      "observed_dev_144_usd": "0.251003325",
+      "observed_interface_6_usd": "0.008973425",
+      "ten_fresh_dev_passes_usd": "2.510033250",
+      "prior_run_unknown_billing_upper_bound_usd": "0"
+    },
+    {
+      "model": "haiku55",
+      "source": "results/main/haiku55/original-report.json",
+      "source_sha256": "90f4dc0e130966c26da35d3ecf00802c409b2d5c04cf40c12a6b92dc52e3fae8",
+      "observed_dev_144_usd": "0.7883027",
+      "observed_interface_6_usd": "0.0252695",
+      "ten_fresh_dev_passes_usd": "7.8830270",
+      "prior_run_unknown_billing_upper_bound_usd": "0.0975157"
+    },
+    {
+      "model": "qwen38",
+      "source": "results/main/qwen38/original-report.json",
+      "source_sha256": "ce92fcb3a924e916c2c51b2474c55432db648fcf333c3f818293fc16c4ecbb53",
+      "observed_dev_144_usd": "2.316124019",
+      "observed_interface_6_usd": "0.086018922",
+      "ten_fresh_dev_passes_usd": "23.161240190",
+      "prior_run_unknown_billing_upper_bound_usd": "0.20975643200000002"
+    },
+    {
+      "model": "sonnet55",
+      "source": "results/main/sonnet55/original-report.json",
+      "source_sha256": "80f7f72c50a27aaaf6c2511ef3c8a225cd18e488f58d5b6435c75c94f26b3b23",
+      "observed_dev_144_usd": "5.511942",
+      "observed_interface_6_usd": "0.19682",
+      "ten_fresh_dev_passes_usd": "55.119420",
+      "prior_run_unknown_billing_upper_bound_usd": "0"
+    }
+  ],
+  "ten_new_dev_generations": 8640,
+  "ten_fresh_dev_estimate_usd": "158.076150440",
+  "nine_fresh_dev_estimate_usd": "142.268535396",
+  "ten_interface_sets_optional_usd": "5.516068470",
+  "prior_pass_unknown_billing_upper_bound_usd": "0.30727213200000002"
+}

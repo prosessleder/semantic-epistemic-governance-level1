@@ -1,8 +1,8 @@
 # Level 1 Semantic and Epistemic Governance: Ontology Changes and Evidential Warrant
 
-Tim O’Brien · [ORCID 0009-0001-2589-347X](https://orcid.org/0009-0001-2589-347X)
+Timothy O’Brien · [ORCID 0009-0001-2589-347X](https://orcid.org/0009-0001-2589-347X)
 
-Research preprint draft. Not peer reviewed. Copyright 2026 Tim O’Brien. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). No affiliations.
+Research preprint draft, revised 18 October 2026. Not peer reviewed. Copyright 2026 Timothy O’Brien. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Independent researcher; no institutional affiliation.
 
 ## Abstract
 
@@ -15,14 +15,16 @@ Consider a classification that grants permission for an operation. Adding an int
 
 Evidence introduces a separate failure path. Another agent, a tool or a memory record may claim that the change is safe. The source might lack authority for the particular claim, rely on an expired delegation, or repeat the same observation as several other sources. Even eligible, independent reports can disagree. A useful reviewer must distinguish a supported conclusion from a plausible guess, retain facts unaffected by a disagreement, and identify what should be checked next.
 
-This paper reports the fixed Level 1 compositional corpus, which combine these dependencies rather than testing one mechanism at a time. Six hosted configurations complete the same semantic and epistemic development sets. The main comparisons include every configuration evaluated on these sets. The tracks remain separate: semantic calls receive a complete ontology and fixed batch of amendments; epistemic calls receive structured evidence about release conditions under a declared authority policy. Neither track is an autonomous agent carrying out real operations.
+This paper reports the fixed Level 1 compositional corpus, which combines these dependencies rather than testing one mechanism at a time. Six hosted configurations complete the same semantic and epistemic development sets. The main comparisons include every configuration evaluated on these sets. The tracks remain separate: semantic calls receive a complete ontology and fixed batch of amendments; epistemic calls receive structured evidence about release conditions under a declared authority policy. Neither track is an autonomous agent carrying out real operations.
 
 We ask whether models can identify joint permission effects, use scoped and independent evidence correctly, distinguish denial from insufficient evidence, and select a useful follow-up observation. We measure each component as well as complete answers. The current study uses one judgment per case without correction feedback.
+
+This paper contributes a fixed compositional corpus and explicit scoring contract, two separately implemented finite references accepting alternative valid answers, and an offline-replayable six-configuration development study separating complete answers, components and delivery failures. The historical correction and source-evidence studies are supporting cohorts with distinct protocols; they are not pooled with the current first-judgment results.
 
 ## Related work
 Ontology policies, policy change analysis and consequence preservation are established topics. KAoS and Margrave analyze formal policies; logical difference and conservative extension compare ontology consequences across versions [kaos,margrave,logicaldiff,survey]. Our finite exhaustive reference applies established principles to supplied batches of ontology changes rather than introducing a new preservation theorem.
 
-External enforcement also predates this study. Ontology-to-tools compilation and PCAS connect formal policy to executable interfaces, while CaMeL and MemLineage separate trusted control or provenance from untrusted content [ontologytools,pcas,camel,memlineage]. Version-bound authority and commit-time checking have close precedents in Authorization Closure Graph, Governed Deduction, Authority at Commit Time and ontology-contract work [authorizationclosure,governeddeduction,committime,pentad]. We evaluate model recommendations against an explicit contract; we do not demonstrate a deployed reference monitor or general agent containment.
+External enforcement also predates this study. Ontology-to-tools compilation and PCAS connect formal policy to executable interfaces, while CaMeL and MemLineage separate trusted control or provenance from untrusted content [ontologytools,pcas,camel,memlineage]. Recent proposals for version-bound authority and commit-time checking include Authorization Closure Graph, Governed Deduction, Authority at Commit Time and ontology-contract work [authorizationclosure,governeddeduction,committime,pentad]. We evaluate model recommendations against an explicit contract; we do not demonstrate a deployed reference monitor or general agent containment.
 
 Context sufficiency, abstention and conflicting memory are established evaluation concerns [sufficientcontext,abstentionbench,memoryconflict]. Repair-based reasoning supplies ways to preserve consistent alternatives when evidence conflicts; provenance and epistemic-cue studies further limit broad novelty claims [repairkb,graphecho,epistemiccues]. Here the contribution is an executable connection between those concerns and ontology-amendment review, including source admission, permission effects, legitimate alternative interpretations and follow-up checks.
 
@@ -47,10 +49,10 @@ A protected permission expands when at least one permitted starting profile gain
 This section describes the current compositional development corpus. Semantic cases test the effects of interacting changes; epistemic packets test which conclusions are warranted by scoped, dependent or conflicting reports. The two tracks are separate abstractions; a combined end-to-end agent evaluation has not been run.
 
 ### Larger semantic amendments
-The semantic development corpus contains 96 cases, divided equally between training and development, with three size levels (Table tab:challenge-tiers). It asks the model to judge a group of edits together. Some groups create a new permission even though no individual edit does; others add one protected permission while leaving another unchanged. Other cases remove a conflict, preserve a blocking conflict, or achieve one requested goal while failing another. The checker tests each edit separately as well as the complete group to identify these interactions. If an edit cannot be applied by itself, that diagnostic is marked unavailable rather than counted as harmless. Approval is checked separately for every protected permission.
+The full constructed semantic corpus contains 96 cases, divided equally between training and development, with three size levels (the corpus-complexity table). It asks the model to judge a group of edits together. Some groups create a new permission even though no individual edit does; others add one protected permission while leaving another unchanged. Other cases remove a conflict, preserve a blocking conflict, or achieve one requested goal while failing another. The checker tests each edit separately as well as the complete group to identify these interactions. If an edit cannot be applied by itself, that diagnostic is marked unavailable rather than counted as harmless. Approval is checked separately for every protected permission.
 
 
-Implemented development complexity. These are corpus properties, not model scores. Each semantic tier has 32 cases and each epistemic tier has 48 packets.
+Constructed corpus complexity, not model scores. Each tier contains 32 semantic cases (16 TRAIN, 16 DEV) and 48 epistemic packets (16 TRAIN, 32 DEV).
 
 | Property | Tier 1 | Tier 2 | Tier 3 |
 | --- | --- | --- | --- |
@@ -67,7 +69,7 @@ Implemented development complexity. These are corpus properties, not model score
 Two separate algorithms agree on all 172,032 before-and-after profile comparisons. One applies rules to sets of facts; the other computes results for many profiles together using bitsets. They compare every declared classification, permission and consistency result. The model must identify each protected permission that expands and give a starting profile demonstrating the gain. Any valid example receives credit; it need not be the first or smallest one found by the checker. The comparison remains limited to the declared input vocabulary.
 
 ### Competing evidence and multiple valid answers
-The epistemic development artifact contains 144 packets from 18 units. Each unit has four matched authority/provenance conditions and two presentation orders. Within each unit, a single grant revocation and specified provenance-parent changes form a two-by-two intervention. Claim content and identifiers stay fixed. Six units are training material and twelve are development; no held-out test units have been sampled.
+The full constructed epistemic artifact contains 144 packets from 18 units. Each unit has four matched authority/provenance conditions and two presentation orders. Within each unit, a single grant revocation and specified provenance-parent changes form a two-by-two intervention. Claim content and identifiers stay fixed. Six units are training material and twelve are development; no held-out test units have been sampled.
 
 In the epistemic task, permission to report is checked for each fact and each amendment under review. A source can therefore be authorized for one claim but not another, or current for one amendment but stale for another. Reports also identify the earlier observations they rely on. Following these links produces a provenance graph: a record of where the information came from.
 
@@ -84,7 +86,7 @@ The following four-fact example illustrates the evidence policy. It is not one o
 
 Suppose a proposal is being reviewed for two requested tasks, A and B. Both reviews depend on the same question about protected permission. An authorized report states that task A's goal passed, task B's goal failed, no exact approval exists, and the proposal creates no new protected permission. A second equally authorized report supplies one observation: it says the proposal *does* create a new protected permission. Both reports are current. Neither source has priority over the other.
 
-Only the permission claim is disputed. The three undisputed facts remain usable in either interpretation. Table tab:epistemic-grey-example shows the two complete consistent choices. Both receive full credit as an evidence interpretation. Choosing the favorable one, however, does not establish that task A may proceed: the other valid interpretation reaches the opposite conclusion. Task B must be denied in either interpretation because its goal failed.
+Only the permission claim is disputed. The three undisputed facts remain usable in either interpretation. The illustrative table shows the two complete consistent choices. Both receive full credit as an evidence interpretation. Choosing the favorable one, however, does not establish that task A may proceed: the other valid interpretation reaches the opposite conclusion. Task B must be denied in either interpretation because its goal failed.
 
 
 Two valid interpretations in the illustrative development example. A failed goal remains decisive despite the separate permission dispute.
@@ -96,14 +98,14 @@ Two valid interpretations in the illustrative development example. A failed goal
 | Conclusion justified across both | Undetermined | Deny |
 
 
-The next useful check is to establish whether permission actually expands. That settles task A while task B remains denied. Rechecking approval would repeat an already settled fact. In the verified illustration, checking expansion costs one unit, checking approval costs one, and checking both costs two. The reference therefore selects the expansion check: it resolves the remaining decision at the lower cost. This example tests three separate abilities–-retaining undisputed evidence, recognizing legitimate alternatives, and choosing a useful follow-up–-without requiring the model to invent a credibility ranking.
+The next useful check is to establish whether permission actually expands. That settles task A while task B remains denied. Rechecking approval would repeat an already settled fact. In the verified illustration, checking expansion costs one unit, checking approval costs one, and checking both costs two. The reference therefore selects the expansion check: it resolves the remaining decision at the lower cost. This example tests three separate abilities: retaining undisputed evidence, recognizing legitimate alternatives, and choosing a useful follow-up, without requiring the model to invent a credibility ranking.
 
 ### Choosing the next observation and measuring shortcuts
 The model is also asked what it should check next. The packet offers a menu of reliable follow-up checks, each with a stated cost. To compare them, the checker considers every answer a check could return under the current evidence. After each possible answer, it counts how many release decisions would still be unresolved. A check is judged by its least helpful possible outcome: the largest remaining count. The preferred check has the lowest such count; when counts tie, the lower cost wins. Any check tied on both receives credit.
 
 These hypothetical observations narrow the existing set of possibilities; they do not rebuild the evidence interpretations. This is a one-step choice about the next useful observation. It does not assume probabilities for the alternatives or find the cheapest complete investigation.
 
-Two separately written checkers agree on all 144 packets. One starts from possible consistent selections of evidence; the other starts from possible assignments of true and false to the facts. Development rule baselines illustrate why separate scores matter: always-undetermined and blanket conflict quarantine each correctly classify 124 of 336 action decisions (36.9%); choosing one arbitrary repair yields 260/336 (77.4%); and treating reports as independent yields 268/336 (79.8%). These are deterministic ablations, not measured LLM results. Packets share units and presentation twins, so these action counts are descriptive and not independent trials.
+Two separately written checkers agree on all 144 packets. One starts from possible consistent selections of evidence; the other starts from possible assignments of true and false to the facts. Rule baselines over all 144 constructed packets (TRAIN and DEV together) illustrate why separate scores matter: always-undetermined and blanket conflict quarantine each correctly classify 124 of 336 action decisions (36.9%); choosing one arbitrary repair yields 260/336 (77.4%); and treating reports as independent yields 268/336 (79.8%). These are deterministic ablations, not measured LLM results. Packets share units and presentation twins, so these action counts are descriptive and not independent trials.
 
 The evaluation separates supported-fact accuracy, valid repair certificates, warranted decisions, possible outcomes, unsupported approvals, unnecessary abstention, optimal-query membership and query regret. Matched changes measure whether models respond to a genuine change in authority or independence; presentation twins measure invariance when the evidence is unchanged. Each hosted evaluation freezes its cases, requests, parser, provider settings and budget before inference. Fresh test units and held-out mechanism combinations remain future work. A consistent lie from an authorized, sufficiently corroborated source remains outside what this evidence contract alone can detect.
 
@@ -143,7 +145,7 @@ Complete semantic correctness requires all output components, including valid ex
 Two separately implemented references agree on the semantic profile comparisons and on all constructed epistemic packets. Native request and response hashes, source snapshots, final outputs, exposed reasoning, provider identity, usage and attempts are independently reconstructed before reporting. Software agreement verifies the implemented reference, not the truth or completeness of a real-world authority policy. Shared units, inspected development cases and differing provider behavior prevent a held-out or equal-compute ranking.
 
 ## Six-model comparative results
-All six configurations completed the same development material under the protocol in Section sec:current-interface. Table tab:challenge-full-results compares complete answers by track and parser. Each model has 150 independently reconstructed observations; only the 48 semantic and 96 epistemic development cases enter these accuracy scores. The rows are ordered by semantic strict complete-answer accuracy, with ties retained. No overall score pools the two tracks.
+All six configurations completed the same development material under the protocol in the model-call and scoring protocol above. The complete-answer table below compares complete answers by track and parser. Each model has 150 independently reconstructed observations; only the 48 semantic and 96 epistemic development cases enter these accuracy scores. The rows are ordered by semantic strict complete-answer accuracy, with ties retained. No overall score pools the two tracks.
 
 **Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
 
@@ -156,7 +158,7 @@ All six configurations completed the same development material under the protoco
 | Sonnet-5.5 | medium | 17/48 (35.4%) | 17/48 (35.4%) | 72/96 (75.0%) | 83/96 (86.5%) |
 | Haiku-5.5 | medium | 0/48 (0.0%) | 23/48 (47.9%) | 2/96 (2.1%) | 69/96 (71.9%) |
 
-![Strict and sole-fence complete-answer accuracy for six completed models](/Users/tobrien/gitw/prosessleder/ontology-boundary-rigorous-worktree/internal/research/ontology-hard-development-6-models-comparison-2026-10-16.png)
+![Strict and sole-fence complete-answer accuracy for six completed models](figures/complete-answer-accuracy.png)
 
 **Inference setting for this table: requested medium reasoning; 32,768 combined reasoning/output tokens; unaided first judgments.**
 
@@ -197,13 +199,13 @@ The semantic component comparison uses strict parsing on all 48 cases. It separa
 
 ### Performance by tier and epistemic component
 
-The tier comparison in The tier figure asks whether performance changes as larger rule sets and more interacting evidence mechanisms are introduced. It does not show a uniform decline: tiers vary several features together, and some later-tier cases are easier for a given configuration. We therefore report their actual scores rather than treating tier number as a validated difficulty scale.
+The tier comparison asks whether performance changes as larger rule sets and more interacting evidence mechanisms are introduced. It does not show a uniform decline: tiers vary several features together, and some later-tier cases are easier for a given configuration. We therefore report their actual scores rather than treating tier number as a validated difficulty scale.
 
 The component figure separates five questions within each epistemic answer: which facts have adequate support, which consistent interpretation is valid, what each action warrants, which release outcomes remain possible, and which offered observation would help most. A packet counts as correct for a component only when that whole component is correct. These are components of each original unaided answer; no verified intermediate facts or possible worlds are supplied. High action accuracy can coexist with mistakes about the evidence or the best next step.
 
-![Full-answer performance by development tier](/Users/tobrien/gitw/prosessleder/ontology-boundary-rigorous-worktree/internal/research/ontology-hard-development-diagnostics-2026-10-16-tiers.png)
+![Full-answer performance by development tier](figures/development-tiers.png)
 
-![Epistemic component correctness](/Users/tobrien/gitw/prosessleder/ontology-boundary-rigorous-worktree/internal/research/ontology-hard-development-diagnostics-2026-10-16-components.png)
+![Epistemic component correctness](figures/epistemic-components.png)
 
 Sol answered all 48 semantic problems and 95 of 96 epistemic packets completely correctly. Terra and Luna had no parsing or token-limit failures, but their complete epistemic answers were correct in 45/96 and 26/96 cases respectively. This variation shows why final release advice, source admission, evidence alternatives and the next useful check should be measured separately. It does not establish that a general notion of model power causes greater reliability. The near-ceiling Sol result also limits claims that this development corpus is a difficult frontier benchmark.
 
@@ -299,13 +301,15 @@ An external reference stops a trajectory when all five fields are correct and ca
 | Nemotron-3.5-Super-VL | enabled; no named effort | 383 (79.8%) | 480 (100.0%) | 448 (93.3%) | 2 |
 | Sonnet-5.5 | medium | 252 (52.5%) | 480 (100.0%) | 479 (99.8%) | 10 |
 
+C denotes a complete five-field answer. First F counts false approvals among the 288 scenarios whose reference release is false. Every C column has denominator 480; check 3 includes carried-forward correct answers and therefore does not represent 480 fresh revision calls.
+
 ### Earlier source-evidence cohort
 
-A separate Qwen/Gemma experiment used 24 fresh underlying ontology/edit units under 16 source contexts, 384 scenarios per model, with its original TEST designation and six separate DEV interface calls. Both models make 380/384 warranted decisions; complete eight-field scores are 375/384 for Qwen and 371/384 for Gemma. Under that study's declared sole-fence framing policy these are source-policy results, not the strict full32 epistemic scores above. The sixteen contexts per unit are dependent, so uncertainty resamples complete units. We preserve the original cases, protocol and model outputs rather than merging these measurements into the main table. Level 2 is still under development; preliminary results are not yet available. It is outside the scope of this paper.
+A separate Qwen/Gemma experiment used 24 fresh underlying ontology/edit units under 16 source contexts, 384 scenarios per model, with its original TEST designation and six separate DEV interface calls. Both models make 380/384 warranted decisions; complete eight-field scores are 375/384 for Qwen and 371/384 for Gemma. Under that study's declared sole-fence framing policy these are source-policy results, not the strict compositional epistemic scores above. The sixteen contexts per unit are dependent, so uncertainty resamples complete units. We preserve the original cases, protocol and model outputs rather than merging these measurements into the main table. Level 2 is still under development; preliminary results are not yet available. It is outside the scope of this paper.
 
 ### Ceiling effects and limits of the level designation
 
-The principal Sol result of48/48 semantic and95/96 epistemic shows a ceiling on this inspected corpus, not universal success. A later mixed semantic development construction yields120/120 correlated views of30 systems for Sol; Sonnet yields56/120 under its strict contract. Mechanical post-hoc extraction/projection reaches113/120 for Sonnet and remains a separate diagnostic, with residual goal-vector convention ambiguity. These data motivate advanced evaluation but are not pooled with the current main score. Level1 already includes interacting edits; the designation is a preserved benchmark generation, not a claim that all problems are local or trivial.
+The principal Sol result of 48/48 semantic and 95/96 epistemic answers shows a ceiling on this inspected corpus, not universal success. Level 1 already includes interacting edits; the designation identifies a fixed benchmark generation rather than a claim that its problems are local or trivial. Repeated fresh judgments would estimate generation variability on these same cases. New units and held-out mechanism combinations would address a different question: generalization beyond this inspected material.
 
 
 ## Discussion
@@ -339,9 +343,9 @@ The contribution is a reproducible, finite diagnostic framework with independent
 ## Data and code availability
 The [public Level 1 repository](https://github.com/prosessleder/semantic-epistemic-governance-level1) provides the fixed cases, frozen requests and scorer sources, saved final model responses, and offline reproduction commands. Full native HTTP and reasoning archives and internal review records remain in the author's private research repository. The historical feedback and source-evidence cohorts retain their separate labels. Third-party research copies are excluded from the public package. Public repository availability does not imply peer review or submission readiness.
 ## Author contributions and AI assistance
-Tim O'Brien is the sole named author. AI assistance supported literature discovery, implementation, experimental orchestration, auditing and manuscript drafting. Scientific interpretation and publication accountability rest with the author. Evaluation models are distinct from the research assistant; model explanations are not independent verification.
+Timothy O'Brien is the sole named author. AI assistance supported literature discovery, implementation, experimental orchestration, auditing and manuscript drafting. Scientific interpretation and publication accountability rest with the author. Evaluation models are distinct from the research assistant; model explanations are not independent verification.
 ## Funding and competing interests
-Funding and competing-interest disclosures await author confirmation for this draft.
+This research received no external funding. The author conducted the work independently, without institutional affiliation. The competing-interest declaration remains to be confirmed before submission.
 
 ## Appendix: Literal instructions for the current tasks
 
@@ -370,8 +374,8 @@ Return exactly supported_facts and selected_repair (lists of unique {atom,value}
 - [margrave] K. Fisler et al., Verification and change-impact analysis of access-control policies, ICSE, 2005. https://cs.brown.edu/people/kfisler/Pubs/icse05.pdf.
 - [logicaldiff] B. Konev, M. Ludwig, D. Walther, F. Wolter, The logical difference for the lightweight description logic EL, JAIR44 (2012) 633--708. https://arxiv.org/abs/1401.5850v1.
 - [survey] E. Botoeva et al., Inseparability and conservative extensions of description logic ontologies: A survey, 2018. https://arxiv.org/abs/1804.07805v1.
-- [ontologytools] X. Zhou et al., Ontology-to-tools compilation for executable semantic constraint enforcement in LLM agents, 2026. https://arxiv.org/abs/2602.03439.
-- [pcas] N. Palumbo et al., Policy compiler for secure agentic systems, 2026. https://arxiv.org/abs/2602.16708v1.
+- [ontologytools] X. Zhou et al., Ontology-to-tools compilation for executable semantic constraint enforcement in LLM agents, preprint, 2026. https://arxiv.org/abs/2602.03439.
+- [pcas] N. Palumbo et al., Policy compiler for secure agentic systems, preprint, 2026. https://arxiv.org/abs/2602.16708v1.
 - [linc] T. X. Olausson et al., LINC: A neurosymbolic approach for logical reasoning by combining language models with first-order logic provers, EMNLP (2023) 5153--5176. https://aclanthology.org/2023.emnlp-main.313/.
 - [critic] Z. Gou et al., CRITIC: Large language models can self-correct with tool-interactive critiquing, ICLR, 2024. https://arxiv.org/abs/2305.11738v4.
 - [mtbench] L. Zheng et al., Judging LLM-as-a-judge with MT-Bench and Chatbot Arena, NeurIPS Datasets and Benchmarks, 2023. https://arxiv.org/abs/2306.05685v4.
@@ -379,7 +383,6 @@ Return exactly supported_facts and selected_repair (lists of unique {atom,value}
 - [governeddeduction] W. Shu, H.-C. Lin, Governed deduction: Policy-grounded premise authorization beyond relevance, preprint, 2026. https://arxiv.org/abs/2609.31029v1.
 - [committime] J. Salas, Authority at commit time: Reject-and-rerun semantics for governed agentic systems, preprint, 2026. https://arxiv.org/abs/2609.31490v1.
 - [pentad] K. Clark, An ontology is a contract, not a theory, Pentad Labs Research Note029, 2026. https://pentad.ai/PLRN/029/.
-- [hfincident] OpenAI, The Hugging Face incident and the road ahead, August 26, 2026. https://openai.com/index/hugging-face-incident-and-the-road-ahead/.
 - [sufficientcontext] H. Joren et al., Sufficient Context: A New Lens on Retrieval Augmented Generation Systems, ICLR, 2025. https://arxiv.org/abs/2411.06037v3.
 - [abstentionbench] P. Kirichenko, M. Ibrahim, K. Chaudhuri, S. J. Bell, AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions, preprint, 2025. https://arxiv.org/abs/2506.09038.
 - [memoryconflict] T. Yang, M. Schonlau, I. Sucholutsky, Selective QA over Conflicting Multi-Source Personal Memory: A Diagnostic Testbed and Method Comparison, preprint, 2026. https://arxiv.org/abs/2605.30087.

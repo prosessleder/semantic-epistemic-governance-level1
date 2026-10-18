@@ -1,0 +1,371 @@
+{
+  "scope": "Primary-source metadata verification. Does not certify claim context or scientific validity. Earlier sandbox DNS failures retained separately.",
+  "references": [
+    {
+      "key": "kaos",
+      "url": "https://ontology.ihmc.us/Papers/uszok_kaos_policy08.pdf",
+      "status": "retrieved_pdf",
+      "bytes": 1468216,
+      "note": "Author/title manually checked from primary PDF through web tool; third-party PDF not stored."
+    },
+    {
+      "key": "margrave",
+      "url": "https://cs.brown.edu/people/kfisler/Pubs/icse05.pdf",
+      "status": "retrieved_pdf",
+      "bytes": 178991,
+      "note": "Author/title manually checked from primary PDF through web tool; third-party PDF not stored."
+    },
+    {
+      "key": "logicaldiff",
+      "url": "https://arxiv.org/abs/1401.5850v1",
+      "status": "retrieved_metadata",
+      "title": [
+        "The Logical Difference for the Lightweight Description Logic EL"
+      ],
+      "authors": [
+        "Konev, Boris",
+        "Ludwig, Michel",
+        "Walther, Dirk",
+        "Wolter, Frank"
+      ],
+      "date": [],
+      "doi": [
+        "10.1613/jair.3552"
+      ]
+    },
+    {
+      "key": "survey",
+      "url": "https://arxiv.org/abs/1804.07805v1",
+      "status": "retrieved_metadata",
+      "title": [
+        "Inseparability and Conservative Extensions of Description Logic Ontologies: A Survey"
+      ],
+      "authors": [
+        "Botoeva, Elena",
+        "Konev, Boris",
+        "Lutz, Carsten",
+        "Ryzhikov, Vladislav",
+        "Wolter, Frank",
+        "Zakharyaschev, Michael"
+      ],
+      "date": [
+        "2018/04/20"
+      ],
+      "doi": [
+        "10.1007/978-3-319-49493-7_2"
+      ]
+    },
+    {
+      "key": "ontologytools",
+      "url": "https://arxiv.org/abs/2602.03439",
+      "status": "retrieved_metadata",
+      "title": [
+        "Ontology-to-tools compilation for executable semantic constraint enforcement in LLM agents"
+      ],
+      "authors": [
+        "Zhou, Xiaochi",
+        "Bulter, Patrick",
+        "Yang, Changxuan",
+        "Rihm, Simon D.",
+        "Angkanaporn, Thitikarn",
+        "Akroyd, Jethro",
+        "Mosbach, Sebastian",
+        "Kraft, Markus"
+      ],
+      "date": [
+        "2026/02/03"
+      ],
+      "doi": []
+    },
+    {
+      "key": "pcas",
+      "url": "https://arxiv.org/abs/2602.16708v1",
+      "status": "retrieved_metadata",
+      "title": [
+        "Policy Compiler for Secure Agentic Systems"
+      ],
+      "authors": [
+        "Palumbo, Nils",
+        "Choudhary, Sarthak",
+        "Choi, Jihye",
+        "Chalasani, Prasad",
+        "Christodorescu, Mihai",
+        "Jha, Somesh"
+      ],
+      "date": [
+        "2026/02/18"
+      ],
+      "doi": []
+    },
+    {
+      "key": "linc",
+      "url": "https://aclanthology.org/2023.emnlp-main.313/",
+      "status": "retrieved_metadata",
+      "title": [
+        "LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers - ACL Anthology"
+      ],
+      "authors": [],
+      "date": [],
+      "doi": []
+    },
+    {
+      "key": "critic",
+      "url": "https://arxiv.org/abs/2305.11738v4",
+      "status": "retrieved_metadata",
+      "title": [
+        "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing"
+      ],
+      "authors": [
+        "Gou, Zhibin",
+        "Shao, Zhihong",
+        "Gong, Yeyun",
+        "Shen, Yelong",
+        "Yang, Yujiu",
+        "Duan, Nan",
+        "Chen, Weizhu"
+      ],
+      "date": [
+        "2023/05/19"
+      ],
+      "doi": []
+    },
+    {
+      "key": "mtbench",
+      "url": "https://arxiv.org/abs/2306.05685v4",
+      "status": "retrieved_metadata",
+      "title": [
+        "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena"
+      ],
+      "authors": [
+        "Zheng, Lianmin",
+        "Chiang, Wei-Lin",
+        "Sheng, Ying",
+        "Zhuang, Siyuan",
+        "Wu, Zhanghao",
+        "Zhuang, Yonghao",
+        "Lin, Zi",
+        "Li, Zhuohan",
+        "Li, Dacheng",
+        "Xing, Eric P.",
+        "Zhang, Hao",
+        "Gonzalez, Joseph E.",
+        "Stoica, Ion"
+      ],
+      "date": [
+        "2023/06/09"
+      ],
+      "doi": []
+    },
+    {
+      "key": "authorizationclosure",
+      "url": "https://arxiv.org/abs/2609.32428v1",
+      "status": "retrieved_metadata",
+      "title": [
+        "Authorization Closure Graph: Minimal Repair for LLM Agents with Evolving User Instructions"
+      ],
+      "authors": [
+        "Wang, Qingzhuo",
+        "Wang, CaiYi",
+        "Meng, Jinglu",
+        "Qin, Ruiyang",
+        "Peng, Kunyu",
+        "Wei, Zhihua",
+        "Shen, Wen"
+      ],
+      "date": [
+        "2026/09/26"
+      ],
+      "doi": []
+    },
+    {
+      "key": "governeddeduction",
+      "url": "https://arxiv.org/abs/2609.31029v1",
+      "status": "retrieved_metadata",
+      "title": [
+        "Governed Deduction: Policy-Grounded Premise Authorization Beyond Relevance"
+      ],
+      "authors": [
+        "Shu, Wesley",
+        "Lin, Hsi-Ching"
+      ],
+      "date": [
+        "2026/09/25"
+      ],
+      "doi": []
+    },
+    {
+      "key": "committime",
+      "url": "https://arxiv.org/abs/2609.31490v1",
+      "status": "retrieved_metadata",
+      "title": [
+        "Authority at Commit Time: Reject-and-Rerun Semantics for Governed Agentic Systems"
+      ],
+      "authors": [
+        "Salas, Jesus"
+      ],
+      "date": [
+        "2026/09/25"
+      ],
+      "doi": []
+    },
+    {
+      "key": "pentad",
+      "url": "https://pentad.ai/PLRN/029/",
+      "status": "retrieved_metadata",
+      "title": [
+        "An ontology is a contract, not a theory | Pentad Labs",
+        "The ontology band, between SQL DDL and code",
+        "The model drafts, the parties consent, the OS enforces"
+      ],
+      "authors": [],
+      "date": [],
+      "doi": []
+    },
+    {
+      "key": "sufficientcontext",
+      "url": "https://arxiv.org/abs/2411.06037v3",
+      "status": "retrieved_metadata",
+      "title": [
+        "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems"
+      ],
+      "authors": [
+        "Joren, Hailey",
+        "Zhang, Jianyi",
+        "Ferng, Chun-Sung",
+        "Juan, Da-Cheng",
+        "Taly, Ankur",
+        "Rashtchian, Cyrus"
+      ],
+      "date": [
+        "2024/11/09"
+      ],
+      "doi": []
+    },
+    {
+      "key": "abstentionbench",
+      "url": "https://arxiv.org/abs/2506.09038",
+      "status": "retrieved_metadata",
+      "title": [
+        "AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions"
+      ],
+      "authors": [
+        "Kirichenko, Polina",
+        "Ibrahim, Mark",
+        "Chaudhuri, Kamalika",
+        "Bell, Samuel J."
+      ],
+      "date": [
+        "2025/06/10"
+      ],
+      "doi": []
+    },
+    {
+      "key": "memoryconflict",
+      "url": "https://arxiv.org/abs/2605.30087",
+      "status": "retrieved_metadata",
+      "title": [
+        "Selective QA over Conflicting Multi-Source Personal Memory: A Diagnostic Testbed and Method Comparison"
+      ],
+      "authors": [
+        "Yang, Tiancheng",
+        "Schonlau, Matthias",
+        "Sucholutsky, Ilia"
+      ],
+      "date": [
+        "2026/05/28"
+      ],
+      "doi": []
+    },
+    {
+      "key": "camel",
+      "url": "https://arxiv.org/abs/2503.18813v2",
+      "status": "retrieved_metadata",
+      "title": [
+        "Defeating Prompt Injections by Design"
+      ],
+      "authors": [
+        "Debenedetti, Edoardo",
+        "Shumailov, Ilia",
+        "Fan, Tianqi",
+        "Hayes, Jamie",
+        "Carlini, Nicholas",
+        "Fabian, Daniel",
+        "Kern, Christoph",
+        "Shi, Chongyang",
+        "Terzis, Andreas",
+        "Tram\u00e8r, Florian"
+      ],
+      "date": [
+        "2025/03/24"
+      ],
+      "doi": []
+    },
+    {
+      "key": "memlineage",
+      "url": "https://arxiv.org/abs/2605.14421",
+      "status": "retrieved_metadata",
+      "title": [
+        "MemLineage: Lineage-Guided Enforcement for LLM Agent Memory"
+      ],
+      "authors": [
+        "Ouyang, Ciyan",
+        "Hou, Rui"
+      ],
+      "date": [
+        "2026/05/14"
+      ],
+      "doi": []
+    },
+    {
+      "key": "repairkb",
+      "url": "https://arxiv.org/abs/2003.05746",
+      "status": "retrieved_metadata",
+      "title": [
+        "Querying and Repairing Inconsistent Prioritized Knowledge Bases: Complexity Analysis and Links with Abstract Argumentation"
+      ],
+      "authors": [
+        "Bienvenu, Meghyn",
+        "Bourgaux, Camille"
+      ],
+      "date": [
+        "2020/03/12"
+      ],
+      "doi": []
+    },
+    {
+      "key": "graphecho",
+      "url": "https://arxiv.org/abs/2609.17695",
+      "status": "retrieved_metadata",
+      "title": [
+        "GraphEcho: Structural Redundancy and Evidence Provenance in LLM Graph Agents"
+      ],
+      "authors": [
+        "Wang, Sikun",
+        "Zhou, Yixi",
+        "Fan, Lei",
+        "Zhang, Fan"
+      ],
+      "date": [
+        "2026/09/15"
+      ],
+      "doi": []
+    },
+    {
+      "key": "epistemiccues",
+      "url": "https://arxiv.org/abs/2610.12788",
+      "status": "retrieved_metadata",
+      "title": [
+        "What Counts as Evidence? Epistemic Cue Utilization in Large Language Models"
+      ],
+      "authors": [
+        "Zhang, Jinchang",
+        "Jiang, Kaijun",
+        "Lu, Guoyu"
+      ],
+      "date": [
+        "2026/10/08"
+      ],
+      "doi": []
+    }
+  ]
+}

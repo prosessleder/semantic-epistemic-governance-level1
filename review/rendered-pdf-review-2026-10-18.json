@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Current compiled PDF layout inspection, distinct from scientific or external peer review.",
+  "pdf_pages": 19,
+  "visual_review": "All pages inspected in rendered PNG contact sheets; affected tables, equations, declarations and figure legend reviewed after revisions.",
+  "files": {
+    "paper/paper.tex": "247493186c0ea6f14035e386b39c09645b1700b1b670bbf501b8454fa1eb3e94",
+    "paper/paper.md": "93f36c7696208a1e7819e9c6e545930a5b0ea040a149e70f812e7d855250109f",
+    "output/pdf/semantic-epistemic-governance-level1.pdf": "2fabc1aeee4d0f037f6eb36acf6c3678dad4554dedf79803affb5ed936c6c743"
+  },
+  "compiler": "Desktop compiler success recorded separately; actual local Tectonic export rendered with Poppler.",
+  "overfull_boxes": 0
+}

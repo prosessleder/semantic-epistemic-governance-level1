@@ -7,9 +7,9 @@
       "sha256": "c8ec4e68ae2235479f04d6356bad3a0235a8177fc96b1050d596e62f7f0e70f5"
     },
     {
-      "bytes": 280,
+      "bytes": 284,
       "path": "CITATION.cff",
-      "sha256": "6de0ce6a5ab7289906538463d72e4d544778be822158951a2caa5b60131dc3b4"
+      "sha256": "bcca1addf8ba31a956be27a025651b96c1218c91d874fe4705c2bbca96f78d7e"
     },
     {
       "bytes": 19168,
@@ -27,9 +27,9 @@
       "sha256": "9d1c9c09012fe26e7724893814842ea7900d531fde09cf82aebed297f113c75f"
     },
     {
-      "bytes": 2699,
+      "bytes": 3688,
       "path": "README.md",
-      "sha256": "1cea096734d986468eeccfa70823f7b2951923ff41aebaeaf20449aaebc6f629"
+      "sha256": "2a50ec305e5a85ff388769221b0b32062787eae908247c3314b4b3db486da9b8"
     },
     {
       "bytes": 2378380,
@@ -4662,14 +4662,49 @@
       "sha256": "4eea11dae67fce1fa37bb3653eb1c929575dcba9701355d8b24792dcd258918d"
     },
     {
-      "bytes": 57952,
-      "path": "paper/paper.md",
-      "sha256": "ca067d5928098b61b862af8cdac4045d56471e8454144ab20dc769437fc482ac"
+      "bytes": 609022,
+      "path": "output/paper.html",
+      "sha256": "6b3c3f229fae9385042d855686fa88bbbdfc472bb5a6f92fc73980d095da38f6"
     },
     {
-      "bytes": 69561,
+      "bytes": 131733,
+      "path": "output/pdf/semantic-epistemic-governance-level1.pdf",
+      "sha256": "2fabc1aeee4d0f037f6eb36acf6c3678dad4554dedf79803affb5ed936c6c743"
+    },
+    {
+      "bytes": 70410,
+      "path": "output/pdf/semantic-epistemic-governance-level1.tex",
+      "sha256": "247493186c0ea6f14035e386b39c09645b1700b1b670bbf501b8454fa1eb3e94"
+    },
+    {
+      "bytes": 107577,
+      "path": "paper/figures/complete-answer-accuracy.png",
+      "sha256": "1139ebf4ddf329d631edeab5a6c78e6941e2fd2e737fe0f5481a7422d26412ad"
+    },
+    {
+      "bytes": 156448,
+      "path": "paper/figures/development-tiers.png",
+      "sha256": "77e555f7da02ff57a6e35a3691e263f1359287929a55737c20e8406dde7d8b72"
+    },
+    {
+      "bytes": 139146,
+      "path": "paper/figures/epistemic-components.png",
+      "sha256": "eef65b04271c81814fcae97ad1cadd0ea28d0e893566035a660829efa30b3e95"
+    },
+    {
+      "bytes": 1133,
+      "path": "paper/figures/provenance.json",
+      "sha256": "80a00fd6631bc42cedae5b15b9ec08c2c20f03914f40c2d5cf0c53031259bd85"
+    },
+    {
+      "bytes": 58283,
+      "path": "paper/paper.md",
+      "sha256": "93f36c7696208a1e7819e9c6e545930a5b0ea040a149e70f812e7d855250109f"
+    },
+    {
+      "bytes": 70410,
       "path": "paper/paper.tex",
-      "sha256": "32b1da600ba2fe6a29aabed8d89119a1562be2dd682fec17aab3bee4c0340d90"
+      "sha256": "247493186c0ea6f14035e386b39c09645b1700b1b670bbf501b8454fa1eb3e94"
     },
     {
       "bytes": 4213,
@@ -4679,7 +4714,7 @@
     {
       "bytes": 309,
       "path": "pyproject.toml",
-      "sha256": "43107e6ffdafc60e831067eb875ed0823f3bd9718d05e3305984f395e48f6db5"
+      "sha256": "a25912087763f6979c0c20f0a0b3f60359ecb2ab0b530f484bbe93ac5bbb8d78"
     },
     {
       "bytes": 210699,
@@ -4705,6 +4740,11 @@
       "bytes": 416122,
       "path": "release-manifests/0.1.4-dev.json",
       "sha256": "f77de50e87888ebae554b1dd3cd5488eb768584cc235edf7ef7939e0a7f9c654"
+    },
+    {
+      "bytes": 416328,
+      "path": "release-manifests/0.1.5-dev.json",
+      "sha256": "b0058184fb4c2e033f7e461773ad1b122afcf4118c769c12e0b3d3e680bd4162"
     },
     {
       "bytes": 6972,
@@ -9595,12 +9635,67 @@
       "bytes": 748580,
       "path": "results/source-evidence-supporting/ontology-qwen38-epistemic-sources-results-2026-10-15.json",
       "sha256": "9db201fbf37c97bf34b74e8d94fbf204e3ceb560181e12169e29ded90e060294"
+    },
+    {
+      "bytes": 308,
+      "path": "review/desktop-compile-2026-10-18.json",
+      "sha256": "5e2fedab019882eb6a39ccbd20208835d968629da718264cbec68429bad2ccab"
+    },
+    {
+      "bytes": 171483,
+      "path": "review/immutable-data-preservation-2026-10-18.json",
+      "sha256": "4e93a1bd92af70717d98e08ffaea9bd1c6be77c521010c19402b7b8e33a9877b"
+    },
+    {
+      "bytes": 2822,
+      "path": "review/level1-ten-pass-cost-estimate-2026-10-18.json",
+      "sha256": "ad8df4b6e937233471bf1dd8b425963a6e0fa2fee6e36720df97c06827857629"
+    },
+    {
+      "bytes": 1200,
+      "path": "review/manuscript-data-audit-2026-10-18.json",
+      "sha256": "b600d73c8d13fc019f1e02f4ad43668291f3425b53ad3906dd06fd638a77e850"
+    },
+    {
+      "bytes": 2433,
+      "path": "review/offline-score-replay-2026-10-18.json",
+      "sha256": "59042e23754da14488fe0d667acdb1451b24f729134ead2c32e3d83f54dab841"
+    },
+    {
+      "bytes": 4918,
+      "path": "review/publication-review-2026-10-18.md",
+      "sha256": "b46cb75e969768f4cd07110b2db56096f6e17447c9f091c6a77e8b3004d38a73"
+    },
+    {
+      "bytes": 4586,
+      "path": "review/reference-metadata-check-2026-10-18.json",
+      "sha256": "9c5023cdb1cbb77766c8f907231213fa762534afb2ccffc7a3240e44a049b98c"
+    },
+    {
+      "bytes": 9369,
+      "path": "review/reference-metadata-check-network-2026-10-18.json",
+      "sha256": "16d61089713d9eb4fd3339e2a35eedd88b005100c6ccf0137b92abc411f46c95"
+    },
+    {
+      "bytes": 768,
+      "path": "review/rendered-pdf-review-2026-10-18.json",
+      "sha256": "d48e6113596d3bc5f6e493c5a15867df913b740e8f4e1d2aa53cc1e4657d9e2d"
+    },
+    {
+      "bytes": 7438,
+      "path": "scripts/audit_manuscript.py",
+      "sha256": "5f8be49c47eeea75f372b30d3ee0957e8c07da32ba8015465fe63c32033a314e"
+    },
+    {
+      "bytes": 5486,
+      "path": "scripts/build_paper.py",
+      "sha256": "5b62a40aa7da6eaffb55ca1e3b658a3bd696d690d9c829284d24e2b19c9a220b"
     }
   ],
   "level": 1,
   "new_model_calls_by_export": 0,
-  "packaging_note": "Documentation and visibility revision only: public Level 1 availability; full native HTTP/reasoning archives remain private. Fixed benchmark cases, request bodies, scorer sources and saved outputs unchanged.",
-  "previous_manifest_sha256": "f77de50e87888ebae554b1dd3cd5488eb768584cc235edf7ef7939e0a7f9c654",
+  "packaging_note": "Documentation and visibility revision only: public Level 1 availability; full native HTTP/reasoning archives remain private. Fixed benchmark cases, request bodies, scorer sources and saved outputs unchanged. Documentation-only publication-review revision: benchmark bytes unchanged; current figures, manuscript and review records added.",
+  "previous_manifest_sha256": "b0058184fb4c2e033f7e461773ad1b122afcf4118c769c12e0b3d3e680bd4162",
   "status": "PUBLIC_WORKING_PACKAGE",
-  "version": "0.1.5-dev"
+  "version": "0.1.6-dev"
 }
