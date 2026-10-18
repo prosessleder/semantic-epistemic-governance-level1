@@ -301,7 +301,7 @@ An external reference stops a trajectory when all five fields are correct and ca
 
 ### Earlier source-evidence cohort
 
-A separate Qwen/Gemma experiment used 24 fresh underlying ontology/edit units under 16 source contexts, 384 scenarios per model, with its original TEST designation and six separate DEV interface calls. Both models make 380/384 warranted decisions; complete eight-field scores are 375/384 for Qwen and 371/384 for Gemma. Under that study's declared sole-fence framing policy these are source-policy results, not the strict full32 epistemic scores above. The sixteen contexts per unit are dependent, so uncertainty resamples complete units. We preserve the original cases, protocol and model outputs rather than merging these measurements into the main table. New Level 2 global-search problems and their adaptive calibration are a separate study.
+A separate Qwen/Gemma experiment used 24 fresh underlying ontology/edit units under 16 source contexts, 384 scenarios per model, with its original TEST designation and six separate DEV interface calls. Both models make 380/384 warranted decisions; complete eight-field scores are 375/384 for Qwen and 371/384 for Gemma. Under that study's declared sole-fence framing policy these are source-policy results, not the strict full32 epistemic scores above. The sixteen contexts per unit are dependent, so uncertainty resamples complete units. We preserve the original cases, protocol and model outputs rather than merging these measurements into the main table. Level 2 is still under development; preliminary results are not yet available. It is outside the scope of this paper.
 
 ### Ceiling effects and limits of the level designation
 

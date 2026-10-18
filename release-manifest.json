@@ -9,7 +9,7 @@
     {
       "bytes": 280,
       "path": "CITATION.cff",
-      "sha256": "62fcd8869ffc355fe40779bcfb2f7f9dc32b83731eeb165e79e472a1f4e0cf95"
+      "sha256": "e5fa43474232a70a3284aef182393bbfbc1b4a3c946550dcd97875eea2496f5f"
     },
     {
       "bytes": 19168,
@@ -27,9 +27,9 @@
       "sha256": "9d1c9c09012fe26e7724893814842ea7900d531fde09cf82aebed297f113c75f"
     },
     {
-      "bytes": 2903,
+      "bytes": 2575,
       "path": "README.md",
-      "sha256": "d0fb387c430104c04b66fc6fc2a67a6258af7b3551416e0594615de6bbe2dc00"
+      "sha256": "4b2452322ef8c14e1de26162dcac80a7bf338ecf9141d30afa53068db3106e09"
     },
     {
       "bytes": 2378380,
@@ -4662,14 +4662,14 @@
       "sha256": "4eea11dae67fce1fa37bb3653eb1c929575dcba9701355d8b24792dcd258918d"
     },
     {
-      "bytes": 57635,
+      "bytes": 57665,
       "path": "paper/paper.md",
-      "sha256": "5468a174b7a4f68ab8c161a16b06e4e2188fcddd56be28d6cad612b6e3dd5ac1"
+      "sha256": "99988305d919ab24974b6aa37e58a9931608a4c5fe00228f62c17b59779a25f9"
     },
     {
-      "bytes": 69238,
+      "bytes": 69269,
       "path": "paper/paper.tex",
-      "sha256": "8943664d7f00843036b2b8d343ff3502072474bba80457507c4c5da425893752"
+      "sha256": "340250c34e3c5d4ad8ed0a392b464bd359ac81c5886f02b57e80441a499cab91"
     },
     {
       "bytes": 4213,
@@ -4679,7 +4679,7 @@
     {
       "bytes": 309,
       "path": "pyproject.toml",
-      "sha256": "c85913512e7b7f3044680e331f3f8d8879e8ee13b25555aa563089eb895d3a3a"
+      "sha256": "286e4e570b9ed85c1ab87cf61a199a8d1c8cd9e73200111eefeb9afed00edb1b"
     },
     {
       "bytes": 210699,
@@ -4695,6 +4695,11 @@
       "bytes": 415566,
       "path": "release-manifests/0.1.2-dev.json",
       "sha256": "046401401180d5af94300a6169390798556eaa0ead3b5e48a43518391495c089"
+    },
+    {
+      "bytes": 415995,
+      "path": "release-manifests/0.1.3-dev.json",
+      "sha256": "d12c1065cc3f8710ae25446a9df5c0c0598bf9b667ca7a1fa4d8fa24bfd94c80"
     },
     {
       "bytes": 6972,
@@ -9589,8 +9594,8 @@
   ],
   "level": 1,
   "new_model_calls_by_export": 0,
-  "packaging_note": "Documentation-only revision: explicit requested reasoning settings beside main/historical tables; all benchmark cases, frozen sources, requests, model outputs and scorers unchanged. Preserves 0.1.2-dev manifest.",
-  "previous_manifest_sha256": "046401401180d5af94300a6169390798556eaa0ead3b5e48a43518391495c089",
+  "packaging_note": "Documentation-only status clarification: Level 2 is unfinished and preliminary results are not yet available. No benchmark case, request, output, score or scorer change.",
+  "previous_manifest_sha256": "d12c1065cc3f8710ae25446a9df5c0c0598bf9b667ca7a1fa4d8fa24bfd94c80",
   "status": "PRIVATE_WORKING_PACKAGE",
-  "version": "0.1.3-dev"
+  "version": "0.1.4-dev"
 }
