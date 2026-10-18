@@ -337,7 +337,7 @@ The compositional study evaluates semantic and epistemic governance as separate 
 The contribution is a reproducible, finite diagnostic framework with independently checked answers and retained native observations. The current results concern development material and supplied governance rules. They motivate further evaluation rather than establishing a general model ranking or a security guarantee.
 
 ## Data and code availability
-Source, deterministic generation, frozen protocols, raw model responses and audit receipts are retained in the author's private research repository. Public reproducibility artifacts for this study have not yet been released. Third-party research copies are excluded from the study artifacts.
+The [public Level 1 repository](https://github.com/prosessleder/semantic-epistemic-governance-level1) provides the fixed cases, frozen requests and scorer sources, saved final model responses, and offline reproduction commands. Full native HTTP and reasoning archives and internal review records remain in the author's private research repository. The historical feedback and source-evidence cohorts retain their separate labels. Third-party research copies are excluded from the public package. Public repository availability does not imply peer review or submission readiness.
 ## Author contributions and AI assistance
 Tim O'Brien is the sole named author. AI assistance supported literature discovery, implementation, experimental orchestration, auditing and manuscript drafting. Scientific interpretation and publication accountability rest with the author. Evaluation models are distinct from the research assistant; model explanations are not independent verification.
 ## Funding and competing interests

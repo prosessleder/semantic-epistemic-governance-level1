@@ -1,8 +1,8 @@
 # Level 1 Semantic and Epistemic Governance
 
-Private independent research package, version0.1.4-dev. This is a standalone copy, not a submodule or a pointer to the original private checkout. No public release is implied.
+Public independent research package, version 0.1.5-dev. This is a standalone copy, not a submodule or a pointer to the original research checkout. The repository is public; the manuscript remains a working draft, not peer reviewed.
 
-Version 0.1.4-dev retains the documentation-only reasoning-setting clarification and explicitly marks Level 2 as unfinished, with preliminary results not yet available. The fixed benchmark version, cases, frozen requests, model outputs, scorers and reported scores are unchanged; `release-manifests/0.1.2-dev.json` preserves the preceding package manifest.
+Version 0.1.5-dev retains the documentation-only reasoning-setting clarification and explicitly marks Level 2 as unfinished, with preliminary results not yet available. The fixed benchmark version, cases, frozen requests, model outputs, scorers and reported scores are unchanged; `release-manifests/0.1.2-dev.json` preserves the preceding package manifest.
 
 The original problem bytes, model-facing requests and scorer sources are copied with origin hashes. They are never regenerated from a newer generator. Native source code is unchanged; only minimal package namespace initializers and an offline CLI are new. Original experiment history remains in the research archive.
 
@@ -22,4 +22,4 @@ Level 2 is still under development; preliminary results are not yet available. T
 
 `origins.json` records original source paths and hashes; `release-manifest.json` binds this package's actual files. A future rerun uses a new result directory and explicit model settings, never overwrites a prior record. Model-facing inputs exclude reference and construction fields. Exact frozen request bodies are retained for later authorized inference, but this package does not automatically send them.
 
-Code is MIT; author-generated benchmark data and documentation are CC BY4.0. Native model-generated material remains private pending redistribution review. The paper under paper/ is a working draft, not a submission-ready publication. These are LLM reasoning measurements, not agent architecture or containment tests.
+Code is MIT; author-generated benchmark data and documentation are CC BY4.0. Saved final model responses are included for offline reproduction. Full native HTTP and reasoning archives remain in the private research archive. The paper under paper/ is a working draft, not a submission-ready publication. These are LLM reasoning measurements, not agent architecture or containment tests.
