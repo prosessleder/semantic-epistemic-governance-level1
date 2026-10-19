@@ -1,38 +1,54 @@
-# Level 1 Semantic and Epistemic Governance
+# Semantic and Epistemic Governance: Ten-Run Results on the Basic Level 1 Tests
 
-Public independent research package, version 0.1.6-dev. This is a standalone copy, not a submodule or a pointer to the original research checkout. The repository is public; the manuscript remains a working draft, not peer reviewed.
+**Paper 2: Basic Level 1. Public preprint, version `0.2.0-preprint`, released 19 October 2026. Not peer reviewed.** [Download the manuscript and scientific supplement](https://github.com/prosessleder/semantic-epistemic-governance-level1/releases/tag/v0.2.0-preprint). The original fixed benchmark identifier remains `level1-fixed-2026-10-16`.
 
-Version 0.1.6-dev revises the working manuscript for publication review: explicit inference settings, corrected corpus/DEV labels, self-contained figures, narrower evidentiary scope, and confirmed independent authorship and no external funding. The fixed benchmark version, cases, frozen requests, model outputs, scorers and reported scores are unchanged. `release-manifests/0.1.5-dev.json` preserves the preceding package manifest.
+The paper now reports all ten nominal passes for six hosted configurations on 48 semantic DEV cases and 96 epistemic DEV packets per pass. The principal result view is explicitly **post-hoc amended**: 8,630 original received finals plus ten later fresh generations linked to the original unknown slots yield 8,640 observed finals and twelve complete model-tracks. The original primary study remains incomplete, with ten unknown outcomes and five unavailable full-ten model-track summaries. No received answer was replaced, no answer was chosen by correctness, and every failed/unknown attempt reservation remains retained.
 
-The original problem bytes, model-facing requests and scorer sources are copied with origin hashes. They are never regenerated from a newer generator. Native source code is unchanged; only minimal package namespace initializers and an offline CLI are new. Original experiment history remains in the research archive.
+All configurations requested medium native reasoning with a 32,768 combined reasoning/output-token cap. Strict typed bare JSON is primary; sole-outer-fence normalization is a separate sensitivity. The twelve semantic construction groups and twelve epistemic units remain correlated inspected DEV material. Repetition adds no independent task units. Scheduling amendments, later follow-up timing/load and missingness limit exchangeability; there is no equal-compute, population-reliability, held-out or containment claim.
+
+## Manuscript and ten-round results
+
+- [Canonical manuscript](paper/paper.tex), [readable companion](paper/paper.md), and [typeset PDF](output/pdf/semantic-epistemic-governance-level1.pdf).
+- [Self-contained ten-round scientific projection](results/ten-pass-amended-v1/README.md), including exact cases/scorers, original and follow-up final projections, declared native usage/attempt accounting, preserved incomplete-primary statistics and full amended statistics.
+- [All round results](results/ten-pass-amended-v1/tables/rounds.csv), [complete-track summaries](results/ten-pass-amended-v1/tables/summary.csv), [per-case consistency](results/ten-pass-amended-v1/tables/per-case-consistency.csv), [components](results/ten-pass-amended-v1/tables/components.csv) and [exclusive outcome categories](results/ten-pass-amended-v1/tables/native-outcomes.csv).
+
+The manuscript includes every nominal round under both parsers, sample SD/ranges, case-consistency distributions, whole-answer components, distinct generation/unit intervals and the immutable original-cohort comparison. Nominal rounds are slot labels, not synchronized independent experimental blocks. Original pass 2/pass 5 gaps were filled later, as disclosed in the methods and round tables.
 
 ## Reproduce offline
 
-Use Python3.11–3.13. Level1 uses only the standard library for these replay commands. No neural model, GPU, API key or network is used by reproduction.
+Python 3.11–3.13 is sufficient for score replay; no model, GPU, API key or network is required. The ten-round full statistical replay uses Python 3.12 and the standard library.
 
 ```sh
 python -I reproduce.py verify
 python -I reproduce.py replay
-python -I reproduce.py score --responses new-predictions.jsonl
+python -I results/ten-pass-amended-v1/replay.py verify
+python -I results/ten-pass-amended-v1/replay.py replay
+python scripts/ten_pass_publication_tables.py check
+python scripts/audit_manuscript.py
 ```
 
-For Level1 the historical full constructed data contains96 semantic and144 epistemic examples; the six-model measured subset has48semanticDEV+96epistemicDEV and six TRAIN delivery observations per model. Keep those splits. Historical eleven-model feedback is a separate96-unit/480-scenario cohort with reference-guided stopping. Supporting two-model source-evidence reports are separate and their full native audit remains in the archive; the CLI currently replays the main and eleven-model feedback scores.
+The historical `reproduce.py replay` command retains its original six-configuration single-pass and eleven-model feedback scope. The separate ten-round replay checks 150 original reference cases, 17,260 original strict/fence scores and 20 follow-up scores, exact original/follow-up mapping, partitions, billing and **both full original and amended analyses**. Both unchanged statistical algorithms use 20,000 draws, with generation seed 2026101803 and separate unit-sensitivity seed 2026101804. Frozen JSON integer-key normalization changes representation only.
 
-Level 2 is still under development; preliminary results are not yet available. This repository documents the Level 1 study only.
+Public projection metadata omits private author/planning records and documents a host-specific interpreter-path redaction. Cases, scorers, final text, scores, usage, attempt accounting and statistical analysis payloads preserve the scientific source bytes. Full native HTTP/reasoning/partial/error bodies remain in the private archive. Portable final-projection replay is not independent raw-HTTP authentication or regeneration of hosted-model answers.
 
-`origins.json` records original source paths and hashes; `release-manifest.json` binds this package's actual files. A future rerun uses a new result directory and explicit model settings, never overwrites a prior record. Model-facing inputs exclude reference and construction fields. Exact frozen request bodies are retained for later authorized inference, but this package does not automatically send them.
+## Historical cohorts
 
-Code is MIT; author-generated benchmark data and documentation are CC BY4.0. Saved final model responses are included for offline reproduction. Full native HTTP and reasoning archives remain in the private research archive. The paper under paper/ is a working draft, not a submission-ready publication. These are LLM reasoning measurements, not agent architecture or containment tests.
+The original single-pass comparison has 48 semantic DEV + 96 epistemic DEV judgments and six separate TRAIN interface observations per model. The eleven-model feedback cohort has 480 scenarios from 96 underlying units, an 8,192 combined-token allowance and reference-guided stopping; its cumulative retained answers are not fresh judgments at each checkpoint. The earlier two-model source-evidence study has 384 views from 24 units under its own policy. All remain separate from the ten-round cohort. Existing original cases, request bodies, source snapshots, saved outputs and reports remain unchanged.
 
-## Manuscript review and build
+## Build and package the scientific supplement
 
-The current [typeset draft](output/pdf/semantic-epistemic-governance-level1.pdf), [readable manuscript](paper/paper.md), and [publication review](review/publication-review-2026-10-18.md) are distinct from the immutable benchmark data. The current draft remains a descriptive development study with one judgment per case. No ten-pass replication has been launched.
-
-Optional authoring dependencies are Pandoc, Tectonic and matplotlib; they are not required by offline benchmark replay.
+Optional authoring dependencies are Pandoc, Tectonic and matplotlib. The canonical TeX is self-contained; the built-in desktop LaTeX compiler can compile it independently. The readable companion and embedded-figure HTML are generated from that source.
 
 ```sh
-python3 scripts/build_paper.py --figures --pdf
-python3 scripts/audit_manuscript.py
+python scripts/build_paper.py --figures --pdf
+python scripts/audit_manuscript.py
+python scripts/package_publication.py
 ```
 
-The HTML view embeds its figures. The TeX source retains vector plots whose numerical coordinates are checked by the manuscript audit. The author has no institutional affiliation and confirms no external funding. Competing interests and venue-specific submission requirements remain to be finalized.
+The publication ZIP uses a scientific allowlist. It excludes authoring instructions, private review/planning, live runs, native HTTP/reasoning, credentials and compiler scratch files. Its manifests bind exact included bytes. Older release manifests remain historical; document/package version changes do not regenerate the benchmark.
+
+## Authorship and rights
+
+Timothy O’Brien is the sole author, an independent researcher without institutional affiliation. No external funding was received. Codex assisted research and manuscript preparation; accountability remains with the author. The author confirms no competing interests. A venue-specific submission must also follow that venue's current instructions.
+
+Code is MIT; author-generated data/documentation are CC BY 4.0. Saved final model responses support offline reproduction; third-party sources retain their rights. This is a public preprint with no assigned DOI. No journal submission, acceptance or independent external peer review is claimed.

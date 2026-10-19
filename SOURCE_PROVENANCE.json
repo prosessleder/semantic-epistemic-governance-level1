@@ -1,0 +1,17 @@
+{
+  "amended_complete_model_tracks": 12,
+  "amended_received": 8640,
+  "historical_public_baseline": "dbb691fdee34afaec921130ccc34563ad0c09e88",
+  "historical_release_manifest_sha256": "64cbea47ae59ebc99d73b40dd1008ad959cdd4879642a15a1185ac48c42c85d7",
+  "historical_scientific_files_byte_exact": 1900,
+  "historical_source_scope": "Byte-exact older public scientific source snapshots can retain inert historical host-path strings. New ten-round projection redactions are declared in its own provenance.",
+  "new_model_calls_by_packaging": 0,
+  "omitted": "Agent instructions, private review/planning and operational origin metadata, live runs, native HTTP/reasoning and compiler scratch files.",
+  "original_primary_received": 8630,
+  "original_primary_unknown": 10,
+  "original_study_complete": false,
+  "scope": "Paper 2 public preprint; original incomplete study preserved; later follow-ups explicitly post hoc. No journal submission or peer-review claim.",
+  "ten_round_projection_manifest_sha256": "ce3e34ca4208207344f64b07881771d9fb1c93fbe238369ec8ce74bfd043218d",
+  "ten_round_scientific_provenance": "results/ten-pass-amended-v1/provenance.json",
+  "version": "level1-publication-candidate-provenance-v1"
+}

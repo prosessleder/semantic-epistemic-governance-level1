@@ -1,8 +1,10 @@
 cff-version: 1.2.0
-message: "Cite this immutable benchmark version and the corresponding paper."
-title: "Level 1 Semantic and Epistemic Governance"
-version: 0.1.6-dev
+message: "Public preprint; not peer reviewed. Cite the paper version and its fixed benchmark identifier. No DOI has been assigned."
+title: "Semantic and Epistemic Governance: Ten-Run Results on the Basic Level 1 Tests"
+version: 0.2.0-preprint
 authors:
   - family-names: "O’Brien"
     given-names: "Timothy"
     orcid: "https://orcid.org/0009-0001-2589-347X"
+url: "https://github.com/prosessleder/semantic-epistemic-governance-level1"
+date-released: "2026-10-19"

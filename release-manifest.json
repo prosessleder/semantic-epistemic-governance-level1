@@ -1,15 +1,11 @@
 {
   "benchmark_version": "level1-fixed-2026-10-16",
+  "complete_amended_model_tracks": 12,
   "files": [
     {
-      "bytes": 56,
-      "path": ".gitignore",
-      "sha256": "c8ec4e68ae2235479f04d6356bad3a0235a8177fc96b1050d596e62f7f0e70f5"
-    },
-    {
-      "bytes": 284,
+      "bytes": 483,
       "path": "CITATION.cff",
-      "sha256": "bcca1addf8ba31a956be27a025651b96c1218c91d874fe4705c2bbca96f78d7e"
+      "sha256": "a8d231a5f58cfad2137750a5b41f3f9e69cdbf9050ff025e4cdfe15297e6c7f2"
     },
     {
       "bytes": 19168,
@@ -27,9 +23,14 @@
       "sha256": "9d1c9c09012fe26e7724893814842ea7900d531fde09cf82aebed297f113c75f"
     },
     {
-      "bytes": 3688,
+      "bytes": 6370,
       "path": "README.md",
-      "sha256": "2a50ec305e5a85ff388769221b0b32062787eae908247c3314b4b3db486da9b8"
+      "sha256": "b732d57b6710d8e8bc9611de34dd8a03946d265b2fa618fc2221414de441423a"
+    },
+    {
+      "bytes": 1216,
+      "path": "SOURCE_PROVENANCE.json",
+      "sha256": "6f4d27fe89735c4ebde99add947794ce4819b3de18863e9923178af3272d289d"
     },
     {
       "bytes": 2378380,
@@ -4612,11 +4613,6 @@
       "sha256": "acb25e4a4624f62ec1e081470d146ebd4f38927f573051d86f684ed3d0e627bd"
     },
     {
-      "bytes": 385575,
-      "path": "historical-snapshot-origins.json",
-      "sha256": "451b8dfa49a346856badadbac5f35f7c214b5e7f27f098af7776dc3e67b2d1ed"
-    },
-    {
       "bytes": 68,
       "path": "internal/__init__.py",
       "sha256": "79f82e2b1b7663cc672da4e680b65bcbaf8310bf469b54a81dc2f4d0df4c1dbf"
@@ -4657,94 +4653,59 @@
       "sha256": "10900bbd928a49907e4b60f6db90312e36c168f3d93159dfe0ab7d763fc45208"
     },
     {
-      "bytes": 508691,
-      "path": "origins.json",
-      "sha256": "4eea11dae67fce1fa37bb3653eb1c929575dcba9701355d8b24792dcd258918d"
-    },
-    {
-      "bytes": 609022,
+      "bytes": 263249,
       "path": "output/paper.html",
-      "sha256": "6b3c3f229fae9385042d855686fa88bbbdfc472bb5a6f92fc73980d095da38f6"
+      "sha256": "e515dada50009d03d74ab092ebfc309c27fa8f5ee6935778c03a8b1ebd9b86a6"
     },
     {
-      "bytes": 131733,
+      "bytes": 132417,
       "path": "output/pdf/semantic-epistemic-governance-level1.pdf",
-      "sha256": "2fabc1aeee4d0f037f6eb36acf6c3678dad4554dedf79803affb5ed936c6c743"
+      "sha256": "215f8a289e3006d881931beafaead5023d22c2912e13a26237ad281692ad8dcc"
     },
     {
-      "bytes": 70410,
+      "bytes": 76259,
       "path": "output/pdf/semantic-epistemic-governance-level1.tex",
-      "sha256": "247493186c0ea6f14035e386b39c09645b1700b1b670bbf501b8454fa1eb3e94"
+      "sha256": "b76a7a3d47e0325439ef22b3f52a4f417ea5c836c018c1166c4373e0e77b326a"
     },
     {
-      "bytes": 107577,
-      "path": "paper/figures/complete-answer-accuracy.png",
-      "sha256": "1139ebf4ddf329d631edeab5a6c78e6941e2fd2e737fe0f5481a7422d26412ad"
+      "bytes": 101623,
+      "path": "paper/figures/ten-pass-format-sensitivity.png",
+      "sha256": "14059d727e89b03dc22bdfcbe428b8056a5723950bcd7be984fb146f9a8f4d82"
     },
     {
-      "bytes": 156448,
-      "path": "paper/figures/development-tiers.png",
-      "sha256": "77e555f7da02ff57a6e35a3691e263f1359287929a55737c20e8406dde7d8b72"
+      "bytes": 108075,
+      "path": "paper/figures/ten-pass-intervals.png",
+      "sha256": "a90196821b771bca3d13765b821e1ee37eacaf0f8671b9c56045c512d977b270"
     },
     {
-      "bytes": 139146,
-      "path": "paper/figures/epistemic-components.png",
-      "sha256": "eef65b04271c81814fcae97ad1cadd0ea28d0e893566035a660829efa30b3e95"
+      "bytes": 452,
+      "path": "paper/figures/ten-pass-provenance.json",
+      "sha256": "79610ed01a289ff5df089791dccc2f123b403c60d08eba071cc0432bb045b8cb"
     },
     {
-      "bytes": 1133,
-      "path": "paper/figures/provenance.json",
-      "sha256": "80a00fd6631bc42cedae5b15b9ec08c2c20f03914f40c2d5cf0c53031259bd85"
-    },
-    {
-      "bytes": 58283,
+      "bytes": 69159,
       "path": "paper/paper.md",
-      "sha256": "93f36c7696208a1e7819e9c6e545930a5b0ea040a149e70f812e7d855250109f"
+      "sha256": "3b11acd8d3bdf2e44f5337de80c0c4fe20a12e03b5f300b0f6d499139b63b27f"
     },
     {
-      "bytes": 70410,
+      "bytes": 76259,
       "path": "paper/paper.tex",
-      "sha256": "247493186c0ea6f14035e386b39c09645b1700b1b670bbf501b8454fa1eb3e94"
+      "sha256": "b76a7a3d47e0325439ef22b3f52a4f417ea5c836c018c1166c4373e0e77b326a"
     },
     {
-      "bytes": 4213,
-      "path": "paper/reasoning-settings-clarification.json",
-      "sha256": "583b81527cc7552b78c56fdf35a217e5e059c354abc03f2a6e1e2a2c2fe04888"
+      "bytes": 49757,
+      "path": "paper/ten-pass-generated.json",
+      "sha256": "3785ee57c1e23047310074ffa96e31df9f690525c58589709b50ddd0f44903c4"
     },
     {
-      "bytes": 309,
+      "bytes": 307,
       "path": "pyproject.toml",
-      "sha256": "a25912087763f6979c0c20f0a0b3f60359ecb2ab0b530f484bbe93ac5bbb8d78"
+      "sha256": "aa49172f0d668cab9e2a6b16a204537c27775f811541e6c04cf72bc42edf38bc"
     },
     {
-      "bytes": 210699,
-      "path": "release-manifests/0.1.0-dev.json",
-      "sha256": "9583251adc9920a94ae1e9351c75d601903f139da75b3eafd8cee7344f77be7b"
-    },
-    {
-      "bytes": 416418,
-      "path": "release-manifests/0.1.1-dev.json",
-      "sha256": "b52ec926432816c43fe247822b53d489d877d7bf5728273cd23d8e20777fd467"
-    },
-    {
-      "bytes": 415566,
-      "path": "release-manifests/0.1.2-dev.json",
-      "sha256": "046401401180d5af94300a6169390798556eaa0ead3b5e48a43518391495c089"
-    },
-    {
-      "bytes": 415995,
-      "path": "release-manifests/0.1.3-dev.json",
-      "sha256": "d12c1065cc3f8710ae25446a9df5c0c0598bf9b667ca7a1fa4d8fa24bfd94c80"
-    },
-    {
-      "bytes": 416122,
-      "path": "release-manifests/0.1.4-dev.json",
-      "sha256": "f77de50e87888ebae554b1dd3cd5488eb768584cc235edf7ef7939e0a7f9c654"
-    },
-    {
-      "bytes": 416328,
-      "path": "release-manifests/0.1.5-dev.json",
-      "sha256": "b0058184fb4c2e033f7e461773ad1b122afcf4118c769c12e0b3d3e680bd4162"
+      "bytes": 419789,
+      "path": "release-manifests/0.1.6-dev.json",
+      "sha256": "64cbea47ae59ebc99d73b40dd1008ad959cdd4879642a15a1185ac48c42c85d7"
     },
     {
       "bytes": 6972,
@@ -9637,65 +9598,244 @@
       "sha256": "9db201fbf37c97bf34b74e8d94fbf204e3ceb560181e12169e29ded90e060294"
     },
     {
-      "bytes": 308,
-      "path": "review/desktop-compile-2026-10-18.json",
-      "sha256": "5e2fedab019882eb6a39ccbd20208835d968629da718264cbec68429bad2ccab"
+      "bytes": 2235,
+      "path": "results/ten-pass-amended-v1/README.md",
+      "sha256": "e93fc4454eeb01ab6f0e35377a53fc85b2818fb0466a7eeda7afc48ba0ba92bb"
     },
     {
-      "bytes": 171483,
-      "path": "review/immutable-data-preservation-2026-10-18.json",
-      "sha256": "4e93a1bd92af70717d98e08ffaea9bd1c6be77c521010c19402b7b8e33a9877b"
+      "bytes": 4189,
+      "path": "results/ten-pass-amended-v1/followup/attempt-ledger.json",
+      "sha256": "917538c20accc8aa0776ee3dc79d5351b8c85c264cce6e3b626d42eb02d44717"
     },
     {
-      "bytes": 2822,
-      "path": "review/level1-ten-pass-cost-estimate-2026-10-18.json",
-      "sha256": "ad8df4b6e937233471bf1dd8b425963a6e0fa2fee6e36720df97c06827857629"
+      "bytes": 765542,
+      "path": "results/ten-pass-amended-v1/followup/execution-plan.json",
+      "sha256": "e81ae376a84e433a692f00b6f2b39fc79598337d9d72e3847ffa0e4cbecf6b09"
     },
     {
-      "bytes": 1200,
-      "path": "review/manuscript-data-audit-2026-10-18.json",
-      "sha256": "b600d73c8d13fc019f1e02f4ad43668291f3425b53ad3906dd06fd638a77e850"
+      "bytes": 42097,
+      "path": "results/ten-pass-amended-v1/followup/final-projections.json",
+      "sha256": "55118e247051cc839121ffb817c6b61ff95c4e507a7b206e10348a72493d44c2"
     },
     {
-      "bytes": 2433,
-      "path": "review/offline-score-replay-2026-10-18.json",
-      "sha256": "59042e23754da14488fe0d667acdb1451b24f729134ead2c32e3d83f54dab841"
+      "bytes": 5219,
+      "path": "results/ten-pass-amended-v1/manifest.json",
+      "sha256": "ce3e34ca4208207344f64b07881771d9fb1c93fbe238369ec8ce74bfd043218d"
     },
     {
-      "bytes": 4918,
-      "path": "review/publication-review-2026-10-18.md",
-      "sha256": "b46cb75e969768f4cd07110b2db56096f6e17447c9f091c6a77e8b3004d38a73"
+      "bytes": 1431,
+      "path": "results/ten-pass-amended-v1/primary/README.md",
+      "sha256": "02bf54528f5f02b43a7533a73a4071797f843468b88f484d74555c4c9bb07a20"
     },
     {
-      "bytes": 4586,
-      "path": "review/reference-metadata-check-2026-10-18.json",
-      "sha256": "9c5023cdb1cbb77766c8f907231213fa762534afb2ccffc7a3240e44a049b98c"
+      "bytes": 5814,
+      "path": "results/ten-pass-amended-v1/primary/analysis_core.py",
+      "sha256": "32f7197082a35d05cd925d561baacaee0e990f13fd608b01db9256c042f61aa8"
     },
     {
-      "bytes": 9369,
-      "path": "review/reference-metadata-check-network-2026-10-18.json",
-      "sha256": "16d61089713d9eb4fd3339e2a35eedd88b005100c6ccf0137b92abc411f46c95"
+      "bytes": 2495616,
+      "path": "results/ten-pass-amended-v1/primary/data/async-plan.json",
+      "sha256": "1ebb957c9286f964460eb9486dc20fbc8e50d4395bc31997bdaefd1f3cc48764"
     },
     {
-      "bytes": 768,
-      "path": "review/rendered-pdf-review-2026-10-18.json",
-      "sha256": "d48e6113596d3bc5f6e493c5a15867df913b740e8f4e1d2aa53cc1e4657d9e2d"
+      "bytes": 3582674,
+      "path": "results/ten-pass-amended-v1/primary/data/attempt-ledger.json",
+      "sha256": "8bacfd8e4ebd0adbb9f2086ff35da2981a3d95c562d20cb90bd9eb1cc5ad744a"
     },
     {
-      "bytes": 7438,
+      "bytes": 2378380,
+      "path": "results/ten-pass-amended-v1/primary/data/cases.json",
+      "sha256": "7a30fc1dd2982804566a8551e69db9e773fba9a6cd6b13b31d4b9b25e34cd830"
+    },
+    {
+      "bytes": 32211078,
+      "path": "results/ten-pass-amended-v1/primary/data/final-projections.json",
+      "sha256": "b9386bc4b36680af82165f00fb06361c86c85f99768da73fa102ac769c2e6ee7"
+    },
+    {
+      "bytes": 2618989,
+      "path": "results/ten-pass-amended-v1/primary/data/original-plan.json",
+      "sha256": "9c89ab86e252e0ddda1b37f282a4e239bec949aaf059e5271458f75495341224"
+    },
+    {
+      "bytes": 2422883,
+      "path": "results/ten-pass-amended-v1/primary/data/recovery-plan.json",
+      "sha256": "cff83834884b4e2ee8b12cefa9a0525aa3fda74cafee0e20c07c938c1df7a5de"
+    },
+    {
+      "bytes": 1349917,
+      "path": "results/ten-pass-amended-v1/primary/data/recovery-v4-plan.json",
+      "sha256": "96b0296de23712b920c66ff45dd3031e20270b462ca07208f67793e81b7bf3f8"
+    },
+    {
+      "bytes": 21095,
+      "path": "results/ten-pass-amended-v1/primary/frozen-source/internal/benchmarks/ontology_epistemic_challenge_v2.py",
+      "sha256": "7eccf38f86220ad960ce470fb40c3bfdf8bc936f437fe02ad7758905f06ab5c3"
+    },
+    {
+      "bytes": 34120,
+      "path": "results/ten-pass-amended-v1/primary/frozen-source/internal/benchmarks/ontology_semantic_challenge_v2.py",
+      "sha256": "add1e0918fdb38f71df2a4d827195fa1bd9beed89005f72ebd138a3e91917d50"
+    },
+    {
+      "bytes": 11744,
+      "path": "results/ten-pass-amended-v1/primary/frozen-source/internal/scripts/audit_ontology_epistemic_challenge_v2.py",
+      "sha256": "2614d25ddd00aa4f8d5d1c9f9b998c7502a0c826e2e2a293f30a58210d1cfc89"
+    },
+    {
+      "bytes": 12853,
+      "path": "results/ten-pass-amended-v1/primary/frozen-source/internal/scripts/run_ontology_challenge_v2_full32.py",
+      "sha256": "3f8cb074b3b60ce9f10e17d5ccc653e7d0f1d59fadda288425cc50f0129b41a5"
+    },
+    {
+      "bytes": 32666,
+      "path": "results/ten-pass-amended-v1/primary/frozen-source/internal/scripts/run_ontology_epistemic_sources.py",
+      "sha256": "f6b1faf083515651ec71bd7c8a0e511f585a3291c6805f89560055808145c379"
+    },
+    {
+      "bytes": 935,
+      "path": "results/ten-pass-amended-v1/primary/frozen-source/src/ontology_boundary/__init__.py",
+      "sha256": "6f2fac4744283d72ead42c76cf298a0bcde385e84851f5972f3e4e82fc02096e"
+    },
+    {
+      "bytes": 21113,
+      "path": "results/ten-pass-amended-v1/primary/frozen-source/src/ontology_boundary/oracle.py",
+      "sha256": "10900bbd928a49907e4b60f6db90312e36c168f3d93159dfe0ab7d763fc45208"
+    },
+    {
+      "bytes": 11396,
+      "path": "results/ten-pass-amended-v1/primary/frozen-source/src/ontology_boundary/rdf_adapter.py",
+      "sha256": "3338bbe9bf12e580f79a8071b179f88092e586a758ba983ff8c18430c7687872"
+    },
+    {
+      "bytes": 2956,
+      "path": "results/ten-pass-amended-v1/primary/manifest.json",
+      "sha256": "f280e263a88f7d63012127619f120498843818be378806a3ed03ba3d34c087f8"
+    },
+    {
+      "bytes": 3602,
+      "path": "results/ten-pass-amended-v1/primary/provenance.json",
+      "sha256": "0c0f921f043b8444f3ff83be0d96a6f18f7bc0908c74b028cbfee5f7a9e4ef98"
+    },
+    {
+      "bytes": 14443,
+      "path": "results/ten-pass-amended-v1/primary/replay.py",
+      "sha256": "a64fa0bec90ae44e21685fcda737d7e687303abb05027668c78eee901a6fe32d"
+    },
+    {
+      "bytes": 1000693,
+      "path": "results/ten-pass-amended-v1/primary/results/analysis.json",
+      "sha256": "f494247a65190491bc489ed5048247806712edf72e1efadd63eef9946c957a57"
+    },
+    {
+      "bytes": 781,
+      "path": "results/ten-pass-amended-v1/primary/results/scope-and-accounting.json",
+      "sha256": "7c1cc0478e44883325ddabfc3073ff5cd8731d7bcd6580a68b64d5dcb5b7de21"
+    },
+    {
+      "bytes": 7115,
+      "path": "results/ten-pass-amended-v1/provenance.json",
+      "sha256": "1c6f241ad9310ae15d442d6eb8fc38e818ef1f7f99e9d7601b8918f8bb55d499"
+    },
+    {
+      "bytes": 12977,
+      "path": "results/ten-pass-amended-v1/replay.py",
+      "sha256": "057bb7b97fcd748fbfccebf8d64053fa3b7de77d6c48a32c5b2483482328f44b"
+    },
+    {
+      "bytes": 1044595,
+      "path": "results/ten-pass-amended-v1/results/analysis.json",
+      "sha256": "c84c0f30698f30ca6947111eb898af109733d13586dccb8a8291619c0194bb4d"
+    },
+    {
+      "bytes": 1176,
+      "path": "results/ten-pass-amended-v1/results/scope-and-accounting.json",
+      "sha256": "abb3e9097151270d7258945fa8666da1a9327e35bdc5daaa3c6e802fe3839926"
+    },
+    {
+      "bytes": 5659,
+      "path": "results/ten-pass-amended-v1/scientific-protocol.md",
+      "sha256": "cfb36ae044291aaaa29433e5e81e6863a528b8bd57b7a5708aa4da76d64f4dfb"
+    },
+    {
+      "bytes": 24487,
+      "path": "results/ten-pass-amended-v1/tables/components.csv",
+      "sha256": "2ad7de194e57b2ce928273e7aab126c0e71e16c5d9ffcaf62fe8d613dcc1434a"
+    },
+    {
+      "bytes": 25908,
+      "path": "results/ten-pass-amended-v1/tables/native-outcomes.csv",
+      "sha256": "e2eac992725987504b0bf43ae91badc6c712d2335f2b64318a7e4f8d6099b5be"
+    },
+    {
+      "bytes": 407040,
+      "path": "results/ten-pass-amended-v1/tables/per-case-consistency.csv",
+      "sha256": "e28f5f9df11275e8cc571f0d590933ff07610625f869b08d5485d41618589c25"
+    },
+    {
+      "bytes": 5951,
+      "path": "results/ten-pass-amended-v1/tables/resources.csv",
+      "sha256": "7156a9e4415f4d864d5964dd848e9612d2558b9a74968eee13f38c0aefb6f9a9"
+    },
+    {
+      "bytes": 37084,
+      "path": "results/ten-pass-amended-v1/tables/rounds.csv",
+      "sha256": "364396175395542a94431864f8e4b15ebfab00f827cb8caba43299f8eb64fdca"
+    },
+    {
+      "bytes": 9531,
+      "path": "results/ten-pass-amended-v1/tables/summary.csv",
+      "sha256": "6f6e7aefea1cb7321cd81bb1e9a0c68c327ba9e43d13d39db2386332a5dccccf"
+    },
+    {
+      "bytes": 9905,
+      "path": "results/ten-pass-amended-v1/tables/tiers.csv",
+      "sha256": "7bb178ce14589319cc3f80e29ccdcaafac6e3bb9176c600e34b40f270dbb344d"
+    },
+    {
+      "bytes": 24574,
       "path": "scripts/audit_manuscript.py",
-      "sha256": "5f8be49c47eeea75f372b30d3ee0957e8c07da32ba8015465fe63c32033a314e"
+      "sha256": "941cce8dd2816f6e2ad0a111ecb9e848869e7217cad2c00b5a6c8917f3681887"
     },
     {
-      "bytes": 5486,
+      "bytes": 1239,
       "path": "scripts/build_paper.py",
-      "sha256": "5b62a40aa7da6eaffb55ca1e3b658a3bd696d690d9c829284d24e2b19c9a220b"
+      "sha256": "4b49f1e627280f23ebf4e73cf19327f6a1c2c7e87c3db26885934146cb7dc34f"
+    },
+    {
+      "bytes": 3590,
+      "path": "scripts/build_ten_pass_figures.py",
+      "sha256": "a0f7f1296c4e7844fe2417e1daac2f8233eacf931ff4e8f59554d9947f72c487"
+    },
+    {
+      "bytes": 16465,
+      "path": "scripts/export_ten_pass_publication.py",
+      "sha256": "8aa92d17e509b9e18fb7cdb3078c06039386b715d31c337bc655f23671fd3869"
+    },
+    {
+      "bytes": 7599,
+      "path": "scripts/package_publication.py",
+      "sha256": "f96da5165b50f6c674a8edfb8fc1e1b3e58b624a927f42e09982556a9040f93c"
+    },
+    {
+      "bytes": 3244,
+      "path": "scripts/sync_manuscript.py",
+      "sha256": "cbbff8e6a43af775762fc3a0e95a19c47aa91fa270fd2cfc9b0bb8253524d44d"
+    },
+    {
+      "bytes": 12957,
+      "path": "scripts/ten_pass_publication_tables.py",
+      "sha256": "09546d1e25dcaabfbd7f7858ca52b44470ad0db3dc5c88cf09bf9d74b9f7711e"
     }
   ],
   "level": 1,
   "new_model_calls_by_export": 0,
-  "packaging_note": "Documentation and visibility revision only: public Level 1 availability; full native HTTP/reasoning archives remain private. Fixed benchmark cases, request bodies, scorer sources and saved outputs unchanged. Documentation-only publication-review revision: benchmark bytes unchanged; current figures, manuscript and review records added.",
-  "previous_manifest_sha256": "b0058184fb4c2e033f7e461773ad1b122afcf4118c769c12e0b3d3e680bd4162",
-  "status": "PUBLIC_WORKING_PACKAGE",
-  "version": "0.1.6-dev"
+  "original_primary_received": 8630,
+  "original_primary_unknown": 10,
+  "original_study_complete": false,
+  "packaging_note": "New manuscript and scientific supplement. Historical cases, requests, scorer sources and saved outputs remain byte exact. The added scientific projection retains original and amended analyses; its metadata curation is separately declared.",
+  "post_hoc_amended_received": 8640,
+  "previous_manifest_sha256": "64cbea47ae59ebc99d73b40dd1008ad959cdd4879642a15a1185ac48c42c85d7",
+  "status": "PUBLIC_PREPRINT",
+  "version": "0.2.0-preprint"
 }
