@@ -42,7 +42,7 @@ def sync():
         return '\\begin{figure}\\includegraphics{figures/ten-pass-intervals.png}\\caption{'+caption+'}\\end{figure}'
     body=re.sub(r'\\begin\{figure\}.*?\\end\{figure\}',figure,body,flags=re.S)
     body=re.sub(r'% BEGIN GENERATED[^\n]*|% END GENERATED[^\n]*','',body)
-    text='# '+title+'\n\nTimothy O’Brien · [ORCID 0009-0001-2589-347X](https://orcid.org/0009-0001-2589-347X)\n\nPreprint 0.2.0, 19 October 2026. Not peer reviewed. Independent researcher; no institutional affiliation. Copyright 2026 Timothy O’Brien. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).\n\n## Abstract\n\n'+convert(abstract,False)+'\n'+convert(body)
+    text='# '+title+'\n\nTimothy O’Brien · [ORCID 0009-0001-2589-347X](https://orcid.org/0009-0001-2589-347X)\n\nPreprint 0.2.1, 19 October 2026. Not peer reviewed. Independent researcher; no institutional affiliation. Copyright 2026 Timothy O’Brien. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).\n\n## Abstract\n\n'+convert(abstract,False)+'\n'+convert(body)
     text+='\n## References\n\n'+convert('\\begin{enumerate}\n'+'\n'.join('\\item '+content.strip() for _,content in items)+'\n\\end{enumerate}',False)
     text=re.sub(r'<span id="[^"]+"></span>','',text)
     text=re.sub(r'<div id="[^"]+">|</div>','',text)

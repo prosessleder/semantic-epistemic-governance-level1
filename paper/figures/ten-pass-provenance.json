@@ -3,7 +3,7 @@
   "source": "results/ten-pass-amended-v1/results/analysis.json",
   "source_sha256": "c84c0f30698f30ca6947111eb898af109733d13586dccb8a8291619c0194bb4d",
   "figures": {
-    "ten-pass-intervals.png": "a90196821b771bca3d13765b821e1ee37eacaf0f8671b9c56045c512d977b270",
+    "ten-pass-intervals.png": "7de62ffbf4dfe42540541ae02bf038f35311bf1224024c2b8ef0182be6ca14ae",
     "ten-pass-format-sensitivity.png": "14059d727e89b03dc22bdfcbe428b8056a5723950bcd7be984fb146f9a8f4d82"
   }
 }

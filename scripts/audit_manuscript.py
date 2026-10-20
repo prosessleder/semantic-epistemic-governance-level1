@@ -22,6 +22,7 @@ MODELS = ['gpt61sol', 'gpt56terra', 'qwen38', 'gpt6luna', 'sonnet55', 'haiku55']
 SHORT = dict(zip(MODELS, ['Sol', 'Terra', 'Qwen', 'Luna', 'Sonnet', 'Haiku']))
 TRACKS = ['semantic', 'epistemic']
 PARSERS = ['primary', 'framing_sensitivity']
+REPORTING = 'framing_sensitivity'  # v0.2.1: ignore a sole presentation fence
 PINNED_REFERENCES = {
     'kaos': 'https://ontology.ihmc.us/Papers/uszok_kaos_policy08.pdf',
     'margrave': 'https://cs.brown.edu/people/kfisler/Pubs/icse05.pdf',
@@ -129,23 +130,23 @@ def expected_tables(records, primary, analysis, original_analysis):
             xs = [r for r in records if r['alias'] == alias and r['track'] == track]
             denom = 48 if track == 'semantic' else 96
             check(len(xs) == denom*10, 'Incomplete amended track')
-            rates = [sum(correct(r,'primary') for r in xs if r['round'] == n)/denom for n in range(1,11)]
-            q = analysis['models'][alias][track]['primary']['ten_round_summary']
+            rates = [sum(correct(r,REPORTING) for r in xs if r['round'] == n)/denom for n in range(1,11)]
+            q = analysis['models'][alias][track][REPORTING]['ten_round_summary']
             mean, sd = statistics.mean(rates), statistics.stdev(rates)
             check(math.isclose(mean,q['mean'],abs_tol=1e-15) and math.isclose(sd,q['round_sample_sd'],abs_tol=1e-15), 'Saved moments differ')
             check(q['round_range'] == [min(rates),max(rates)], 'Saved pass range differs')
-            summary.append([SHORT[alias],track[0].upper(),f"{sum(correct(r,'primary') for r in xs)}/{denom*10}",percent(mean),percent(sd),interval([min(rates),max(rates)]),percent(sum(correct(r,'framing_sensitivity') for r in xs)/(denom*10))])
+            summary.append([SHORT[alias],track[0].upper(),f"{sum(correct(r,REPORTING) for r in xs)}/{denom*10}",percent(mean),percent(sd),interval([min(rates),max(rates)])])
             units = defaultdict(list)
-            for r in xs: units[r['unit_id']].append(int(correct(r,'primary')))
+            for r in xs: units[r['unit_id']].append(int(correct(r,REPORTING)))
             check(len(units) == 12, 'Underlying unit inventory')
             equal_unit = statistics.mean(statistics.mean(v) for v in units.values())
-            unit = analysis['unit_sensitivity'][track+'--primary']
+            unit = analysis['unit_sensitivity'][track+'--'+REPORTING]
             check(math.isclose(equal_unit,unit['unit_weighted_means'][alias],abs_tol=1e-15), 'Equal-unit mean differs')
             check(q['generation_draws'] == 20000 and q['generation_seed'] == 2026101803, 'Generation seed/draws')
             check(unit['draws'] == 20000 and unit['seed'] == 2026101804, 'Unit seed/draws')
             intervals.append([SHORT[alias],track[0].upper(),interval(q['fixed_corpus_generation_resampling_interval']),interval(unit['case_weighted_intervals'][alias]),percent(equal_unit)])
             prior = [r for r in primary if r['alias'] == alias and r['track'] == track]
-            oq = original_analysis['models'][alias][track]['primary']['ten_round_summary']
+            oq = original_analysis['models'][alias][track][REPORTING]['ten_round_summary']
             prior_mean = percent(sum(correct(r,'primary') for r in prior)/(denom*10)) if oq is not None else 'Unavailable'
             original.append([SHORT[alias],track[0].upper(),f'{len(prior)}/{denom*10}',denom*10-len(prior),prior_mean])
             check((oq is None) == (len(prior) != denom*10), 'Original null estimate altered')
@@ -154,7 +155,7 @@ def expected_tables(records, primary, analysis, original_analysis):
                 check(dict(counts) == analysis['models'][alias][track][mode]['exclusive_outcomes'], 'Saved categories differ')
                 check(not set(counts)-{'correct','completed_task_error','unparseable_final','schema_invalid'}, 'Native-error finish contradicts table')
                 categories.append([SHORT[alias],track[0].upper(),'strict' if mode == 'primary' else 'fence']+[counts[k] for k in ['correct','completed_task_error','unparseable_final','schema_invalid']])
-    add('tab:ten-pass-summary', ['Config.','Track','Strict correct','Strict mean','SD','Pass range','Fence mean'], summary)
+    add('tab:ten-pass-summary', ['Config.','Track','Correct','Mean','SD','Pass range'], summary)
     add('tab:ten-pass-intervals', ['Config.','Track','Generation interval','Unit sensitivity','Equal-unit mean'], intervals)
     add('tab:native-outcomes', ['Config.','Track','Parser','Correct','Error','Parse','Schema'], categories)
     add('tab:original-primary', ['Config.','Track','Received/planned','Unknown','Full-ten mean'], original)
@@ -168,7 +169,7 @@ def expected_tables(records, primary, analysis, original_analysis):
         for alias in MODELS:
             indexed = defaultdict(list)
             for r in records:
-                if r['alias'] == alias and r['track'] == track: indexed[r['original_id']].append(correct(r,'primary'))
+                if r['alias'] == alias and r['track'] == track: indexed[r['original_id']].append(correct(r,REPORTING))
             check(len(indexed) == denom and all(len(x) == 10 for x in indexed.values()), 'Ten generations per case')
             histogram = Counter(sum(x) for x in indexed.values())
             rows.append([SHORT[alias]]+[histogram[n] for n in range(11)])
@@ -265,8 +266,8 @@ def audit(refresh_metadata=False):
     wanted = []
     for track in TRACKS:
         for y,alias in enumerate(MODELS,1):
-            q = analysis['models'][alias][track]['primary']['ten_round_summary']
-            for xs in [analysis['unit_sensitivity'][track+'--primary']['case_weighted_intervals'][alias],q['fixed_corpus_generation_resampling_interval'],[q['mean']]]:
+            q = analysis['models'][alias][track][REPORTING]['ten_round_summary']
+            for xs in [analysis['unit_sensitivity'][track+'--'+REPORTING]['case_weighted_intervals'][alias],q['fixed_corpus_generation_resampling_interval'],[q['mean']]]:
                 wanted.append([(100*x,y) for x in xs])
     check(len(coords) == len(wanted) == 36,'Plot series count')
     points = 0

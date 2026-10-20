@@ -3,9 +3,14 @@
   "complete_amended_model_tracks": 12,
   "files": [
     {
-      "bytes": 483,
+      "bytes": 555,
       "path": "CITATION.cff",
-      "sha256": "a8d231a5f58cfad2137750a5b41f3f9e69cdbf9050ff025e4cdfe15297e6c7f2"
+      "sha256": "b49566f87bf12c7ce350c0f41b851f63f0f69657be73c6a20af168b36071d53c"
+    },
+    {
+      "bytes": 2008,
+      "path": "CORRECTION-0.2.1.md",
+      "sha256": "22d89a69bae5ea5dffaef1b285335c6874a2c2000403dea9338a507d4941b48a"
     },
     {
       "bytes": 19168,
@@ -23,9 +28,9 @@
       "sha256": "9d1c9c09012fe26e7724893814842ea7900d531fde09cf82aebed297f113c75f"
     },
     {
-      "bytes": 6370,
+      "bytes": 6748,
       "path": "README.md",
-      "sha256": "b732d57b6710d8e8bc9611de34dd8a03946d265b2fa618fc2221414de441423a"
+      "sha256": "cb6ea0848bcb464bea30a0d48516fffaac6463dc2266f917eb32c073a3873800"
     },
     {
       "bytes": 1216,
@@ -4653,19 +4658,19 @@
       "sha256": "10900bbd928a49907e4b60f6db90312e36c168f3d93159dfe0ab7d763fc45208"
     },
     {
-      "bytes": 263249,
+      "bytes": 271637,
       "path": "output/paper.html",
-      "sha256": "e515dada50009d03d74ab092ebfc309c27fa8f5ee6935778c03a8b1ebd9b86a6"
+      "sha256": "9ad004cea0166d90b8b490852070d180fd8eae82c5a3191da96905d267026765"
     },
     {
-      "bytes": 132417,
+      "bytes": 132945,
       "path": "output/pdf/semantic-epistemic-governance-level1.pdf",
-      "sha256": "215f8a289e3006d881931beafaead5023d22c2912e13a26237ad281692ad8dcc"
+      "sha256": "cca1a2bd227b47d31e8ad9a3ed8b88f9ede70f9314973288c23e43899f60f637"
     },
     {
-      "bytes": 76259,
+      "bytes": 77278,
       "path": "output/pdf/semantic-epistemic-governance-level1.tex",
-      "sha256": "b76a7a3d47e0325439ef22b3f52a4f417ea5c836c018c1166c4373e0e77b326a"
+      "sha256": "946f6be83fd1939ba4b311550371bf7c8b3c48a62df643c32e82a1a1dd674d99"
     },
     {
       "bytes": 101623,
@@ -4673,29 +4678,29 @@
       "sha256": "14059d727e89b03dc22bdfcbe428b8056a5723950bcd7be984fb146f9a8f4d82"
     },
     {
-      "bytes": 108075,
+      "bytes": 114097,
       "path": "paper/figures/ten-pass-intervals.png",
-      "sha256": "a90196821b771bca3d13765b821e1ee37eacaf0f8671b9c56045c512d977b270"
+      "sha256": "7de62ffbf4dfe42540541ae02bf038f35311bf1224024c2b8ef0182be6ca14ae"
     },
     {
       "bytes": 452,
       "path": "paper/figures/ten-pass-provenance.json",
-      "sha256": "79610ed01a289ff5df089791dccc2f123b403c60d08eba071cc0432bb045b8cb"
+      "sha256": "14ed82fbf02b4e5303eee5674d06d5a628bd545ace8c32e56501ee9893e792ba"
     },
     {
-      "bytes": 69159,
+      "bytes": 69948,
       "path": "paper/paper.md",
-      "sha256": "3b11acd8d3bdf2e44f5337de80c0c4fe20a12e03b5f300b0f6d499139b63b27f"
+      "sha256": "4e04aa7cfb74d9b0078cc209710385f2caf0fbc7c65e6a28e3edd3bf4625d209"
     },
     {
-      "bytes": 76259,
+      "bytes": 77278,
       "path": "paper/paper.tex",
-      "sha256": "b76a7a3d47e0325439ef22b3f52a4f417ea5c836c018c1166c4373e0e77b326a"
+      "sha256": "946f6be83fd1939ba4b311550371bf7c8b3c48a62df643c32e82a1a1dd674d99"
     },
     {
-      "bytes": 49757,
+      "bytes": 49549,
       "path": "paper/ten-pass-generated.json",
-      "sha256": "3785ee57c1e23047310074ffa96e31df9f690525c58589709b50ddd0f44903c4"
+      "sha256": "1e64ea420c9fc54ae9adc7b5cf03617e80ecec77f272a565230b8e23e0dcefa4"
     },
     {
       "bytes": 307,
@@ -4706,6 +4711,11 @@
       "bytes": 419789,
       "path": "release-manifests/0.1.6-dev.json",
       "sha256": "64cbea47ae59ebc99d73b40dd1008ad959cdd4879642a15a1185ac48c42c85d7"
+    },
+    {
+      "bytes": 425451,
+      "path": "release-manifests/0.2.0-preprint.json",
+      "sha256": "94667eb538a2681bc9d5893f6b44c3f4a434ab2ec245ff2bc679486b6f9854f4"
     },
     {
       "bytes": 6972,
@@ -9793,9 +9803,9 @@
       "sha256": "7bb178ce14589319cc3f80e29ccdcaafac6e3bb9176c600e34b40f270dbb344d"
     },
     {
-      "bytes": 24574,
+      "bytes": 24561,
       "path": "scripts/audit_manuscript.py",
-      "sha256": "941cce8dd2816f6e2ad0a111ecb9e848869e7217cad2c00b5a6c8917f3681887"
+      "sha256": "42c04056b5afc769c032e7345a3b8b9e92b4b7f7a10a05cdbb961ea60bc5cadc"
     },
     {
       "bytes": 1239,
@@ -9803,9 +9813,9 @@
       "sha256": "4b49f1e627280f23ebf4e73cf19327f6a1c2c7e87c3db26885934146cb7dc34f"
     },
     {
-      "bytes": 3590,
+      "bytes": 3624,
       "path": "scripts/build_ten_pass_figures.py",
-      "sha256": "a0f7f1296c4e7844fe2417e1daac2f8233eacf931ff4e8f59554d9947f72c487"
+      "sha256": "8bb599a77543eb2f36bf32ce2b12d7762f0fccc80bfe75412da0a4904b5f72b8"
     },
     {
       "bytes": 16465,
@@ -9818,9 +9828,14 @@
       "sha256": "f96da5165b50f6c674a8edfb8fc1e1b3e58b624a927f42e09982556a9040f93c"
     },
     {
+      "bytes": 7931,
+      "path": "scripts/package_publication_v021.py",
+      "sha256": "44c489a194fa8a1f3c1ccc4b4e0d3fdb61fce80d6261940edabda221050dd495"
+    },
+    {
       "bytes": 3244,
       "path": "scripts/sync_manuscript.py",
-      "sha256": "cbbff8e6a43af775762fc3a0e95a19c47aa91fa270fd2cfc9b0bb8253524d44d"
+      "sha256": "6c5a4574bcebb729f2cab827ea4848c2aa7d7e1930ef2754a94eafc1bf2f586e"
     },
     {
       "bytes": 12957,
@@ -9836,6 +9851,9 @@
   "packaging_note": "New manuscript and scientific supplement. Historical cases, requests, scorer sources and saved outputs remain byte exact. The added scientific projection retains original and amended analyses; its metadata curation is separately declared.",
   "post_hoc_amended_received": 8640,
   "previous_manifest_sha256": "64cbea47ae59ebc99d73b40dd1008ad959cdd4879642a15a1185ac48c42c85d7",
+  "previous_public_version": "0.2.0-preprint",
+  "reporting_correction": "Ignore a sole outer Markdown fence; no data, denominator, scorer, algorithm or seed change",
+  "reporting_parser": "framing_sensitivity",
   "status": "PUBLIC_PREPRINT",
-  "version": "0.2.0-preprint"
+  "version": "0.2.1-preprint"
 }

@@ -2,11 +2,11 @@
 
 Timothy O’Brien · [ORCID 0009-0001-2589-347X](https://orcid.org/0009-0001-2589-347X)
 
-Preprint 0.2.0, 19 October 2026. Not peer reviewed. Independent researcher; no institutional affiliation. Copyright 2026 Timothy O’Brien. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Preprint 0.2.1, 19 October 2026. Not peer reviewed. Independent researcher; no institutional affiliation. Copyright 2026 Timothy O’Brien. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Abstract
 
-An ontology amendment can satisfy its visible goal while expanding a protected permission; an evidence review can reach a plausible conclusion from claims it is not authorized to use. We evaluate six hosted model configurations on this project’s basic Level 1 tests: 48 semantic development cases and 96 epistemic packets, with ten planned judgments per case. The reported dataset is explicitly post hoc amended: the original experiment supplied 8,630 of 8,640 planned responses, and ten later fresh generations filled its unknown-outcome slots without replacing any received answer. The incomplete original cohort and all unknown attempts remain preserved separately. Under strict typed bare-JSON scoring, amended ten-pass means range from 0.625 to 100.000 percent for semantic tasks and from 1.250 to 99.792 percent for epistemic tasks. Sole-outer-fence sensitivity changes some results substantially, including Haiku epistemic correctness from 1.250 to 72.917 percent, so formatting failures are separated from completed task errors. We report every round, round variation, per-case consistency, generation intervals for the fixed test set and separate unit-resampling intervals. The 48 semantic cases form twelve construction groups; the 96 epistemic packets are eight views of each of twelve units. Repeated generations add no independent task units. These are descriptive measurements on inspected development material, conditional on the supplied governance contracts, provider behavior and later follow-up timing. They do not establish held-out generalization, real-source trust, equal compute or autonomous-agent containment.
+An ontology amendment can satisfy its visible goal while expanding a protected permission; an evidence review can reach a plausible conclusion from claims it is not authorized to use. We evaluate six hosted model configurations on this project’s basic Level 1 tests: 48 semantic development cases and 96 epistemic packets, with ten planned judgments per case. The reported dataset is explicitly post hoc amended: the original experiment supplied 8,630 of 8,640 planned responses, and ten later fresh generations filled its unknown-outcome slots without replacing any received answer. The incomplete original cohort and all unknown attempts remain preserved separately. After normalizing a sole outer code fence, amended ten-pass complete-answer means range from 31.042 to 100.000 percent for semantic tasks and from 33.646 to 99.792 percent for epistemic tasks. This reporting correction treats a presentation wrapper as irrelevant to task correctness; substantive answer checks and all response denominators are unchanged. Original bare-JSON scores remain available as a serialization audit. We report every round, round variation, per-case consistency, generation intervals for the fixed test set and separate unit-resampling intervals. The 48 semantic cases form twelve construction groups; the 96 epistemic packets are eight views of each of twelve units. Repeated generations add no independent task units. These are descriptive measurements on inspected development material, conditional on the supplied governance contracts, provider behavior and later follow-up timing. They do not establish held-out generalization, real-source trust, equal compute or autonomous-agent containment.
 
 ## Introduction
 
@@ -14,7 +14,7 @@ A reviewer of an ontology change must answer two different questions: what does 
 
 This paper evaluates model answers to fixed finite tasks about those obligations. Semantic calls judge a supplied batch of changes against explicit goals and protected permissions. Epistemic calls apply supplied authority, provenance, conflict and observation rules to a structured evidence packet. Neither track performs an actual release or measures an autonomous agent acting in an external system. A reference checker determines correctness within the declared abstraction; it does not authenticate real sources or establish that an organization’s policy is adequate.
 
-The empirical contribution is a six-configuration, ten-round repeatability measurement on an already inspected development test set. We retain every received response, distinguish complete answers from their components, and report both strict formatting and a narrowly defined framing sensitivity. The main reported dataset includes ten separately authorized later generations for unknown original outcomes. It is an explicitly amended descriptive analysis, not an uninterrupted complete original experiment or an evaluation on new held-out cases.
+The empirical contribution is a six-configuration, ten-round repeatability measurement on an already inspected development test set. We retain every received response, distinguish complete answers from their components, and report fence-normalized task correctness and retain the original strict serialization audit. The main reported dataset includes ten separately authorized later generations for unknown original outcomes. It is an explicitly amended descriptive analysis, not an uninterrupted complete original experiment or an evaluation on new held-out cases.
 
 The paper contributes the fixed executable test set and alternative-solution-aware references, all ten round measurements and case-consistency summaries, and an offline-replayable record of the original incomplete cohort and its separate amendment. The original single-pass study, eleven-model correction study and two-model source-evidence study are supporting historical cohorts; none supplies observations to the ten-round numerator or denominator.
 
@@ -130,7 +130,7 @@ All six recorded configurations: requested medium native reasoning and a 32,768 
 
 ### Scoring and observed versus missing outcomes
 
-The primary scoring rule requires one bare JSON object with the complete typed schema and the declared list-order requirements. The separate sensitivity removes only a sole outer code fence; it does not extract JSON from prose, reorder epistemic facts, repair an object or select a better answer. Witnesses, repairs and next observations accept every semantically valid or tied-optimal answer under the original scorer.
+The reported task-correctness scores require one JSON object with the complete typed schema and the declared list-order requirements, after removing a sole outer code fence if present. A surrounding Markdown fence is treated as a presentation artifact and does not reduce the reported task score. Normalization does not extract JSON from prose, reorder epistemic facts, repair an object, change a value or select a better answer. All received responses remain in the denominator. Version 0.2.1 promotes the already computed sole-fence analysis to the main reporting view; version 0.2.0 and the original frozen protocol used bare JSON as primary. The original strict scores and both frozen parser outputs remain unchanged in the supplement and the audit tables below. This is a disclosed reporting correction, with no new model calls or changes to the statistical algorithms or seeds. Witnesses, repairs and next observations accept every semantically valid or tied-optimal answer under the original scorer.
 
 Complete semantic correctness requires all fields, including every protected expansion and valid witness. Complete epistemic correctness requires supported facts, a valid repair, all decisions, all possibilities and an optimal next query. Component scores count whole answers correct for that field; “all decisions correct” is not per-action accuracy. A valid undetermined answer is a substantive decision, not a missing response.
 
@@ -174,28 +174,28 @@ Fifteen within-track paired configuration contrasts per parser (60 across both t
 
 ### Complete answers and pass variation
 
-Table 5 reports every configuration and both tracks. The display order is the fixed configuration order, not a pooled leaderboard. The strict scoring rule is primary; sole-fence values are a separately labeled sensitivity. All six configurations supplied 480 semantic and 960 epistemic finals in the amended view. No historical interface, single-pass or correction observation enters these counts.
+Table 5 reports every configuration and both tracks. The display order is the fixed configuration order, not a pooled leaderboard. Fence-normalized complete-answer correctness is the main reported result. Original strict bare-JSON scores are retained for serialization auditing and do not contribute to the normalized means, intervals or consistency summaries. All six configurations supplied 480 semantic and 960 epistemic finals in the amended view. No historical interface, single-pass or correction observation enters these counts.
 
-| Config. | Track | Strict correct | Strict mean |    SD |      Pass range | Fence mean |
-|:--------|------:|---------------:|------------:|------:|----------------:|-----------:|
-| Sol     |     S |        480/480 |     100.000 | 0.000 | 100.000–100.000 |    100.000 |
-| Sol     |     E |        958/960 |      99.792 | 0.439 |  98.958–100.000 |     99.792 |
-| Terra   |     S |        450/480 |      93.750 | 2.406 |   89.583–97.917 |     93.750 |
-| Terra   |     E |        501/960 |      52.188 | 4.539 |   45.833–59.375 |     52.188 |
-| Qwen    |     S |        445/480 |      92.708 | 2.250 |   89.583–95.833 |     96.667 |
-| Qwen    |     E |        393/960 |      40.938 | 5.358 |   34.375–50.000 |     43.750 |
-| Luna    |     S |        341/480 |      71.042 | 8.531 |   56.250–85.417 |     71.042 |
-| Luna    |     E |        323/960 |      33.646 | 2.506 |   29.167–37.500 |     33.646 |
-| Sonnet  |     S |        149/480 |      31.042 | 3.860 |   27.083–39.583 |     31.042 |
-| Sonnet  |     E |        702/960 |      73.125 | 4.331 |   62.500–78.125 |     88.229 |
-| Haiku   |     S |          3/480 |       0.625 | 1.006 |     0.000–2.083 |     49.167 |
-| Haiku   |     E |         12/960 |       1.250 | 1.076 |     0.000–3.125 |     72.917 |
+| Config. | Track | Correct |    Mean |    SD |      Pass range |
+|:--------|------:|--------:|--------:|------:|----------------:|
+| Sol     |     S | 480/480 | 100.000 | 0.000 | 100.000–100.000 |
+| Sol     |     E | 958/960 |  99.792 | 0.439 |  98.958–100.000 |
+| Terra   |     S | 450/480 |  93.750 | 2.406 |   89.583–97.917 |
+| Terra   |     E | 501/960 |  52.188 | 4.539 |   45.833–59.375 |
+| Qwen    |     S | 464/480 |  96.667 | 3.137 |  91.667–100.000 |
+| Qwen    |     E | 420/960 |  43.750 | 5.913 |   37.500–54.167 |
+| Luna    |     S | 341/480 |  71.042 | 8.531 |   56.250–85.417 |
+| Luna    |     E | 323/960 |  33.646 | 2.506 |   29.167–37.500 |
+| Sonnet  |     S | 149/480 |  31.042 | 3.860 |   27.083–39.583 |
+| Sonnet  |     E | 847/960 |  88.229 | 4.110 |   79.167–91.667 |
+| Haiku   |     S | 236/480 |  49.167 | 5.909 |   37.500–56.250 |
+| Haiku   |     E | 700/960 |  72.917 | 2.734 |   67.708–78.125 |
 
-Post-hoc amended complete-answer results. S=semantic, E=epistemic. Mean and range are percentages; sample SD is percentage points across ten nominal passes. Sole-fence scoring changes only a sole outer code fence. All settings: medium native reasoning, 32,768 combined tokens.
+Post-hoc amended complete-answer results after sole-outer-fence normalization. S=semantic, E=epistemic. All received responses remain in the denominator. Mean and range are percentages; sample SD is percentage points across ten nominal passes. All settings: medium native reasoning, 32,768 combined tokens.
 
-Qwen’s strict means are 92.708 percent semantic (445/480) and 40.938 percent epistemic (393/960); sole-fence means are 96.667 and 43.750 percent. Terra’s corresponding strict means are 93.750 and 52.188 percent. These are different task contracts on different constructed inputs, so the gap is descriptive rather than an isolated causal effect of “epistemic reasoning.” Sol has 480/480 strict semantic and 958/960 epistemic complete answers. Its near-ceiling result limits claims that this fixed test set is a frontier difficulty benchmark.
+Qwen’s reported fence-normalized means are 96.667 percent semantic (464/480) and 43.750 percent epistemic (420/960). Terra’s corresponding means are 93.750 percent (450/480) and 52.188 percent (501/960). These are different task contracts on different constructed inputs, so the gap is descriptive rather than an isolated causal effect of “epistemic reasoning.” Sol has 480/480 semantic and 958/960 epistemic complete answers under the reported normalized scoring. Its near-ceiling result limits claims that this fixed test set is a frontier difficulty benchmark.
 
-All ten pass rates under both parsers appear in Appendix A. They are not ten independent new-case studies. The full supplement additionally retains per-case out-of-ten counts, their distributions, both estimands, all exploratory contrasts and native completion times. The highest strict semantic pass SD is Luna’s 8.531 percentage points; an average alone would hide that variation.
+All ten pass rates under both parsers appear in Appendix A. They are not ten independent new-case studies. The full supplement additionally retains per-case out-of-ten counts, their distributions, both estimands, all exploratory contrasts and native completion times. The highest normalized semantic pass SD is Luna’s 8.531 percentage points; an average alone would hide that variation.
 
 | Config. | Track | Generation interval | Unit sensitivity | Equal-unit mean |
 |:--------|------:|--------------------:|-----------------:|----------------:|
@@ -203,29 +203,29 @@ All ten pass rates under both parsers appear in Appendix A. They are not ten ind
 | Sol     |     E |      99.479–100.000 |   99.375–100.000 |          99.792 |
 | Terra   |     S |       91.667–95.625 |    90.417–97.143 |          95.000 |
 | Terra   |     E |       49.896–54.479 |    46.771–57.604 |          52.188 |
-| Qwen    |     S |       90.625–94.792 |    90.208–95.000 |          93.472 |
-| Qwen    |     E |       38.646–43.229 |    35.833–46.667 |          40.938 |
+| Qwen    |     S |       95.208–97.917 |    94.583–98.636 |          97.778 |
+| Qwen    |     E |       41.458–46.042 |    38.750–49.375 |          43.750 |
 | Luna    |     S |       67.500–74.583 |    65.417–76.667 |          71.250 |
 | Luna    |     E |       31.562–35.833 |    30.104–37.083 |          33.646 |
 | Sonnet  |     S |       27.917–34.167 |    25.455–36.167 |          30.139 |
-| Sonnet  |     E |       70.625–75.625 |    67.396–78.125 |          73.125 |
-| Haiku   |     S |         0.000–1.250 |      0.000–2.250 |           1.250 |
-| Haiku   |     E |         0.625–1.979 |      0.521–2.083 |           1.250 |
+| Sonnet  |     E |       86.458–90.000 |    84.479–91.875 |          88.229 |
+| Haiku   |     S |       45.625–52.917 |    41.818–55.227 |          47.500 |
+| Haiku   |     E |       70.729–75.104 |    65.833–80.417 |          72.917 |
 
-Strict complete-answer summaries: two distinct conditional 95% percentile intervals, in percent. Unit interval is case-weighted; the last column is the separately defined equal-unit mean. Equal-unit intervals and both-parser summaries are supplied in the supplement. These are not unseen-task reliability bounds.
+Fence-normalized complete-answer summaries: two distinct conditional 95% percentile intervals, in percent. Unit interval is case-weighted; the last column is the separately defined equal-unit mean. Equal-unit intervals and both-parser summaries are supplied in the supplement. These are not unseen-task reliability bounds.
 
 <figure>
 <img src="figures/ten-pass-intervals.png" />
-<figcaption>Strict complete-answer means (points), generation intervals for the fixed test set (thick blue) and separate unit-resampling sensitivities (thin orange). All include the ten post-hoc follow-ups; the original study remains incomplete. These conditional intervals address different questions.</figcaption>
+<figcaption>Fence-normalized complete-answer means (points), generation intervals for the fixed test set (thick blue) and separate unit-resampling sensitivities (thin orange). All include the ten post-hoc follow-ups; the original study remains incomplete. These conditional intervals address different questions.</figcaption>
 </figure>
 
 ### Components, formatting and native boundaries
 
 The semantic components require goals, expansion sets, witnesses, exact approvals, per-permission authorization and release decisions. The epistemic components require supported facts, a valid repair, all warranted decisions, all possible outcomes and an optimal observation. Component counts in Appendix B use the full amended denominator under both parsers. They describe the model’s original full-task answer, not performance after supplying verified intermediate facts.
 
-For example, Terra gives every epistemic action decision correctly in 839/960 strict whole-packet answers, but only 501/960 answers are completely correct. Qwen’s corresponding counts are 679/960 and 393/960. A correct decision can coexist with an incomplete support set, invalid repair or inferior next observation. These packet-level counts must not be read as per-action rates or as evidence of successful external enforcement.
+For example, under normalized scoring Terra gives every epistemic action decision correctly in 839/960 whole-packet answers, but only 501/960 answers are completely correct. Qwen’s corresponding counts are 721/960 and 420/960. A correct decision can coexist with an incomplete support set, invalid repair or inferior next observation. These packet-level counts must not be read as per-action rates or as evidence of successful external enforcement.
 
-Format effects are substantial. Haiku’s strict semantic result is 3/480, versus 236/480 with sole-fence normalization; its epistemic result changes from 12/960 to 700/960. Sonnet’s epistemic result changes from 702/960 to 847/960, while its semantic result stays 149/480 because 329 finals remain unparseable under either parser. These differences are sensitivity to the answer contract, not demonstrated improvements in the underlying reasoning process. Unparseable prose cannot be assumed logically wrong or silently converted into a valid answer.
+The reported normalized results include Haiku’s 236/480 semantic and 700/960 epistemic complete answers, and Sonnet’s 149/480 semantic and 847/960 epistemic complete answers. A sole outer fence is ignored rather than counted as a task error. Sonnet’s 329 semantic finals that remain unparseable after this narrow normalization stay in the denominator; no answer is silently repaired or omitted. The strict-versus-normalized audit below preserves the original serialization results without treating their difference as a change in reasoning.
 
 | Config. | Track | Parser | Correct | Error | Parse | Schema |
 |:--------|------:|-------:|--------:|------:|------:|-------:|
@@ -256,7 +256,7 @@ Format effects are substantial. Haiku’s strict semantic result is 3/480, versu
 
 Mutually exclusive amended outcome categories. S rows sum to 480; E rows to 960. Error means a parsed, schema-valid completed task error; Parse and Schema are distinct. Every received final had native stop status; there were no received length/filter/provider-error finishes. Original unresolved transport attempts remain outside these delivered-response rows.
 
-Luna has one schema-invalid epistemic final. Sonnet has four strict and six sole-fence schema-invalid epistemic finals; removing a fence can expose a previously unparsed schema defect. Haiku retains two schema-invalid epistemic finals under the sensitivity. All 8,640 delivered responses have native stop finishes; the historical single-pass Haiku overload is not a ten-round provider failure. Transport unknowns, final-format defects and completed task errors therefore require separate accounting.
+Luna has one schema-invalid epistemic final. Sonnet has four strict and six sole-fence schema-invalid epistemic finals; removing a fence can expose a previously unparsed schema defect. Haiku retains two schema-invalid epistemic finals under normalized scoring. All 8,640 delivered responses have native stop finishes; the historical single-pass Haiku overload is not a ten-round provider failure. Transport unknowns, final-format defects and completed task errors therefore require separate accounting.
 
 ### Resources and original incomplete-cohort sensitivity
 
@@ -285,7 +285,7 @@ Immutable original primary cohort before unknown-outcome follow-ups. Full-ten st
 
 ### What the measurements establish
 
-The recorded configurations differ descriptively across the two fixed task contracts. The repeated cohort confirms that a single first judgment can hide generation variation: pass distributions and per-case consistency complement a mean. It also confirms that strict serialization and task content are different failure boundaries. All-model, both-parser reporting prevents a code-fence sensitivity from being presented as a reasoning improvement or a parsed decision from standing in for a complete evidence analysis.
+The recorded configurations differ descriptively across the two fixed task contracts. The repeated cohort confirms that a single first judgment can hide generation variation: pass distributions and per-case consistency complement a mean. It also confirms that strict serialization and task content are different failure boundaries. Fence normalization keeps a presentation wrapper from depressing the main task score. The separately retained strict audit documents the reporting correction; it is not evidence of a reasoning intervention. A parsed decision still cannot stand in for a complete evidence analysis.
 
 The semantic and epistemic tasks are not matched interventions isolating one cognitive property. They differ in input structure, output length, reference computation and failure opportunities. Their contrast motivates separate obligations and diagnostics; it does not identify a causal explanation of model differences. “Basic Level 1” identifies the initial test stage in this project. The harder Level 2 tests are outside this paper’s scope. This stage label is not a calibrated universal difficulty scale or a claim that all models find these tests easy. Sol’s semantic ceiling is evidence about these cases, not a proof of universal governance competence.
 
@@ -301,13 +301,13 @@ Native reconstruction and exact offline replay make artifacts inspectable. Share
 
 ## Conclusion
 
-The completed post-hoc amended dataset supplies all 8,640 planned slot responses for six configurations across ten nominal passes. Its complete-answer, pass-variation, per-case and component results distinguish consequences of ontology changes from warranted evidence use, while exposing substantial serialization effects. The preserved original 8,630-response cohort and ten unknown attempts make the later amendment auditable.
+The completed post-hoc amended dataset supplies all 8,640 planned slot responses for six configurations across ten nominal passes. Its complete-answer, pass-variation, per-case and component results distinguish consequences of ontology changes from warranted evidence use, while excluding a sole presentation fence from task errors. The preserved original 8,630-response cohort and ten unknown attempts make the later amendment auditable.
 
 The defensible contribution is an executable diagnostic study on a fixed inspected development test set, with explicit alternative-answer rules and reproducible conditional summaries. It supports neither a pooled reliability ranking nor an uninterrupted-original-completion or security claim. Future sealed-unit evaluation is needed to test behavior beyond these constructions.
 
 ## Data and code availability
 
-The existing [Level1 repository](https://github.com/prosessleder/semantic-epistemic-governance-level1) supplies the original fixed test set and historical results. The [version 0.2.0 preprint supplement](https://github.com/prosessleder/semantic-epistemic-governance-level1/releases/tag/v0.2.0-preprint) adds the original incomplete and separately amended ten-round final projections, exact scorers/cases, attempt/usage metadata, both full analyses and offline replay. This supplement accompanies the public preprint. In the new ten-round projection, host-specific operational paths and private author/planning records are excluded, with explicit metadata-redaction provenance. Scientific cases, scores, finals, usage and statistical algorithms remain unchanged. Full native HTTP, reasoning and partial/error bodies remain in the private research archive.
+The existing [Level1 repository](https://github.com/prosessleder/semantic-epistemic-governance-level1) supplies the original fixed test set and historical results. The [version 0.2.1 corrected preprint supplement](https://github.com/prosessleder/semantic-epistemic-governance-level1/releases/tag/v0.2.1-preprint) adds the original incomplete and separately amended ten-round final projections, exact scorers/cases, attempt/usage metadata, both full analyses and offline replay. This supplement accompanies the public preprint. In the new ten-round projection, host-specific operational paths and private author/planning records are excluded, with explicit metadata-redaction provenance. Scientific cases, scores, finals, usage and statistical algorithms remain unchanged. Full native HTTP, reasoning and partial/error bodies remain in the private research archive.
 
 ## Author contributions and AI assistance
 
@@ -323,7 +323,7 @@ The author declares no competing interests.
 
 ## All ten nominal pass results
 
-Each entry is complete-answer percentage for all 48 semantic or 96 epistemic DEV inputs in that nominal pass, with no interface or historical observations. Strict and sole-fence tables are separate. Pass labels do not denote synchronized time blocks. The amended semantic pass 5 contains one later Qwen generation; epistemic pass 2 contains two later generations each for Terra, Luna and Haiku, and epistemic pass 5 contains three later Qwen generations. All other cells retain their original received finals. Complete counts, exact times and original/follow-up identifiers are retained in the supplement.
+Each entry is complete-answer percentage for all 48 semantic or 96 epistemic DEV inputs in that nominal pass, with no interface or historical observations. The fence-normalized tables supply the reported task scores; the strict bare-JSON tables separately preserve the original serialization audit. Pass labels do not denote synchronized time blocks. The amended semantic pass 5 contains one later Qwen generation; epistemic pass 2 contains two later generations each for Terra, Luna and Haiku, and epistemic pass 5 contains three later Qwen generations. All other cells retain their original received finals. Complete counts, exact times and original/follow-up identifiers are retained in the supplement.
 
 | Pass |     Sol |  Terra |   Qwen |   Luna | Sonnet | Haiku |
 |:-----|--------:|-------:|-------:|-------:|-------:|------:|
@@ -393,12 +393,12 @@ Per-case counts retain all ten observations of each fixed case. Histograms summa
 |:--------|----:|----:|----:|----:|----:|----:|----:|----:|----:|----:|----:|
 | Sol     |   0 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |  48 |
 | Terra   |   0 |   0 |   0 |   0 |   1 |   0 |   0 |   1 |   4 |  13 |  29 |
-| Qwen    |   0 |   0 |   0 |   0 |   0 |   1 |   1 |   1 |   8 |   7 |  30 |
+| Qwen    |   0 |   0 |   0 |   0 |   0 |   0 |   1 |   1 |   3 |   3 |  40 |
 | Luna    |   0 |   0 |   1 |   2 |   2 |   6 |   8 |   8 |   7 |   5 |   9 |
 | Sonnet  |  14 |   3 |   9 |   5 |   4 |   2 |   3 |   1 |   2 |   4 |   1 |
-| Haiku   |  47 |   0 |   0 |   1 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |
+| Haiku   |   1 |   7 |   4 |   5 |   6 |   7 |   2 |   2 |   6 |   7 |   1 |
 
-Number of fixed semantic DEV inputs with exactly 0 through 10 strict complete-answer successes. Every row sums to 48.
+Number of fixed semantic DEV inputs with exactly 0 through 10 fence-normalized complete-answer successes. Every row sums to 48.
 
 | Config. | Goals | Gains | Witness | Approval | Auth. | Release |
 |:--------|------:|------:|--------:|---------:|------:|--------:|
@@ -426,12 +426,12 @@ Semantic whole-answer components under sole fence scoring; denominator 480 per c
 |:--------|----:|----:|----:|----:|----:|----:|----:|----:|----:|----:|----:|
 | Sol     |   0 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |   2 |  94 |
 | Terra   |   8 |  10 |  11 |  11 |   6 |   3 |   8 |   5 |   7 |  12 |  15 |
-| Qwen    |  19 |  10 |  11 |   9 |   4 |   6 |   8 |   8 |   9 |   8 |   4 |
+| Qwen    |  18 |   9 |  11 |   8 |   3 |   8 |   6 |   6 |  12 |  11 |   4 |
 | Luna    |  25 |  14 |  14 |   6 |   5 |   3 |   7 |   6 |   6 |   4 |   6 |
-| Sonnet  |   0 |   0 |   0 |   3 |   1 |  18 |   9 |  21 |  13 |  16 |  15 |
-| Haiku   |  84 |  12 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |   0 |
+| Sonnet  |   0 |   0 |   0 |   0 |   2 |   5 |   4 |   5 |  12 |  21 |  47 |
+| Haiku   |   1 |   2 |   5 |   6 |   6 |   5 |   7 |   7 |  12 |  16 |  29 |
 
-Number of fixed epistemic DEV inputs with exactly 0 through 10 strict complete-answer successes. Every row sums to 96.
+Number of fixed epistemic DEV inputs with exactly 0 through 10 fence-normalized complete-answer successes. Every row sums to 96.
 
 | Config. | Facts | Repair | Decisions | Possible | Query |
 |:--------|------:|-------:|----------:|---------:|------:|

@@ -1,10 +1,10 @@
 # Semantic and Epistemic Governance: Ten-Run Results on the Basic Level 1 Tests
 
-**Paper 2: Basic Level 1. Public preprint, version `0.2.0-preprint`, released 19 October 2026. Not peer reviewed.** [Download the manuscript and scientific supplement](https://github.com/prosessleder/semantic-epistemic-governance-level1/releases/tag/v0.2.0-preprint). The original fixed benchmark identifier remains `level1-fixed-2026-10-16`.
+**Paper 2: Basic Level 1. Public preprint, version `0.2.1-preprint`, released 19 October 2026. Not peer reviewed.** [Download the manuscript and scientific supplement](https://github.com/prosessleder/semantic-epistemic-governance-level1/releases/tag/v0.2.1-preprint). The original fixed benchmark identifier remains `level1-fixed-2026-10-16`.
 
 The paper now reports all ten nominal passes for six hosted configurations on 48 semantic DEV cases and 96 epistemic DEV packets per pass. The principal result view is explicitly **post-hoc amended**: 8,630 original received finals plus ten later fresh generations linked to the original unknown slots yield 8,640 observed finals and twelve complete model-tracks. The original primary study remains incomplete, with ten unknown outcomes and five unavailable full-ten model-track summaries. No received answer was replaced, no answer was chosen by correctness, and every failed/unknown attempt reservation remains retained.
 
-All configurations requested medium native reasoning with a 32,768 combined reasoning/output-token cap. Strict typed bare JSON is primary; sole-outer-fence normalization is a separate sensitivity. The twelve semantic construction groups and twelve epistemic units remain correlated inspected DEV material. Repetition adds no independent task units. Scheduling amendments, later follow-up timing/load and missingness limit exchangeability; there is no equal-compute, population-reliability, held-out or containment claim.
+All configurations requested medium native reasoning with a 32,768 combined reasoning/output-token cap. The main reported task score ignores a sole outer Markdown code fence. This version promotes the previously computed `framing_sensitivity` view; the original strict bare-JSON scores remain an unchanged serialization audit. No response is omitted or substantively repaired. See [the reporting correction](CORRECTION-0.2.1.md). The twelve semantic construction groups and twelve epistemic units remain correlated inspected DEV material. Repetition adds no independent task units. Scheduling amendments, later follow-up timing/load and missingness limit exchangeability; there is no equal-compute, population-reliability, held-out or containment claim.
 
 ## Manuscript and ten-round results
 
@@ -42,7 +42,7 @@ Optional authoring dependencies are Pandoc, Tectonic and matplotlib. The canonic
 ```sh
 python scripts/build_paper.py --figures --pdf
 python scripts/audit_manuscript.py
-python scripts/package_publication.py
+python scripts/package_publication_v021.py
 ```
 
 The publication ZIP uses a scientific allowlist. It excludes authoring instructions, private review/planning, live runs, native HTTP/reasoning, credentials and compiler scratch files. Its manifests bind exact included bytes. Older release manifests remain historical; document/package version changes do not regenerate the benchmark.
@@ -51,4 +51,4 @@ The publication ZIP uses a scientific allowlist. It excludes authoring instructi
 
 Timothy O’Brien is the sole author, an independent researcher without institutional affiliation. No external funding was received. Codex assisted research and manuscript preparation; accountability remains with the author. The author confirms no competing interests. A venue-specific submission must also follow that venue's current instructions.
 
-Code is MIT; author-generated data/documentation are CC BY 4.0. Saved final model responses support offline reproduction; third-party sources retain their rights. This is a public preprint with no assigned DOI. No journal submission, acceptance or independent external peer review is claimed.
+Code is MIT; author-generated data/documentation are CC BY 4.0. Saved final model responses support offline reproduction; third-party sources retain their rights. The corrected public preprint is [DOI 10.5281/zenodo.23487873](https://doi.org/10.5281/zenodo.23487873); its [previous version](https://doi.org/10.5281/zenodo.23482583) remains available. No journal submission, acceptance or independent external peer review is claimed.

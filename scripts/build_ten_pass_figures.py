@@ -18,13 +18,13 @@ def build():
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,'axes.spines.right':False})
     fig,axes=plt.subplots(1,2,figsize=(11,5.6),sharey=True,layout='constrained')
     for ax,t in zip(axes,['semantic','epistemic']):
-        u=a['unit_sensitivity'][t+'--primary']
+        u=a['unit_sensitivity'][t+'--framing_sensitivity']
         for i,alias in enumerate(ALIASES):
-            z=a['models'][alias][t]['primary']['ten_round_summary']
+            z=a['models'][alias][t]['framing_sensitivity']['ten_round_summary']
             lo,hi=u['case_weighted_intervals'][alias];ax.plot([lo,hi],[i,i],color='#A76F3E',linewidth=1.8,label='Unit-resampling sensitivity' if i==0 else None)
             lo,hi=z['fixed_corpus_generation_resampling_interval'];ax.plot([lo,hi],[i,i],color='#2166AC',linewidth=5,label='Generation interval (fixed test set)' if i==0 else None)
             ax.scatter([z['mean']],[i],color='#152E40',s=30,zorder=3)
-        ax.set_title(t.capitalize()+' · strict scoring');ax.set_xlim(-.01,1.025);ax.xaxis.set_major_formatter(PercentFormatter(1));ax.grid(axis='x',alpha=.15);ax.set_xlabel('Amended ten-pass complete-answer mean')
+        ax.set_title(t.capitalize()+' · fence-normalized scoring');ax.set_xlim(-.01,1.025);ax.xaxis.set_major_formatter(PercentFormatter(1));ax.grid(axis='x',alpha=.15);ax.set_xlabel('Amended ten-pass complete-answer mean')
     axes[0].set_yticks(range(6),LABELS);axes[0].invert_yaxis()
     handles,labels=axes[0].get_legend_handles_labels();fig.legend(handles,labels,loc='outside lower center',ncol=2,frameon=False)
     fig.suptitle('Basic Level 1: amended ten-run results, two conditional 95% intervals\nOriginal primary remains incomplete; ten later follow-ups are included',fontsize=11)

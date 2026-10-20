@@ -1,5 +1,5 @@
 {
-  "version": "ten-pass-amended-manuscript-v1",
+  "version": "ten-pass-manuscript-generated-v0.2.1",
   "analysis_sha256": "c84c0f30698f30ca6947111eb898af109733d13586dccb8a8291619c0194bb4d",
   "original_analysis_sha256": "f494247a65190491bc489ed5048247806712edf72e1efadd63eef9946c957a57",
   "tables": {
@@ -13,32 +13,32 @@
       "rows": [
         [
           "Sol",
-          "\\texttt{openai/gpt-6.1-sol}",
+          "openai/gpt-6.1-sol",
           "OpenAI"
         ],
         [
           "Terra",
-          "\\texttt{openai/gpt-5.6-terra}",
+          "openai/gpt-5.6-terra",
           "OpenAI"
         ],
         [
           "Qwen",
-          "\\texttt{qwen/qwen3.8-27b}",
+          "qwen/qwen3.8-27b",
           "Chutes FP8"
         ],
         [
           "Luna",
-          "\\texttt{openai/gpt-6-luna}",
+          "openai/gpt-6-luna",
           "OpenAI"
         ],
         [
           "Sonnet",
-          "\\texttt{anthropic/claude-sonnet-5.5}",
+          "anthropic/claude-sonnet-5.5",
           "Anthropic"
         ],
         [
           "Haiku",
-          "\\texttt{anthropic/claude-haiku-5.5}",
+          "anthropic/claude-haiku-5.5",
           "Anthropic"
         ]
       ]
@@ -91,15 +91,14 @@
       ]
     },
     "tab:ten-pass-summary": {
-      "caption": "Post-hoc amended complete-answer results. S=semantic, E=epistemic. Mean and range are percentages; sample SD is percentage points across ten nominal passes. Sole-fence scoring changes only a sole outer code fence. All settings: medium native reasoning, 32,768 combined tokens.",
+      "caption": "Post-hoc amended complete-answer results after sole-outer-fence normalization. S=semantic, E=epistemic. All received responses remain in the denominator. Mean and range are percentages; sample SD is percentage points across ten nominal passes. All settings: medium native reasoning, 32,768 combined tokens.",
       "headers": [
         "Config.",
         "Track",
-        "Strict correct",
-        "Strict mean",
+        "Correct",
+        "Mean",
         "SD",
-        "Pass range",
-        "Fence mean"
+        "Pass range"
       ],
       "rows": [
         [
@@ -108,8 +107,7 @@
           "480/480",
           "100.000",
           "0.000",
-          "100.000--100.000",
-          "100.000"
+          "100.000--100.000"
         ],
         [
           "Sol",
@@ -117,8 +115,7 @@
           "958/960",
           "99.792",
           "0.439",
-          "98.958--100.000",
-          "99.792"
+          "98.958--100.000"
         ],
         [
           "Terra",
@@ -126,8 +123,7 @@
           "450/480",
           "93.750",
           "2.406",
-          "89.583--97.917",
-          "93.750"
+          "89.583--97.917"
         ],
         [
           "Terra",
@@ -135,26 +131,23 @@
           "501/960",
           "52.188",
           "4.539",
-          "45.833--59.375",
-          "52.188"
+          "45.833--59.375"
         ],
         [
           "Qwen",
           "S",
-          "445/480",
-          "92.708",
-          "2.250",
-          "89.583--95.833",
-          "96.667"
+          "464/480",
+          "96.667",
+          "3.137",
+          "91.667--100.000"
         ],
         [
           "Qwen",
           "E",
-          "393/960",
-          "40.938",
-          "5.358",
-          "34.375--50.000",
-          "43.750"
+          "420/960",
+          "43.750",
+          "5.913",
+          "37.500--54.167"
         ],
         [
           "Luna",
@@ -162,8 +155,7 @@
           "341/480",
           "71.042",
           "8.531",
-          "56.250--85.417",
-          "71.042"
+          "56.250--85.417"
         ],
         [
           "Luna",
@@ -171,8 +163,7 @@
           "323/960",
           "33.646",
           "2.506",
-          "29.167--37.500",
-          "33.646"
+          "29.167--37.500"
         ],
         [
           "Sonnet",
@@ -180,40 +171,36 @@
           "149/480",
           "31.042",
           "3.860",
-          "27.083--39.583",
-          "31.042"
+          "27.083--39.583"
         ],
         [
           "Sonnet",
           "E",
-          "702/960",
-          "73.125",
-          "4.331",
-          "62.500--78.125",
-          "88.229"
+          "847/960",
+          "88.229",
+          "4.110",
+          "79.167--91.667"
         ],
         [
           "Haiku",
           "S",
-          "3/480",
-          "0.625",
-          "1.006",
-          "0.000--2.083",
-          "49.167"
+          "236/480",
+          "49.167",
+          "5.909",
+          "37.500--56.250"
         ],
         [
           "Haiku",
           "E",
-          "12/960",
-          "1.250",
-          "1.076",
-          "0.000--3.125",
-          "72.917"
+          "700/960",
+          "72.917",
+          "2.734",
+          "67.708--78.125"
         ]
       ]
     },
     "tab:ten-pass-intervals": {
-      "caption": "Strict complete-answer summaries: two distinct conditional 95\\% percentile intervals, in percent. Unit interval is case-weighted; the last column is the separately defined equal-unit mean. Equal-unit intervals and both-parser summaries are supplied in the supplement. These are not unseen-task reliability bounds.",
+      "caption": "Fence-normalized complete-answer summaries: two distinct conditional 95\\% percentile intervals, in percent. Unit interval is case-weighted; the last column is the separately defined equal-unit mean. Equal-unit intervals and both-parser summaries are supplied in the supplement. These are not unseen-task reliability bounds.",
       "headers": [
         "Config.",
         "Track",
@@ -253,16 +240,16 @@
         [
           "Qwen",
           "S",
-          "90.625--94.792",
-          "90.208--95.000",
-          "93.472"
+          "95.208--97.917",
+          "94.583--98.636",
+          "97.778"
         ],
         [
           "Qwen",
           "E",
-          "38.646--43.229",
-          "35.833--46.667",
-          "40.938"
+          "41.458--46.042",
+          "38.750--49.375",
+          "43.750"
         ],
         [
           "Luna",
@@ -288,23 +275,23 @@
         [
           "Sonnet",
           "E",
-          "70.625--75.625",
-          "67.396--78.125",
-          "73.125"
+          "86.458--90.000",
+          "84.479--91.875",
+          "88.229"
         ],
         [
           "Haiku",
           "S",
-          "0.000--1.250",
-          "0.000--2.250",
-          "1.250"
+          "45.625--52.917",
+          "41.818--55.227",
+          "47.500"
         ],
         [
           "Haiku",
           "E",
-          "0.625--1.979",
-          "0.521--2.083",
-          "1.250"
+          "70.729--75.104",
+          "65.833--80.417",
+          "72.917"
         ]
       ]
     },
@@ -1051,7 +1038,7 @@
       ]
     },
     "tab:consistency-semantic": {
-      "caption": "Number of fixed semantic DEV inputs with exactly 0 through 10 strict complete-answer successes. Every row sums to 48.",
+      "caption": "Number of fixed semantic DEV inputs with exactly 0 through 10 fence-normalized complete-answer successes. Every row sums to 48.",
       "headers": [
         "Config.",
         "0",
@@ -1102,12 +1089,12 @@
           0,
           0,
           0,
+          0,
           1,
           1,
-          1,
-          8,
-          7,
-          30
+          3,
+          3,
+          40
         ],
         [
           "Luna",
@@ -1139,17 +1126,17 @@
         ],
         [
           "Haiku",
-          47,
-          0,
-          0,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
+          7,
+          4,
+          5,
+          6,
+          7,
+          2,
+          2,
+          6,
+          7,
+          1
         ]
       ]
     },
@@ -1290,7 +1277,7 @@
       ]
     },
     "tab:consistency-epistemic": {
-      "caption": "Number of fixed epistemic DEV inputs with exactly 0 through 10 strict complete-answer successes. Every row sums to 96.",
+      "caption": "Number of fixed epistemic DEV inputs with exactly 0 through 10 fence-normalized complete-answer successes. Every row sums to 96.",
       "headers": [
         "Config.",
         "0",
@@ -1336,16 +1323,16 @@
         ],
         [
           "Qwen",
-          19,
-          10,
+          18,
+          9,
           11,
-          9,
-          4,
+          8,
+          3,
+          8,
           6,
-          8,
-          8,
-          9,
-          8,
+          6,
+          12,
+          11,
           4
         ],
         [
@@ -1367,28 +1354,28 @@
           0,
           0,
           0,
-          3,
-          1,
-          18,
-          9,
+          0,
+          2,
+          5,
+          4,
+          5,
+          12,
           21,
-          13,
-          16,
-          15
+          47
         ],
         [
           "Haiku",
-          84,
+          1,
+          2,
+          5,
+          6,
+          6,
+          5,
+          7,
+          7,
           12,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
+          16,
+          29
         ]
       ]
     },
@@ -1572,22 +1559,23 @@
   "blocks": {
     "tab:configurations": "\\begin{table}[htbp]\\centering\\small\n\\caption{All six recorded configurations: requested medium native reasoning and a 32,768 combined-token allowance. Short names identify these hosted configurations, not fixed model weights or an equal-compute condition.}\\label{tab:configurations}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lll}\\toprule\nShort name & Model identifier & Pinned provider\\\\\\midrule\nSol & \\texttt{openai/gpt-6.1-sol} & OpenAI\\\\\nTerra & \\texttt{openai/gpt-5.6-terra} & OpenAI\\\\\nQwen & \\texttt{qwen/qwen3.8-27b} & Chutes FP8\\\\\nLuna & \\texttt{openai/gpt-6-luna} & OpenAI\\\\\nSonnet & \\texttt{anthropic/claude-sonnet-5.5} & Anthropic\\\\\nHaiku & \\texttt{anthropic/claude-haiku-5.5} & Anthropic\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:execution": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Execution history. The first four legs comprise the incomplete original primary cohort; the final row is a separately authorized post-hoc missing-outcome follow-up. Failed attempts and unknowns are retained, not counted as received task answers.}\\label{tab:execution}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrr}\\toprule\nExecution & Received finals & New unknowns & Transient failures & Closed attempts\\\\\\midrule\nOriginal & 765 & 0 & 1 & 766\\\\\nQueue continuation & 451 & 6 & 0 & 457\\\\\nNever-submitted recovery & 6,672 & 4 & 2 & 6,678\\\\\nFinal never-submitted leg & 742 & 0 & 0 & 742\\\\\nUnknown-outcome follow-up & 10 & 0 & 0 & 10\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
-    "tab:ten-pass-summary": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Post-hoc amended complete-answer results. S=semantic, E=epistemic. Mean and range are percentages; sample SD is percentage points across ten nominal passes. Sole-fence scoring changes only a sole outer code fence. All settings: medium native reasoning, 32,768 combined tokens.}\\label{tab:ten-pass-summary}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrr}\\toprule\nConfig. & Track & Strict correct & Strict mean & SD & Pass range & Fence mean\\\\\\midrule\nSol & S & 480/480 & 100.000 & 0.000 & 100.000--100.000 & 100.000\\\\\nSol & E & 958/960 & 99.792 & 0.439 & 98.958--100.000 & 99.792\\\\\nTerra & S & 450/480 & 93.750 & 2.406 & 89.583--97.917 & 93.750\\\\\nTerra & E & 501/960 & 52.188 & 4.539 & 45.833--59.375 & 52.188\\\\\nQwen & S & 445/480 & 92.708 & 2.250 & 89.583--95.833 & 96.667\\\\\nQwen & E & 393/960 & 40.938 & 5.358 & 34.375--50.000 & 43.750\\\\\nLuna & S & 341/480 & 71.042 & 8.531 & 56.250--85.417 & 71.042\\\\\nLuna & E & 323/960 & 33.646 & 2.506 & 29.167--37.500 & 33.646\\\\\nSonnet & S & 149/480 & 31.042 & 3.860 & 27.083--39.583 & 31.042\\\\\nSonnet & E & 702/960 & 73.125 & 4.331 & 62.500--78.125 & 88.229\\\\\nHaiku & S & 3/480 & 0.625 & 1.006 & 0.000--2.083 & 49.167\\\\\nHaiku & E & 12/960 & 1.250 & 1.076 & 0.000--3.125 & 72.917\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
-    "tab:ten-pass-intervals": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Strict complete-answer summaries: two distinct conditional 95\\% percentile intervals, in percent. Unit interval is case-weighted; the last column is the separately defined equal-unit mean. Equal-unit intervals and both-parser summaries are supplied in the supplement. These are not unseen-task reliability bounds.}\\label{tab:ten-pass-intervals}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrr}\\toprule\nConfig. & Track & Generation interval & Unit sensitivity & Equal-unit mean\\\\\\midrule\nSol & S & 100.000--100.000 & 100.000--100.000 & 100.000\\\\\nSol & E & 99.479--100.000 & 99.375--100.000 & 99.792\\\\\nTerra & S & 91.667--95.625 & 90.417--97.143 & 95.000\\\\\nTerra & E & 49.896--54.479 & 46.771--57.604 & 52.188\\\\\nQwen & S & 90.625--94.792 & 90.208--95.000 & 93.472\\\\\nQwen & E & 38.646--43.229 & 35.833--46.667 & 40.938\\\\\nLuna & S & 67.500--74.583 & 65.417--76.667 & 71.250\\\\\nLuna & E & 31.562--35.833 & 30.104--37.083 & 33.646\\\\\nSonnet & S & 27.917--34.167 & 25.455--36.167 & 30.139\\\\\nSonnet & E & 70.625--75.625 & 67.396--78.125 & 73.125\\\\\nHaiku & S & 0.000--1.250 & 0.000--2.250 & 1.250\\\\\nHaiku & E & 0.625--1.979 & 0.521--2.083 & 1.250\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
-    "fig:ten-pass-intervals": "\\begin{figure}[htbp]\\centering\n\\begin{tikzpicture}\n\\begin{groupplot}[group style={group size=2 by 1,horizontal sep=0.8cm},width=0.44\\linewidth,height=6cm,xmin=0,xmax=102,xtick={0,25,50,75,100},ymin=0.5,ymax=6.5,ytick={1,2,3,4,5,6},yticklabels={Sol,Terra,Qwen,Luna,Sonnet,Haiku},y dir=reverse,tick label style={font=\\scriptsize},label style={font=\\scriptsize},title style={font=\\small},xlabel={Strict amended mean (\\%)},xmajorgrids]\n\\nextgroupplot[title={Semantic}]\n\\addplot[orange!80!black,line width=1pt] coordinates {(100.00000000,1) (100.00000000,1)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(100.00000000,1) (100.00000000,1)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(100.00000000,1)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(90.41666667,2) (97.14285714,2)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(91.66666667,2) (95.62500000,2)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(93.75000000,2)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(90.20833333,3) (95.00000000,3)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(90.62500000,3) (94.79166667,3)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(92.70833333,3)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(65.41666667,4) (76.66666667,4)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(67.50000000,4) (74.58333333,4)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(71.04166667,4)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(25.45454545,5) (36.16666667,5)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(27.91666667,5) (34.16666667,5)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(31.04166667,5)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(0.00000000,6) (2.25000000,6)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(0.00000000,6) (1.25000000,6)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(0.62500000,6)};\n\\nextgroupplot[title={Epistemic},yticklabels={}]\n\\addplot[orange!80!black,line width=1pt] coordinates {(99.37500000,1) (100.00000000,1)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(99.47916667,1) (100.00000000,1)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(99.79166667,1)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(46.77083333,2) (57.60416667,2)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(49.89583333,2) (54.47916667,2)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(52.18750000,2)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(35.83333333,3) (46.66666667,3)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(38.64583333,3) (43.22916667,3)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(40.93750000,3)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(30.10416667,4) (37.08333333,4)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(31.56250000,4) (35.83333333,4)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(33.64583333,4)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(67.39583333,5) (78.12500000,5)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(70.62500000,5) (75.62500000,5)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(73.12500000,5)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(0.52083333,6) (2.08333333,6)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(0.62500000,6) (1.97916667,6)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(1.25000000,6)};\n\\end{groupplot}\n\\end{tikzpicture}\n\\caption{Strict complete-answer means (points), generation intervals for the fixed test set (thick blue) and separate unit-resampling sensitivities (thin orange). All include the ten post-hoc follow-ups; the original study remains incomplete. These conditional intervals address different questions.}\\label{fig:ten-pass-intervals}\n\\end{figure}\n",
+    "tab:ten-pass-summary": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Post-hoc amended complete-answer results after sole-outer-fence normalization. S=semantic, E=epistemic. All received responses remain in the denominator. Mean and range are percentages; sample SD is percentage points across ten nominal passes. All settings: medium native reasoning, 32,768 combined tokens.}\\label{tab:ten-pass-summary}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrr}\\toprule\nConfig. & Track & Correct & Mean & SD & Pass range\\\\\\midrule\nSol & S & 480/480 & 100.000 & 0.000 & 100.000--100.000\\\\\nSol & E & 958/960 & 99.792 & 0.439 & 98.958--100.000\\\\\nTerra & S & 450/480 & 93.750 & 2.406 & 89.583--97.917\\\\\nTerra & E & 501/960 & 52.188 & 4.539 & 45.833--59.375\\\\\nQwen & S & 464/480 & 96.667 & 3.137 & 91.667--100.000\\\\\nQwen & E & 420/960 & 43.750 & 5.913 & 37.500--54.167\\\\\nLuna & S & 341/480 & 71.042 & 8.531 & 56.250--85.417\\\\\nLuna & E & 323/960 & 33.646 & 2.506 & 29.167--37.500\\\\\nSonnet & S & 149/480 & 31.042 & 3.860 & 27.083--39.583\\\\\nSonnet & E & 847/960 & 88.229 & 4.110 & 79.167--91.667\\\\\nHaiku & S & 236/480 & 49.167 & 5.909 & 37.500--56.250\\\\\nHaiku & E & 700/960 & 72.917 & 2.734 & 67.708--78.125\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
+    "tab:ten-pass-intervals": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Fence-normalized complete-answer summaries: two distinct conditional 95\\% percentile intervals, in percent. Unit interval is case-weighted; the last column is the separately defined equal-unit mean. Equal-unit intervals and both-parser summaries are supplied in the supplement. These are not unseen-task reliability bounds.}\\label{tab:ten-pass-intervals}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrr}\\toprule\nConfig. & Track & Generation interval & Unit sensitivity & Equal-unit mean\\\\\\midrule\nSol & S & 100.000--100.000 & 100.000--100.000 & 100.000\\\\\nSol & E & 99.479--100.000 & 99.375--100.000 & 99.792\\\\\nTerra & S & 91.667--95.625 & 90.417--97.143 & 95.000\\\\\nTerra & E & 49.896--54.479 & 46.771--57.604 & 52.188\\\\\nQwen & S & 95.208--97.917 & 94.583--98.636 & 97.778\\\\\nQwen & E & 41.458--46.042 & 38.750--49.375 & 43.750\\\\\nLuna & S & 67.500--74.583 & 65.417--76.667 & 71.250\\\\\nLuna & E & 31.562--35.833 & 30.104--37.083 & 33.646\\\\\nSonnet & S & 27.917--34.167 & 25.455--36.167 & 30.139\\\\\nSonnet & E & 86.458--90.000 & 84.479--91.875 & 88.229\\\\\nHaiku & S & 45.625--52.917 & 41.818--55.227 & 47.500\\\\\nHaiku & E & 70.729--75.104 & 65.833--80.417 & 72.917\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
+    "fig:ten-pass-intervals": "\\begin{figure}[htbp]\\centering\n\\begin{tikzpicture}\n\\begin{groupplot}[group style={group size=2 by 1,horizontal sep=0.8cm},width=0.44\\linewidth,height=6cm,xmin=0,xmax=102,xtick={0,25,50,75,100},ymin=0.5,ymax=6.5,ytick={1,2,3,4,5,6},yticklabels={Sol,Terra,Qwen,Luna,Sonnet,Haiku},y dir=reverse,tick label style={font=\\scriptsize},label style={font=\\scriptsize},title style={font=\\small},xlabel={Normalized amended mean (\\%)},xmajorgrids]\n\\nextgroupplot[title={Semantic}]\n\\addplot[orange!80!black,line width=1pt] coordinates {(100.00000000,1) (100.00000000,1)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(100.00000000,1) (100.00000000,1)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(100.00000000,1)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(90.41666667,2) (97.14285714,2)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(91.66666667,2) (95.62500000,2)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(93.75000000,2)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(94.58333333,3) (98.63636364,3)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(95.20833333,3) (97.91666667,3)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(96.66666667,3)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(65.41666667,4) (76.66666667,4)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(67.50000000,4) (74.58333333,4)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(71.04166667,4)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(25.45454545,5) (36.16666667,5)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(27.91666667,5) (34.16666667,5)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(31.04166667,5)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(41.81818182,6) (55.22727273,6)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(45.62500000,6) (52.91666667,6)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(49.16666667,6)};\n\\nextgroupplot[title={Epistemic},yticklabels={}]\n\\addplot[orange!80!black,line width=1pt] coordinates {(99.37500000,1) (100.00000000,1)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(99.47916667,1) (100.00000000,1)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(99.79166667,1)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(46.77083333,2) (57.60416667,2)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(49.89583333,2) (54.47916667,2)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(52.18750000,2)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(38.75000000,3) (49.37500000,3)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(41.45833333,3) (46.04166667,3)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(43.75000000,3)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(30.10416667,4) (37.08333333,4)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(31.56250000,4) (35.83333333,4)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(33.64583333,4)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(84.47916667,5) (91.87500000,5)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(86.45833333,5) (90.00000000,5)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(88.22916667,5)};\n\\addplot[orange!80!black,line width=1pt] coordinates {(65.83333333,6) (80.41666667,6)};\n\\addplot[blue!60!black,line width=3pt] coordinates {(70.72916667,6) (75.10416667,6)};\n\\addplot[only marks,mark=*,mark size=1.8pt,black] coordinates {(72.91666667,6)};\n\\end{groupplot}\n\\end{tikzpicture}\n\\caption{Fence-normalized complete-answer means (points), generation intervals for the fixed test set (thick blue) and separate unit-resampling sensitivities (thin orange). All include the ten post-hoc follow-ups; the original study remains incomplete. These conditional intervals address different questions.}\\label{fig:ten-pass-intervals}\n\\end{figure}\n",
     "tab:native-outcomes": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Mutually exclusive amended outcome categories. S rows sum to 480; E rows to 960. Error means a parsed, schema-valid completed task error; Parse and Schema are distinct. Every received final had native stop status; there were no received length/filter/provider-error finishes. Original unresolved transport attempts remain outside these delivered-response rows.}\\label{tab:native-outcomes}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrr}\\toprule\nConfig. & Track & Parser & Correct & Error & Parse & Schema\\\\\\midrule\nSol & S & strict & 480 & 0 & 0 & 0\\\\\nSol & S & fence & 480 & 0 & 0 & 0\\\\\nSol & E & strict & 958 & 2 & 0 & 0\\\\\nSol & E & fence & 958 & 2 & 0 & 0\\\\\nTerra & S & strict & 450 & 30 & 0 & 0\\\\\nTerra & S & fence & 450 & 30 & 0 & 0\\\\\nTerra & E & strict & 501 & 459 & 0 & 0\\\\\nTerra & E & fence & 501 & 459 & 0 & 0\\\\\nQwen & S & strict & 445 & 15 & 20 & 0\\\\\nQwen & S & fence & 464 & 16 & 0 & 0\\\\\nQwen & E & strict & 393 & 510 & 57 & 0\\\\\nQwen & E & fence & 420 & 540 & 0 & 0\\\\\nLuna & S & strict & 341 & 139 & 0 & 0\\\\\nLuna & S & fence & 341 & 139 & 0 & 0\\\\\nLuna & E & strict & 323 & 636 & 0 & 1\\\\\nLuna & E & fence & 323 & 636 & 0 & 1\\\\\nSonnet & S & strict & 149 & 2 & 329 & 0\\\\\nSonnet & S & fence & 149 & 2 & 329 & 0\\\\\nSonnet & E & strict & 702 & 88 & 166 & 4\\\\\nSonnet & E & fence & 847 & 107 & 0 & 6\\\\\nHaiku & S & strict & 3 & 0 & 477 & 0\\\\\nHaiku & S & fence & 236 & 2 & 242 & 0\\\\\nHaiku & E & strict & 12 & 5 & 943 & 0\\\\\nHaiku & E & fence & 700 & 258 & 0 & 2\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:original-primary": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Immutable original primary cohort before unknown-outcome follow-ups. Full-ten strict means (percent) remain unavailable for all five incomplete tracks. Later responses appear only in the separately labeled amended dataset.}\\label{tab:original-primary}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrr}\\toprule\nConfig. & Track & Received/planned & Unknown & Full-ten mean\\\\\\midrule\nSol & S & 480/480 & 0 & 100.000\\\\\nSol & E & 960/960 & 0 & 99.792\\\\\nTerra & S & 480/480 & 0 & 93.750\\\\\nTerra & E & 958/960 & 2 & Unavailable\\\\\nQwen & S & 479/480 & 1 & Unavailable\\\\\nQwen & E & 957/960 & 3 & Unavailable\\\\\nLuna & S & 480/480 & 0 & 71.042\\\\\nLuna & E & 958/960 & 2 & Unavailable\\\\\nSonnet & S & 480/480 & 0 & 31.042\\\\\nSonnet & E & 960/960 & 0 & 73.125\\\\\nHaiku & S & 480/480 & 0 & 0.625\\\\\nHaiku & E & 958/960 & 2 & Unavailable\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:rounds-semantic-primary": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Semantic complete-answer percentages in every nominal pass; strict bare JSON. Later missing-outcome generations retain their original slot pass labels as disclosed in the text.}\\label{tab:rounds-semantic-primary}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrr}\\toprule\nPass & Sol & Terra & Qwen & Luna & Sonnet & Haiku\\\\\\midrule\n1 & 100.000 & 95.833 & 89.583 & 66.667 & 31.250 & 0.000\\\\\n2 & 100.000 & 93.750 & 93.750 & 70.833 & 27.083 & 0.000\\\\\n3 & 100.000 & 95.833 & 95.833 & 70.833 & 39.583 & 0.000\\\\\n4 & 100.000 & 93.750 & 91.667 & 85.417 & 29.167 & 0.000\\\\\n5 & 100.000 & 89.583 & 91.667 & 68.750 & 27.083 & 0.000\\\\\n6 & 100.000 & 97.917 & 93.750 & 66.667 & 29.167 & 0.000\\\\\n7 & 100.000 & 93.750 & 95.833 & 83.333 & 35.417 & 2.083\\\\\n8 & 100.000 & 93.750 & 93.750 & 56.250 & 31.250 & 2.083\\\\\n9 & 100.000 & 91.667 & 89.583 & 75.000 & 29.167 & 0.000\\\\\n10 & 100.000 & 91.667 & 91.667 & 66.667 & 31.250 & 2.083\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:rounds-semantic-framing_sensitivity": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Semantic complete-answer percentages in every nominal pass; sole outer fence. Later missing-outcome generations retain their original slot pass labels as disclosed in the text.}\\label{tab:rounds-semantic-framing_sensitivity}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrr}\\toprule\nPass & Sol & Terra & Qwen & Luna & Sonnet & Haiku\\\\\\midrule\n1 & 100.000 & 95.833 & 93.750 & 66.667 & 31.250 & 45.833\\\\\n2 & 100.000 & 93.750 & 100.000 & 70.833 & 27.083 & 54.167\\\\\n3 & 100.000 & 95.833 & 100.000 & 70.833 & 39.583 & 52.083\\\\\n4 & 100.000 & 93.750 & 93.750 & 85.417 & 29.167 & 52.083\\\\\n5 & 100.000 & 89.583 & 93.750 & 68.750 & 27.083 & 47.917\\\\\n6 & 100.000 & 97.917 & 97.917 & 66.667 & 29.167 & 41.667\\\\\n7 & 100.000 & 93.750 & 100.000 & 83.333 & 35.417 & 52.083\\\\\n8 & 100.000 & 93.750 & 97.917 & 56.250 & 31.250 & 37.500\\\\\n9 & 100.000 & 91.667 & 97.917 & 75.000 & 29.167 & 56.250\\\\\n10 & 100.000 & 91.667 & 91.667 & 66.667 & 31.250 & 52.083\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:rounds-epistemic-primary": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Epistemic complete-answer percentages in every nominal pass; strict bare JSON. Later missing-outcome generations retain their original slot pass labels as disclosed in the text.}\\label{tab:rounds-epistemic-primary}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrr}\\toprule\nPass & Sol & Terra & Qwen & Luna & Sonnet & Haiku\\\\\\midrule\n1 & 100.000 & 48.958 & 50.000 & 35.417 & 76.042 & 3.125\\\\\n2 & 98.958 & 59.375 & 42.708 & 33.333 & 75.000 & 1.042\\\\\n3 & 100.000 & 45.833 & 48.958 & 34.375 & 71.875 & 1.042\\\\\n4 & 100.000 & 55.208 & 34.375 & 37.500 & 77.083 & 1.042\\\\\n5 & 100.000 & 55.208 & 41.667 & 31.250 & 71.875 & 1.042\\\\\n6 & 100.000 & 47.917 & 36.458 & 32.292 & 72.917 & 0.000\\\\\n7 & 100.000 & 53.125 & 39.583 & 36.458 & 72.917 & 0.000\\\\\n8 & 98.958 & 47.917 & 36.458 & 32.292 & 62.500 & 1.042\\\\\n9 & 100.000 & 51.042 & 36.458 & 29.167 & 78.125 & 3.125\\\\\n10 & 100.000 & 57.292 & 42.708 & 34.375 & 72.917 & 1.042\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:rounds-epistemic-framing_sensitivity": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Epistemic complete-answer percentages in every nominal pass; sole outer fence. Later missing-outcome generations retain their original slot pass labels as disclosed in the text.}\\label{tab:rounds-epistemic-framing_sensitivity}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrr}\\toprule\nPass & Sol & Terra & Qwen & Luna & Sonnet & Haiku\\\\\\midrule\n1 & 100.000 & 48.958 & 54.167 & 35.417 & 90.625 & 72.917\\\\\n2 & 98.958 & 59.375 & 47.917 & 33.333 & 91.667 & 67.708\\\\\n3 & 100.000 & 45.833 & 51.042 & 34.375 & 90.625 & 73.958\\\\\n4 & 100.000 & 55.208 & 37.500 & 37.500 & 91.667 & 70.833\\\\\n5 & 100.000 & 55.208 & 45.833 & 31.250 & 84.375 & 75.000\\\\\n6 & 100.000 & 47.917 & 40.625 & 32.292 & 87.500 & 73.958\\\\\n7 & 100.000 & 53.125 & 41.667 & 36.458 & 85.417 & 72.917\\\\\n8 & 98.958 & 47.917 & 37.500 & 32.292 & 79.167 & 78.125\\\\\n9 & 100.000 & 51.042 & 37.500 & 29.167 & 90.625 & 71.875\\\\\n10 & 100.000 & 57.292 & 43.750 & 34.375 & 90.625 & 71.875\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
-    "tab:consistency-semantic": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Number of fixed semantic DEV inputs with exactly 0 through 10 strict complete-answer successes. Every row sums to 48.}\\label{tab:consistency-semantic}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrrrrrrr}\\toprule\nConfig. & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\\\\\midrule\nSol & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 48\\\\\nTerra & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 4 & 13 & 29\\\\\nQwen & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 8 & 7 & 30\\\\\nLuna & 0 & 0 & 1 & 2 & 2 & 6 & 8 & 8 & 7 & 5 & 9\\\\\nSonnet & 14 & 3 & 9 & 5 & 4 & 2 & 3 & 1 & 2 & 4 & 1\\\\\nHaiku & 47 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
+    "tab:consistency-semantic": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Number of fixed semantic DEV inputs with exactly 0 through 10 fence-normalized complete-answer successes. Every row sums to 48.}\\label{tab:consistency-semantic}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrrrrrrr}\\toprule\nConfig. & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\\\\\midrule\nSol & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 48\\\\\nTerra & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 4 & 13 & 29\\\\\nQwen & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 3 & 3 & 40\\\\\nLuna & 0 & 0 & 1 & 2 & 2 & 6 & 8 & 8 & 7 & 5 & 9\\\\\nSonnet & 14 & 3 & 9 & 5 & 4 & 2 & 3 & 1 & 2 & 4 & 1\\\\\nHaiku & 1 & 7 & 4 & 5 & 6 & 7 & 2 & 2 & 6 & 7 & 1\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:components-semantic-primary": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Semantic whole-answer components under strict scoring; denominator 480 per configuration. A component count does not require the other components to be correct.}\\label{tab:components-semantic-primary}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrr}\\toprule\nConfig. & Goals & Gains & Witness & Approval & Auth. & Release\\\\\\midrule\nSol & 480 & 480 & 480 & 480 & 480 & 480\\\\\nTerra & 461 & 475 & 469 & 476 & 475 & 475\\\\\nQwen & 454 & 458 & 458 & 453 & 458 & 458\\\\\nLuna & 388 & 401 & 391 & 480 & 410 & 418\\\\\nSonnet & 150 & 150 & 150 & 151 & 150 & 151\\\\\nHaiku & 3 & 3 & 3 & 3 & 3 & 3\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:components-semantic-framing_sensitivity": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Semantic whole-answer components under sole fence scoring; denominator 480 per configuration. A component count does not require the other components to be correct.}\\label{tab:components-semantic-framing_sensitivity}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrr}\\toprule\nConfig. & Goals & Gains & Witness & Approval & Auth. & Release\\\\\\midrule\nSol & 480 & 480 & 480 & 480 & 480 & 480\\\\\nTerra & 461 & 475 & 469 & 476 & 475 & 475\\\\\nQwen & 474 & 477 & 477 & 473 & 477 & 478\\\\\nLuna & 388 & 401 & 391 & 480 & 410 & 418\\\\\nSonnet & 150 & 150 & 150 & 151 & 150 & 151\\\\\nHaiku & 236 & 237 & 237 & 238 & 237 & 237\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
-    "tab:consistency-epistemic": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Number of fixed epistemic DEV inputs with exactly 0 through 10 strict complete-answer successes. Every row sums to 96.}\\label{tab:consistency-epistemic}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrrrrrrr}\\toprule\nConfig. & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\\\\\midrule\nSol & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 94\\\\\nTerra & 8 & 10 & 11 & 11 & 6 & 3 & 8 & 5 & 7 & 12 & 15\\\\\nQwen & 19 & 10 & 11 & 9 & 4 & 6 & 8 & 8 & 9 & 8 & 4\\\\\nLuna & 25 & 14 & 14 & 6 & 5 & 3 & 7 & 6 & 6 & 4 & 6\\\\\nSonnet & 0 & 0 & 0 & 3 & 1 & 18 & 9 & 21 & 13 & 16 & 15\\\\\nHaiku & 84 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
+    "tab:consistency-epistemic": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Number of fixed epistemic DEV inputs with exactly 0 through 10 fence-normalized complete-answer successes. Every row sums to 96.}\\label{tab:consistency-epistemic}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrrrrrrr}\\toprule\nConfig. & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\\\\\midrule\nSol & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 94\\\\\nTerra & 8 & 10 & 11 & 11 & 6 & 3 & 8 & 5 & 7 & 12 & 15\\\\\nQwen & 18 & 9 & 11 & 8 & 3 & 8 & 6 & 6 & 12 & 11 & 4\\\\\nLuna & 25 & 14 & 14 & 6 & 5 & 3 & 7 & 6 & 6 & 4 & 6\\\\\nSonnet & 0 & 0 & 0 & 0 & 2 & 5 & 4 & 5 & 12 & 21 & 47\\\\\nHaiku & 1 & 2 & 5 & 6 & 6 & 5 & 7 & 7 & 12 & 16 & 29\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:components-epistemic-primary": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Epistemic whole-answer components under strict scoring; denominator 960 per configuration. A component count does not require the other components to be correct.}\\label{tab:components-epistemic-primary}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrr}\\toprule\nConfig. & Facts & Repair & Decisions & Possible & Query\\\\\\midrule\nSol & 958 & 958 & 960 & 960 & 960\\\\\nTerra & 550 & 584 & 839 & 839 & 801\\\\\nQwen & 467 & 514 & 679 & 675 & 640\\\\\nLuna & 339 & 448 & 689 & 689 & 656\\\\\nSonnet & 706 & 750 & 738 & 738 & 734\\\\\nHaiku & 12 & 17 & 14 & 14 & 14\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:components-epistemic-framing_sensitivity": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Epistemic whole-answer components under sole fence scoring; denominator 960 per configuration. A component count does not require the other components to be correct.}\\label{tab:components-epistemic-framing_sensitivity}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrr}\\toprule\nConfig. & Facts & Repair & Decisions & Possible & Query\\\\\\midrule\nSol & 958 & 958 & 960 & 960 & 960\\\\\nTerra & 550 & 584 & 839 & 839 & 801\\\\\nQwen & 500 & 552 & 721 & 717 & 682\\\\\nLuna & 339 & 448 & 689 & 689 & 656\\\\\nSonnet & 852 & 905 & 891 & 891 & 887\\\\\nHaiku & 715 & 835 & 831 & 831 & 822\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n",
     "tab:historical-single": "\\begin{table}[htbp]\\centering\\scriptsize\n\\caption{Historical one-judgment cohort only. These counts are not ten-round measurements. All configurations requested medium reasoning and a 32,768 combined-token allowance.}\\label{tab:historical-single}\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrr}\\toprule\nConfig. & Semantic strict & Semantic fence & Epistemic strict & Epistemic fence\\\\\\midrule\nSol & 48/48 & 48/48 & 95/96 & 95/96\\\\\nTerra & 45/48 & 45/48 & 45/96 & 45/96\\\\\nQwen & 45/48 & 46/48 & 40/96 & 44/96\\\\\nLuna & 32/48 & 32/48 & 26/96 & 26/96\\\\\nSonnet & 17/48 & 17/48 & 72/96 & 83/96\\\\\nHaiku & 0/48 & 23/48 & 2/96 & 69/96\\\\\n\\bottomrule\\end{tabular}\n\\end{table}\n"
   },
-  "scientific_scope": "Original incomplete8630 plus explicitly amended8640; no native calls or frozen writer reruns"
+  "scientific_scope": "Reporting correction only: sole outer presentation fences ignored; both frozen parsers and all scientific payloads unchanged.",
+  "reporting_parser": "framing_sensitivity"
 }

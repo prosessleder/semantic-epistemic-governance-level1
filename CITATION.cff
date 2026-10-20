@@ -1,10 +1,11 @@
 cff-version: 1.2.0
-message: "Public preprint; not peer reviewed. Cite the paper version and its fixed benchmark identifier. No DOI has been assigned."
+message: "Public preprint; not peer reviewed. Cite the paper version and its fixed benchmark identifier. Sole outer code fences are normalized in the reported task scores."
 title: "Semantic and Epistemic Governance: Ten-Run Results on the Basic Level 1 Tests"
-version: 0.2.0-preprint
+version: 0.2.1-preprint
 authors:
   - family-names: "O’Brien"
     given-names: "Timothy"
     orcid: "https://orcid.org/0009-0001-2589-347X"
 url: "https://github.com/prosessleder/semantic-epistemic-governance-level1"
 date-released: "2026-10-19"
+doi: "10.5281/zenodo.23487873"
